@@ -24,6 +24,7 @@
 * [第四章 移动通信安全概述](chap0x04/main.md)
     * [实验](chap0x04/exp.md)
     * [物联网实战初探笔记](chap0x04/smartconfig.md)
+    * [CVE-2019-12272](chap0x04/cve-2019-12272.md)
 * [第五章 智能终端操作系统安全基础](chap0x05/main.md)
     * [实验](chap0x05/exp.md)
 * [第六章 安卓系统访问控制策略与机制](chap0x06/main.md)

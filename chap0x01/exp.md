@@ -45,3 +45,88 @@
 * 虚拟机镜像备份和还原的方法
 * 熟悉虚拟机基本网络配置，了解不同联网模式的典型应用场景
 
+## OpenWrt on VirtualBox
+
+```bash
+# 下载镜像文件
+wget https://downloads.openwrt.org/snapshots/targets/x86/64/openwrt-x86-64-combined-squashfs.img.gz
+# 解压缩
+gunzip openwrt-x86-64-combined-squashfs.img.gz
+# img 格式转换为 Virtualbox 虚拟硬盘格式 vdi
+VBoxManage convertfromraw --format VDI openwrt-x86-64-combined-squashfs.img openwrt-x86-64-combined-squashfs.vdi
+# 新建虚拟机选择「类型」 Linux / 「版本」Linux 2.6 / 3.x / 4.x (64-bit)，填写有意义的虚拟机「名称」
+# 内存设置为 256 MB
+# 使用已有的虚拟硬盘文件 - 「注册」新虚拟硬盘文件选择刚才转换生成的 .vdi 文件
+```
+
+在下载镜像时，包含 `squashfs` 关键词的镜像文件区别于包含 `ext4` 关键词的镜像文件之处在于：`squashfs` 镜像包含一个只读文件系统可以用于「恢复出厂设置」。[OpenWrt 的官方镜像下载站点](https://downloads.openwrt.org/) 同时提供了最新版镜像和历史版本镜像的下载链接。对于在 VirtualBox 中安装 `OpenWrt` 来说首选 `x86` 架构的镜像文件以获得最好的运行兼容性保证。
+
+经过上述命令操作之后我们将在 VirtualBox 的虚拟机列表里看到我们刚刚创建的 `OpenWrt` 虚拟机。在启动虚拟机之前，我们还需要进行必要的虚拟网卡设置。推荐设置为：
+
+* 第一块网卡设置为：Intel PRO/1000 MT 桌面（仅主机(Host-Only)网络）
+* 第二块网卡设置为：Intel PRO/1000 MT 桌面（网络地址转换(NAT)）
+
+示例第一块网卡对应的 `Host-Only` 网卡 `vboxnet0` 设置如下：
+
+![](attach/chap0x01/openwrt-vb.png)
+
+确认好网络设置正确后，启动虚拟机，大约数秒之后（根据宿主机性能不同可能会有差异）黑色命令行界面不再滚动更新新消息时，按下「ENTER」键即可进入 OpenWrt 的终端控制台。
+
+如果你熟悉常见 Linux 发行版的命令行使用，那么对于 `OpenWrt` 的基本使用应该很容易上手。
+
+首先，可以使用 `ping` 来检查互联网连通性。在保证有互联网联通的条件下，可以通过 `OpenWrt` 的软件包管理器 `opkg` 进行联网安装软件。不过考虑到在 VirtualBox 的默认显示终端里进行命令行操作不便，建议先配置好 `OpenWrt` 的管理接口再通过 `SSH` 的方式远程操控会更方便一些。除了在「参考资料」一节给出的 `OpenWrt` 官方指南里的方法可以完成网络配置之外。如果你熟悉 `vi` 的基本使用，还可以通过 `vi` 直接编辑 `/etc/config/network` 配置文件来设置好远程管理专用网卡的 IP 地址。
+
+通过 SSH 方式来管理 `OpenWrt` 可以很方便进行「复制粘贴」操作，大大提升系统管理效率。对于路由器操作系统 `OpenWrt` 来说，更常见的远程管理方式是通过 `LuCI` 这个网页形式的管理界面来完成。以下以 `luci` 软件包的安装为例，给出常用的一些 `opkg` 命令供参考。
+
+```bash
+# 更新 opkg 本地缓存
+opkg update
+
+# 检索指定软件包
+opkg find luci
+# luci - git-19.223.33685-f929298-1
+
+# 查看 luci 依赖的软件包有哪些 
+opkg depends luci
+# luci depends on:
+# 	libc
+# 	uhttpd
+# 	uhttpd-mod-ubus
+# 	luci-mod-admin-full
+# 	luci-theme-bootstrap
+# 	luci-app-firewall
+# 	luci-proto-ppp
+# 	libiwinfo-lua
+# 	luci-proto-ipv6
+
+# 查看系统中已安装软件包
+opkg list-installed
+
+# 安装 luci
+opkg install luci
+
+# 查看 luci-mod-admin-full 在系统上释放的文件有哪些
+opkg files luci-mod-admin-full
+# Package luci-mod-admin-full (git-16.018.33482-3201903-1) is installed on root and has the following files:
+# /usr/lib/lua/luci/view/admin_network/wifi_status.htm
+# /usr/lib/lua/luci/view/admin_system/packages.htm
+# /usr/lib/lua/luci/model/cbi/admin_status/processes.lua
+# /www/luci-static/resources/wireless.svg
+# /usr/lib/lua/luci/model/cbi/admin_system/system.
+# ...
+# /usr/lib/lua/luci/view/admin_network/iface_status.htm
+# /usr/lib/lua/luci/view/admin_uci/revert.htm
+# /usr/lib/lua/luci/model/cbi/admin_network/proto_ahcp.lua
+# /usr/lib/lua/luci/view/admin_uci/changelog.htm
+```
+
+以下是安装好 `luci` 后通过浏览器访问管理 `OpenWrt` 的效果截图。
+
+![](attach/chap0x01/openwrt-luci.png)
+
+## 参考资料
+
+* [新版 OpenWrt 安装到 VirtualBox 的指南](https://openwrt.org/docs/guide-user/virtualization/virtualbox-vm)
+* [旧版 OpenWrt 安装到 VirtualBox 的指南](https://oldwiki.archive.openwrt.org/doc/howto/virtualbox)
+
+
