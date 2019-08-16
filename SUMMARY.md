@@ -5,6 +5,7 @@
     * [实验](chap0x01/exp.md)
 * [第二章 无线接入网监听](chap0x02/main.md)
     * [实验](chap0x02/exp.md)
+    * [课后作业](chap0x02/homework.md)
     * [Scapy](chap0x02/scapy.md)
     * [RadioTap](chap0x02/radiotap.md)
     * [常见无线网卡](chap0x02/wifi_card_list.md)
@@ -20,6 +21,7 @@
         * [Netgear WNDA3100v3](chap0x02/wnda3100v3.md)
 * [第三章 无线接入网入侵与防御](chap0x03/main.md) 
     * [实验](chap0x03/exp.md)
+    * [课后作业](chap0x03/homework.md)
     * [Scapy](chap0x03/scapy.md)
 * [第四章 移动通信安全概述](chap0x04/main.md)
     * [实验](chap0x04/exp.md)
@@ -33,6 +35,7 @@
     * [实验](chap0x07/exp.md)
 * [第八章 移动终端应用攻防与代码最佳安全实践](chap0x08/main.md)
     * [实验](chap0x08/exp.md)
+    * [课后作业](chap0x08/homework.md)
 * 模拟测试
     * [2016](exam/2016.md)
 
