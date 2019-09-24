@@ -76,7 +76,7 @@ VBoxManage convertfromraw --format VDI openwrt-x86-64-combined-squashfs.img open
 
 首先，可以使用 `ping` 来检查互联网连通性。在保证有互联网联通的条件下，可以通过 `OpenWrt` 的软件包管理器 `opkg` 进行联网安装软件。不过考虑到在 VirtualBox 的默认显示终端里进行命令行操作不便，建议先配置好 `OpenWrt` 的管理接口再通过 `SSH` 的方式远程操控会更方便一些。除了在「参考资料」一节给出的 `OpenWrt` 官方指南里的方法可以完成网络配置之外。如果你熟悉 `vi` 的基本使用，还可以通过 `vi` 直接编辑 `/etc/config/network` 配置文件来设置好远程管理专用网卡的 IP 地址。
 
-通过 SSH 方式来管理 `OpenWrt` 可以很方便进行「复制粘贴」操作，大大提升系统管理效率。对于路由器操作系统 `OpenWrt` 来说，更常见的远程管理方式是通过 `LuCI` 这个网页形式的管理界面来完成。以下以 `luci` 软件包的安装为例，给出常用的一些 `opkg` 命令供参考。
+通过 SSH 方式来管理 `OpenWrt` 可以很方便进行「复制粘贴」操作，大大提升系统管理效率。对于路由器操作系统 `OpenWrt` 来说，更常见的远程管理方式是通过 `LuCi` 这个网页形式的管理界面来完成。以下以 `LuCi` 软件包的安装为例，给出常用的一些 `opkg` 命令供参考。
 
 ```bash
 # 更新 opkg 本地缓存
@@ -123,6 +123,69 @@ opkg files luci-mod-admin-full
 以下是安装好 `luci` 后通过浏览器访问管理 `OpenWrt` 的效果截图。
 
 ![](attach/chap0x01/openwrt-luci.png)
+
+### 开启 AP 功能
+
+OpenWrt 安装到 VirtualBox 之后，由于 VirtualBox 本身无法提供无线网卡的虚拟化仿真功能。所以如果需要在虚拟机中的 OpenWrt 开启无线网络支持，需要借助无线网卡硬件设备。在本书中，我们推荐使用外接 USB 无线网卡。本书实验验证过的外接 USB 无线网卡信息可以参阅本书第二章的 [常见无线网卡](../chap0x02/wifi_card_list.md) 一节，OpenWrt 在默认安装状态下没有安装无线网卡相关的驱动程序，所以为了让 OpenWrt 可以正确的识别并管理外接 USB 无线网卡，首先需要解决无线网卡驱动在 OpenWrt 中安装的问题。
+
+当前待接入 USB 无线网卡的芯片信息可以通过在 Kali 虚拟机中使用 `lsusb` 的方式查看，但默认情况下 OpenWrt 并没有安装对应的软件包，需要通过如下 `opkg` 命令完成软件安装。
+
+```bash
+opkg update && opkg install usbutils
+```
+
+安装好 `usbutils` 之后，通过以下 2 个步骤可以确定该无线网卡的驱动是否已经安装好。
+
+```bash
+# 查看 USB 外设的标识信息
+lsusb
+# Bus 001 Device 005: ID 0cf3:9271 Qualcomm Atheros Communications AR9271 802.11n
+# Bus 001 Device 006: ID 0bda:8187 Realtek Semiconductor Corp. RTL8187 Wireless Adapter
+
+# 查看 USB 外设的驱动加载情况
+lsusb -t
+# /:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=ehci-pci/12p, 480M
+#     |__ Port 1: Dev 4, If 0, Class=(Defined at Interface level), Driver=, 480M
+#     |__ Port 2: Dev 5, If 0, Class=Vendor Specific Class, Driver=ath9k_htc, 480M
+```
+
+在上面的命令例子中，芯片名称为 `AR9271` 的无线网卡已经成功加载了驱动 `ath9k_htc` ，而另一块芯片名称为 `RTL8187` 的无线网卡则未加载到匹配的驱动。通过 `ifconfig -a` 或 `ip link` 均可以验证系统当前只能识别到一块无线网卡。
+
+通过 `opkg find` 命令可以快速查找可能包含指定芯片名称的驱动程序包，如下所示：
+
+```bash
+opkg find kmod-* | grep 8187
+# kmod-rtl8187 - 4.14.131+2017-11-01-10 - Realtek Drivers for RTL818x devices (RTL8187 USB)
+```
+
+安装 `kmod-rtl8187` 驱动之后，再执行 `lsusb -t` 时发现已经成功加载驱动。
+
+```
+|__ Port 1: Dev 6, If 0, Class=(Defined at Interface level), Driver=rtl8187, 480M
+```
+
+此时再次执行 `ifconfig -a` 或 `ip link` 均可以验证系统当前已经可以识别 2 块无线网卡。
+
+查看 `openwrt` 支持哪些无线网卡驱动可以通过 `opkg find kmod-* | grep wireless` 进行查看。
+
+默认情况下，OpenWrt 只支持 `WEP` 系列过时的无线安全机制。为了让 OpenWrt 支持 `WPA` 系列更安全的无线安全机制，还需要额外安装 2 个软件包：`wpa-supplicant` 和 `hostapd` 。其中 `wpa-supplicant` 提供 WPA 客户端认证，`hostapd` 提供 AP 或 ad-hoc 模式的 WPA 认证。
+
+可以通过 `OpenWrt` 的 `LuCi` 完成无线网络的配置，为了使用其他无线客户端可以正确发现新创建的无线网络，以下还有 2 点需要额外注意的特殊配置注意事项：
+
+* 虚拟机的 WAN 网卡对应的虚拟网络类型必须设置为 `NAT` 而不能使用 `NatNetwork` ，无线客户端连入无线网络后才可以正常上网。
+* 不要使用 Auto 模式的信道选择和信号强度，[均手工指定](https://forum.archive.openwrt.org/viewtopic.php?id=37896) 才可以。如下图所示为手工指定监听信道和信号强度的示例：
+
+![](attach/chap0x01/luci-wireless-config.png)
+
+在没有客户端加入当前无线网络时，我们在 `LuCi` 上查看无线网络状态如下图所示：
+
+![](attach/chap0x01/openwrt-wireless-unassociated.png)
+
+当有客户端加入当前无线网络时，我们在 `LuCi` 上查看无线网络状态如下图所示：
+
+![](attach/chap0x01/openwrt-wireless-joined.png)
+
+在使用外置 USB 无线网卡来作为虚拟机中的 OpenWrt 的无线网卡时需要注意设备连接的「不稳定性」可能会导致随时出现无线网卡突然在 OpenWrt 系统中无法被识别的情况，故障排查方法可以参考 [第二章的「无线网卡设置查看基本工具」](../chap0x02/main.md#无线网卡设置查看基本工具) 一节提供的一些软硬件故障排查方法。
 
 ## 参考资料
 
