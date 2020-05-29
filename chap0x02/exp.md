@@ -307,8 +307,8 @@ Edit->Preferences->Protocol->IEEE 802.11->Enable decryption->descryption keys选
 
 ## 参考资料
 
-- [Wireless Sniffing with Wireshark](http://sec.cuc.edu.cn/huangwei/wiki/attachments/textbook/mis/chap0x02/Wireless Snifﬁng with Wireshark.pdf)
-- [IEEE 802.11 frame format (PPT)](http://sec.cuc.edu.cn/huangwei/wiki/attachments/textbook/mis/chap0x02/802-11-Frame_E_C.pdf)
+- [Wireless Sniffing with Wireshark](https://github.com/c4pr1c3/cuc-courses/raw/master/misc/Wireless%20Sniffing%20with%20Wireshark.pdf)
+- [IEEE 802.11 frame format (PPT)](https://github.com/c4pr1c3/cuc-courses/raw/master/misc/802-11-Frame_E_C.pdf)
 - [https://wiki.wireshark.org/Wi-Fi](https://wiki.wireshark.org/Wi-Fi)
 - [https://www.wireshark.org/docs/dfref/r/radio.html](https://www.wireshark.org/docs/dfref/r/radio.html)
 - [https://www.wireshark.org/docs/dfref/w/wlan.html](https://www.wireshark.org/docs/dfref/w/wlan.html)
