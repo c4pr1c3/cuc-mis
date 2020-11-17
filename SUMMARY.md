@@ -16,6 +16,8 @@
         * [Ralink RT5370](chap0x02/rt5370.md)
         * [Realtek RTL8811AU](chap0x02/rtl8811au.md)
         * [Realtek RTL8812AU](chap0x02/8812au.md)
+        * [Realtek RTL88x2BU](chap0x02/rtl88x2bu.md)
+        * [Realtek RTL8821CU](chap0x02/rtl8821cu.md)
         * [Ralink RT3572L](chap0x02/rt3572l.md)
             * [iw phy输出参数详解](chap0x02/rt3572l_explained.md)
         * [Netgear WNDA3100v3](chap0x02/wnda3100v3.md)
