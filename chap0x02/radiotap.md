@@ -5,6 +5,7 @@ RadioTap 是 IEEE 802.11 帧注入和接收的 **事实** 标准。radiotap 头�
 ```bash
 # Mac 上的 tshark 和 tcpdump 支持的抓包格式如下：
 # -I 参数用于指定网卡使用 监听模式，目前仅无线网卡支持该模式
+# 部分无线网卡可能不支持 -I 参数，例如 Comfast CF-916AC
 # -L 列出当前网卡支持的链路层封包格式
 sudo tshark -i en0 -I -L
 Data link types of interface en0 when in monitor mode (use option -y to set):

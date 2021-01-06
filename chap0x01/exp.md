@@ -74,7 +74,19 @@ VBoxManage convertfromraw --format VDI openwrt-x86-64-combined-squashfs.img open
 
 如果你熟悉常见 Linux 发行版的命令行使用，那么对于 `OpenWrt` 的基本使用应该很容易上手。
 
-首先，可以使用 `ping` 来检查互联网连通性。在保证有互联网联通的条件下，可以通过 `OpenWrt` 的软件包管理器 `opkg` 进行联网安装软件。不过考虑到在 VirtualBox 的默认显示终端里进行命令行操作不便，建议先配置好 `OpenWrt` 的管理接口再通过 `SSH` 的方式远程操控会更方便一些。除了在「参考资料」一节给出的 `OpenWrt` 官方指南里的方法可以完成网络配置之外。如果你熟悉 `vi` 的基本使用，还可以通过 `vi` 直接编辑 `/etc/config/network` 配置文件来设置好远程管理专用网卡的 IP 地址。
+首先，可以使用 `ping` 来检查互联网连通性。在保证有互联网联通的条件下，可以通过 `OpenWrt` 的软件包管理器 `opkg` 进行联网安装软件。不过考虑到在 VirtualBox 的默认显示终端里进行命令行操作不便，建议先配置好 `OpenWrt` 的管理接口再通过 `SSH` 的方式远程操控会更方便一些。除了在「参考资料」一节给出的 `OpenWrt` 官方指南里的方法可以完成网络配置之外。如果你熟悉 `vi` 的基本使用，还可以通过 `vi` 直接编辑 `/etc/config/network` 配置文件来设置好远程管理专用网卡的 IP 地址。如下配置片段所示，修改 OpenWrt 局域网地址为当前 Host-only 网段内可用地址，只需要修改 `option ipaddr` 的值即可。
+
+```ini
+config interface 'lan'
+	option type 'bridge'
+	option ifname 'eth0'
+	option proto 'static'
+	option ipaddr '192.168.56.11' 
+	option netmask '255.255.255.0'
+	option ip6assign '60'
+```
+
+修改完网络配置之后，可以通过 `ifdown eth0 && ifup eth0` 完成指定网卡 `eth0` 的重新加载配置生效无需重新启动系统。如果遇到 `ifdown` 或 `ifup` 指令无效的情况，可以重启系统以使新的网络配置生效。
 
 通过 SSH 方式来管理 `OpenWrt` 可以很方便进行「复制粘贴」操作，大大提升系统管理效率。对于路由器操作系统 `OpenWrt` 来说，更常见的远程管理方式是通过 `LuCi` 这个网页形式的管理界面来完成。以下以 `LuCi` 软件包的安装为例，给出常用的一些 `opkg` 命令供参考。
 
@@ -131,6 +143,7 @@ OpenWrt 安装到 VirtualBox 之后，由于 VirtualBox 本身无法提供无线
 当前待接入 USB 无线网卡的芯片信息可以通过在 Kali 虚拟机中使用 `lsusb` 的方式查看，但默认情况下 OpenWrt 并没有安装对应的软件包，需要通过如下 `opkg` 命令完成软件安装。
 
 ```bash
+# 每次重启 OpenWRT 之后，安装软件包或使用搜索命令之前均需要执行一次 opkg update
 opkg update && opkg install usbutils
 ```
 
@@ -170,12 +183,25 @@ opkg find kmod-* | grep 8187
 
 默认情况下，OpenWrt 只支持 `WEP` 系列过时的无线安全机制。为了让 OpenWrt 支持 `WPA` 系列更安全的无线安全机制，还需要额外安装 2 个软件包：`wpa-supplicant` 和 `hostapd` 。其中 `wpa-supplicant` 提供 WPA 客户端认证，`hostapd` 提供 AP 或 ad-hoc 模式的 WPA 认证。
 
-可以通过 `OpenWrt` 的 `LuCi` 完成无线网络的配置，为了使用其他无线客户端可以正确发现新创建的无线网络，以下还有 2 点需要额外注意的特殊配置注意事项：
+```bash
+opkg install hostapd wpa-supplicant
+```
 
+可以通过 `OpenWrt` 的 `LuCi` 完成无线网络的配置，如果需要在 `LuCi` 的网页版中管理无线网卡设置，还需要在安装完无线网卡驱动和上述 2 个软件之后重启系统方可生效。有时即使在虚拟机的 `USB Device Filters` 中添加了当前无线网卡的自动连入配置时，`OpenWrt` 系统重启时也可能找不到设备，此时只需要物理上重新连接一次无线网卡或通过虚拟机的 USB 设备管理菜单将网卡连入虚拟机即可在 `OpenWrt` 中通过 `lsusb -t` 正确识别网卡并加载网卡驱动，登入 `LuCi` 之后在顶部菜单 `Network` 里即可发现新增了一个菜单项 `Wireless` 。 
+
+![](attach/chap0x01/openwrt-network-wireless.png)
+
+为了使用其他无线客户端可以正确发现新创建的无线网络，以下还有 3 点需要额外注意的特殊配置注意事项：
+
+* 无线网络的详细配置界面里的 `Interface Configuration` 表单里 `Network` 记得勾选 `wan` ；
 * 虚拟机的 WAN 网卡对应的虚拟网络类型必须设置为 `NAT` 而不能使用 `NatNetwork` ，无线客户端连入无线网络后才可以正常上网。
 * 不要使用 Auto 模式的信道选择和信号强度，[均手工指定](https://forum.archive.openwrt.org/viewtopic.php?id=37896) 才可以。如下图所示为手工指定监听信道和信号强度的示例：
 
 ![](attach/chap0x01/luci-wireless-config.png)
+
+完成无线网络配置之后，需要点击 `Enable` 按钮启用当前无线网络。
+
+![](attach/chap0x01/openwrt-wirelss-config.png)
 
 在没有客户端加入当前无线网络时，我们在 `LuCi` 上查看无线网络状态如下图所示：
 
