@@ -213,6 +213,10 @@ opkg install hostapd wpa-supplicant
 
 在使用外置 USB 无线网卡来作为虚拟机中的 OpenWrt 的无线网卡时需要注意设备连接的「不稳定性」可能会导致随时出现无线网卡突然在 OpenWrt 系统中无法被识别的情况，故障排查方法可以参考 [第二章的「无线网卡设置查看基本工具」](../chap0x02/main.md#无线网卡设置查看基本工具) 一节提供的一些软硬件故障排查方法。
 
+如下图所示，就是一个典型的通过 **重新插拔无线网卡** 就能解决网卡无法被识别问题的例子。
+
+![](attach/chap0x01/openwrt-usb-retry.png)
+
 ## 参考资料
 
 * [新版 OpenWrt 安装到 VirtualBox 的指南](https://openwrt.org/docs/guide-user/virtualization/virtualbox-vm)

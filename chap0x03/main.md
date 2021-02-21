@@ -153,7 +153,7 @@ Evil Twin实验的操作方法和步骤详见[本章实验](exp.md)
 
 2002年10月31日，Wi-Fi联盟提出**临时密钥完整性协议**（Temporal Key Integrity Protocol, TKIP），归类于WPA标准的一部分。IEEE随后在2004年7月23日的IEEE 802.11i-2004报告中背书临时密钥完整性协议并同时提出基于**计数器模式密码块链消息完整码**（Counter Cipher Mode with block chaining message authentication code Protocol, CCMP）协议的802.1X和AES协议这些更坚固的安全协议。之后Wi-Fi联盟接受了IEEE的相关报告并冠以“WPA2”这个商业名称发布。
 
-临时密钥完整性协议随后由于安全性原因于2009年1月被IEEE废弃。ZDNet于2010年7月18日的报告中表明Wi-Fi联盟应当禁止所有Wi-Fi设备使用WEP和临时密钥完整性协议。自2012年的802.11标准中，TKIP已不再视为完全，且即将废弃。
+临时密钥完整性协议随后由于安全性原因于2009年1月被IEEE废弃。ZDNet于2010年7月18日的报告中表明Wi-Fi联盟应当禁止所有Wi-Fi设备使用WEP和临时密钥完整性协议。自2012年的802.11标准中，TKIP已不再视为安全，目前已经处于废弃状态。
 
 TKIP本质上是一个WEP补丁，解决了攻击者通过获得少量的路由器流量解析出路由器密钥的问题。为了解决这个问题，TKIP每隔几分钟就给出新的密钥。不给攻击者提供足够的数据来破译密钥或算法所依赖的RC4流加密。
 
@@ -386,12 +386,12 @@ E-S1和E-S2在实际设备中的实现算法使用的是 ``伪随机数发⽣器
 
 针对上述企业级无线网络认证方式的中间人攻击方法，企业无线网络的管理员应：
 
-* 禁用不安全的EAP实现方法，例如：EAP-MD5, EAP-OTP, EAP-GTC, LEAP
-* 启用并 **正确配置** 安全的EAP实现方法，例如：PEAP, TTLS, EAP/TLS
-* 在无线客户端上预置自签发的EAP认证证书或购买权威CA签发的用于身份认证的证书
+* 禁用不安全的 `EAP` 实现方法，例如：EAP-MD5, EAP-OTP, [EAP-GTC](https://www.defcon.org/images/defcon-21/dc-21-presentations/djwishbone-PuNk1nPo0p/DEFCON-21-djwishbone-PuNk1nPo0p-BYO-Disaster-Updated.pdf) , LEAP
+* 启用并 **正确配置** 安全的 `EAP` 实现方法，例如：PEAP, TTLS, EAP/TLS
+* 在无线客户端上预置自签发的 `EAP` 认证证书信任链或购买权威CA签发的用于身份认证的证书
 * 无线客户端启用永远验证服务器证书有效性
 * 教育无线网络用户不要信任任何被警告的证书
-    * 学会手工验证证书的CN字段值是否与公司通告一致（只是缓解风险，如果攻击者完全克隆企业的证书信息，则本方法无效）
+    * 学会手工验证证书的 `CN` 字段值是否与公司通告一致（只是缓解风险，如果攻击者完全克隆企业的证书信息，则本方法无效）
 
 ## 安全机制漏洞利用实例
 

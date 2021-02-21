@@ -3,6 +3,7 @@
 * [引言](README.md)
 * [第一章 无线网络安全基础](chap0x01/main.md)
     * [实验](chap0x01/exp.md)
+    * [课后作业](chap0x01/homework.md)
 * [第二章 无线接入网监听](chap0x02/main.md)
     * [实验](chap0x02/exp.md)
     * [课后作业](chap0x02/homework.md)
