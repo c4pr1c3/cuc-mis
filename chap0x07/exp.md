@@ -77,7 +77,7 @@ grep '注册失败' -R .
 # 当前smali代码对应源代码的行号
 .line 39
 
-# 将 0x7f060027 赋值给寄存器v6
+# 将 0x7f060027 赋值给寄存器v5
 const v5, 0x7f060027
 
 # invoke-virtual 是调用实例的虚方法（该方法不能是 private、static 或 final，也不能是构造函数）
