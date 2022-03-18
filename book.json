@@ -21,28 +21,12 @@
             ]
         }
     },
-    "plugins": ["quiz", "anchor-navigation-ex", "tbfed-pagefooter", "ga", "image-captions", "add-js-css", "edit-link"],
+    "plugins": ["anchor-navigation-ex", "tbfed-pagefooter", "ga", "image-captions", "add-js-css", "edit-link"],
     "pluginsConfig": {
         "tbfed-pagefooter": {
             "copyright":"&copy <a href='https://www.zhihu.com/people/c4pr1c3'>@黄玮</a>",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "quiz": {
-            "labels": {
-                "check"             : "提交检查",
-                "showExplanation"   : "查看题解", 
-                "showCorrect"       : "显示全部",   
-                "explanationHeader" : "题解"
-            },
-            "text": {
-                "noChosen"    : "请至少选择一个正确答案",  
-                "incomplete"  : "没有回答完全" 
-            },
-            "buttons": {
-                "showCorrect"       : true, 
-                "showExplanation"   : true 
-            }
         },
         "anchor-navigation-ex": {
             "showLevel": false
