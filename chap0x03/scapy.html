@@ -1,0 +1,1065 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Scapy · 移动互联网安全</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="黄玮">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chap0x04/main.html" />
+    
+    
+    <link rel="prev" href="homework.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://c4pr1c3.github.io/cuc-wiki/" target="_blank" class="custom-link">中传信安课程网站</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chap0x01/main.html">
+            
+                <a href="../chap0x01/main.html">
+            
+                    
+                    第一章 无线网络安全基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chap0x01/exp.html">
+            
+                <a href="../chap0x01/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chap0x01/homework.html">
+            
+                <a href="../chap0x01/homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chap0x02/main.html">
+            
+                <a href="../chap0x02/main.html">
+            
+                    
+                    第二章 无线接入网监听
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chap0x02/exp.html">
+            
+                <a href="../chap0x02/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chap0x02/homework.html">
+            
+                <a href="../chap0x02/homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chap0x02/scapy.html">
+            
+                <a href="../chap0x02/scapy.html">
+            
+                    
+                    Scapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chap0x02/radiotap.html">
+            
+                <a href="../chap0x02/radiotap.html">
+            
+                    
+                    RadioTap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chap0x02/wifi_card_list.html">
+            
+                <a href="../chap0x02/wifi_card_list.html">
+            
+                    
+                    常见无线网卡
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../chap0x02/alfa.html">
+            
+                <a href="../chap0x02/alfa.html">
+            
+                    
+                    ALFA-AWUS036H
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../chap0x02/rtl8187.html">
+            
+                <a href="../chap0x02/rtl8187.html">
+            
+                    
+                    Realtek RTL8187
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../chap0x02/wn722n.html">
+            
+                <a href="../chap0x02/wn722n.html">
+            
+                    
+                    Atheros AR9271
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../chap0x02/wn822n.html">
+            
+                <a href="../chap0x02/wn822n.html">
+            
+                    
+                    Realtek RTL8192CU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../chap0x02/rt5370.html">
+            
+                <a href="../chap0x02/rt5370.html">
+            
+                    
+                    Ralink RT5370
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../chap0x02/rtl8811au.html">
+            
+                <a href="../chap0x02/rtl8811au.html">
+            
+                    
+                    Realtek RTL8811AU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="../chap0x02/8812au.html">
+            
+                <a href="../chap0x02/8812au.html">
+            
+                    
+                    Realtek RTL8812AU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" data-path="../chap0x02/rtl88x2bu.html">
+            
+                <a href="../chap0x02/rtl88x2bu.html">
+            
+                    
+                    Realtek RTL88x2BU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.9" data-path="../chap0x02/rtl8821cu.html">
+            
+                <a href="../chap0x02/rtl8821cu.html">
+            
+                    
+                    Realtek RTL8821CU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.10" data-path="../chap0x02/rt3572l.html">
+            
+                <a href="../chap0x02/rt3572l.html">
+            
+                    
+                    Ralink RT3572L
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.10.1" data-path="../chap0x02/rt3572l_explained.html">
+            
+                <a href="../chap0x02/rt3572l_explained.html">
+            
+                    
+                    iw phy输出参数详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.11" data-path="../chap0x02/wnda3100v3.html">
+            
+                <a href="../chap0x02/wnda3100v3.html">
+            
+                    
+                    Netgear WNDA3100v3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="main.html">
+            
+                <a href="main.html">
+            
+                    
+                    第三章 无线接入网入侵与防御
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="exp.html">
+            
+                <a href="exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="homework.html">
+            
+                <a href="homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="scapy.html">
+            
+                <a href="scapy.html">
+            
+                    
+                    Scapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chap0x04/main.html">
+            
+                <a href="../chap0x04/main.html">
+            
+                    
+                    第四章 移动通信安全概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chap0x04/exp.html">
+            
+                <a href="../chap0x04/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chap0x04/smartconfig.html">
+            
+                <a href="../chap0x04/smartconfig.html">
+            
+                    
+                    物联网实战初探笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chap0x04/cve-2019-12272.html">
+            
+                <a href="../chap0x04/cve-2019-12272.html">
+            
+                    
+                    CVE-2019-12272
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chap0x05/main.html">
+            
+                <a href="../chap0x05/main.html">
+            
+                    
+                    第五章 智能终端操作系统安全基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chap0x05/exp.html">
+            
+                <a href="../chap0x05/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chap0x06/main.html">
+            
+                <a href="../chap0x06/main.html">
+            
+                    
+                    第六章 安卓系统访问控制策略与机制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chap0x06/exp.html">
+            
+                <a href="../chap0x06/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chap0x07/main.html">
+            
+                <a href="../chap0x07/main.html">
+            
+                    
+                    第七章 移动终端应用逆向分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chap0x07/exp.html">
+            
+                <a href="../chap0x07/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chap0x08/main.html">
+            
+                <a href="../chap0x08/main.html">
+            
+                    
+                    第八章 移动终端应用攻防与代码最佳安全实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chap0x08/exp.html">
+            
+                <a href="../chap0x08/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chap0x08/homework.html">
+            
+                <a href="../chap0x08/homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    模拟测试
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../exam/2016.html">
+            
+                <a href="../exam/2016.html">
+            
+                    
+                    2016
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Scapy</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#scapy"><b></b>Scapy</a></li><ul><li><span class="title-icon "></span><a href="#&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x9605;&#x8BFB;&#x7406;&#x89E3;"><b></b>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x9605;&#x8BFB;&#x7406;&#x89E3;</a></li><ul><li><span class="title-icon "></span><a href="#ex-1py"><b></b>ex-1.py</a></li><li><span class="title-icon "></span><a href="#ex-2py"><b></b>ex-2.py</a></li><li><span class="title-icon "></span><a href="#ex-3py"><b></b>ex-3.py</a></li><li><span class="title-icon "></span><a href="#ex-4py"><b></b>ex-4.py</a></li><li><span class="title-icon "></span><a href="#ex-5py"><b></b>ex-5.py</a></li><li><span class="title-icon "></span><a href="#ex-6py"><b></b>ex-6.py</a></li><li><span class="title-icon "></span><a href="#ex-7py"><b></b>ex-7.py</a></li><li><span class="title-icon "></span><a href="#ex-8py"><b></b>ex-8.py</a></li><li><span class="title-icon "></span><a href="#ex-9py"><b></b>ex-9.py</a></li></ul><li><span class="title-icon "></span><a href="#&#x5176;&#x4ED6;&#x8D44;&#x6E90;"><b></b>&#x5176;&#x4ED6;&#x8D44;&#x6E90;</a></li></ul></ul></div><a href="#scapy" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="scapy"><a name="scapy" class="anchor-navigation-ex-anchor" href="#scapy"><i class="fa fa-link" aria-hidden="true"></i></a>Scapy</h1>
+<h2 id="&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x9605;&#x8BFB;&#x7406;&#x89E3;"><a name="&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x9605;&#x8BFB;&#x7406;&#x89E3;" class="anchor-navigation-ex-anchor" href="#&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x9605;&#x8BFB;&#x7406;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x9605;&#x8BFB;&#x7406;&#x89E3;</h2>
+<h3 id="ex-1py"><a name="ex-1py" class="anchor-navigation-ex-anchor" href="#ex-1py"><i class="fa fa-link" aria-hidden="true"></i></a>ex-1.py</h3>
+<pre><code class="lang-python"><span class="hljs-comment">#!/usr/bin/env python</span>
+
+<span class="hljs-keyword">import</span> sys
+
+<span class="hljs-keyword">from</span> scapy.all <span class="hljs-keyword">import</span> *
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">PacketHandler</span><span class="hljs-params">(pkt)</span>:</span>
+    print(pkt.summary())
+    <span class="hljs-keyword">return</span>
+
+sniff(iface = sys.argv[<span class="hljs-number">1</span>], count = int(sys.argv[<span class="hljs-number">2</span>]), prn = PacketHandler)
+</code></pre>
+<h3 id="ex-2py"><a name="ex-2py" class="anchor-navigation-ex-anchor" href="#ex-2py"><i class="fa fa-link" aria-hidden="true"></i></a>ex-2.py</h3>
+<pre><code class="lang-python"><span class="hljs-comment">#!/usr/bin/env python</span>
+
+<span class="hljs-keyword">import</span> sys
+
+<span class="hljs-keyword">from</span> scapy.all <span class="hljs-keyword">import</span> *
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">PacketHandler</span><span class="hljs-params">(pkt)</span>:</span>
+    <span class="hljs-keyword">if</span> pkt.haslayer(Dot11):
+        print(pkt.summary())
+    <span class="hljs-keyword">else</span>:
+        print(<span class="hljs-string">&quot;Not an 802.11 pkt&quot;</span>)
+
+sniff(iface = sys.argv[<span class="hljs-number">1</span>], count = int(sys.argv[<span class="hljs-number">2</span>]), prn = PacketHandler)
+</code></pre>
+<h3 id="ex-3py"><a name="ex-3py" class="anchor-navigation-ex-anchor" href="#ex-3py"><i class="fa fa-link" aria-hidden="true"></i></a>ex-3.py</h3>
+<pre><code class="lang-python"><span class="hljs-comment">#!/usr/bin/env python</span>
+
+<span class="hljs-keyword">import</span> sys
+<span class="hljs-keyword">from</span> scapy.all <span class="hljs-keyword">import</span> *
+
+devices = set()
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">PacketHandler</span><span class="hljs-params">(pkt)</span>:</span>
+    <span class="hljs-keyword">if</span> pkt.haslayer(Dot11):
+        dot11_layer = pkt.getlayer(Dot11)
+        <span class="hljs-keyword">if</span> dot11_layer.addr2 <span class="hljs-keyword">and</span> ( dot11_layer.addr2 <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> devices):
+            devices.add(dot11_layer.addr2)
+            print(len(devices), dot11_layer.addr2, dot11_layer.payload.name)
+
+sniff(iface = sys.argv[<span class="hljs-number">1</span>], count  = int(sys.argv[<span class="hljs-number">2</span>]), prn = PacketHandler)
+</code></pre>
+<h3 id="ex-4py"><a name="ex-4py" class="anchor-navigation-ex-anchor" href="#ex-4py"><i class="fa fa-link" aria-hidden="true"></i></a>ex-4.py</h3>
+<pre><code class="lang-python"><span class="hljs-comment">#!/usr/bin/env python</span>
+
+<span class="hljs-keyword">import</span> sys
+<span class="hljs-keyword">from</span> scapy.all <span class="hljs-keyword">import</span> *
+
+ssids = set()
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">PacketHandler</span><span class="hljs-params">(pkt)</span>:</span>
+    <span class="hljs-keyword">if</span> pkt.haslayer(Dot11Beacon):
+        temp = pkt
+        <span class="hljs-keyword">while</span> temp:
+            temp = temp.getlayer(Dot11Elt)
+            <span class="hljs-keyword">if</span> temp <span class="hljs-keyword">and</span> temp.ID == <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> (temp.info <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> ssids):
+                ssids.add(temp.info)
+                print(len(ssids), pkt.addr3, temp.info)
+                <span class="hljs-keyword">break</span>
+
+            temp = temp.payload
+
+sniff(iface = sys.argv[<span class="hljs-number">1</span>], count  = int(sys.argv[<span class="hljs-number">2</span>]), prn = PacketHandler)
+</code></pre>
+<h3 id="ex-5py"><a name="ex-5py" class="anchor-navigation-ex-anchor" href="#ex-5py"><i class="fa fa-link" aria-hidden="true"></i></a>ex-5.py</h3>
+<pre><code class="lang-python"><span class="hljs-comment">#!/usr/bin/env python</span>
+
+<span class="hljs-keyword">import</span> sys
+<span class="hljs-keyword">from</span> scapy.all <span class="hljs-keyword">import</span> *
+
+ssids = set()
+clientprobes = set()
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">PacketHandler</span><span class="hljs-params">(pkt)</span>:</span>
+
+    <span class="hljs-keyword">if</span> pkt.haslayer(Dot11ProbeReq):
+        <span class="hljs-keyword">if</span> len(pkt.info) &gt; <span class="hljs-number">0</span>:
+            testcase = str(pkt.addr2) + <span class="hljs-string">&apos;---&apos;</span> + str(pkt.info)
+            <span class="hljs-keyword">if</span> testcase <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> clientprobes:
+                clientprobes.add(testcase)
+                print(<span class="hljs-string">&quot;New Probe Found: &quot;</span> + str(pkt.addr2) + <span class="hljs-string">&apos; &apos;</span> + str(pkt.info))
+
+
+                print(<span class="hljs-string">&quot;\n--------Client Probes Table------\n&quot;</span>)
+                counter = <span class="hljs-number">1</span>
+
+                <span class="hljs-keyword">for</span> probe <span class="hljs-keyword">in</span> clientprobes:
+                    [client, ssid] = probe.split(<span class="hljs-string">&apos;---&apos;</span>)
+                    print(counter, client, ssid)
+                    counter = counter + <span class="hljs-number">1</span>
+
+                print(<span class="hljs-string">&quot;\n---------------------------------\n&quot;</span>)
+
+
+sniff(iface = sys.argv[<span class="hljs-number">1</span>], count  = int(sys.argv[<span class="hljs-number">2</span>]), prn = PacketHandler)
+</code></pre>
+<h3 id="ex-6py"><a name="ex-6py" class="anchor-navigation-ex-anchor" href="#ex-6py"><i class="fa fa-link" aria-hidden="true"></i></a>ex-6.py</h3>
+<pre><code class="lang-python"><span class="hljs-comment">#!/usr/bin/env python</span>
+
+<span class="hljs-keyword">from</span> scapy.all <span class="hljs-keyword">import</span> *
+
+hidden_ssid_aps = set()
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">PacketHandler</span><span class="hljs-params">(pkt)</span>:</span>
+    <span class="hljs-keyword">if</span> pkt.haslayer(Dot11Beacon):
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> pkt.info :
+            <span class="hljs-keyword">if</span> pkt.addr3 <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> hidden_ssid_aps:
+                hidden_ssid_aps.add(pkt.addr3)
+                print(<span class="hljs-string">&quot;HIDDEN SSID Network Found! BSSID: &quot;</span>, str(pkt.addr3))
+
+    <span class="hljs-keyword">elif</span> pkt.haslayer(Dot11ProbeResp) <span class="hljs-keyword">and</span> ( pkt.addr3 <span class="hljs-keyword">in</span> hidden_ssid_aps ):
+        print(<span class="hljs-string">&quot;HIDDEN SSID Uncovered!&quot;</span>, str(pkt.info), str(pkt.addr3))
+
+
+sniff(iface = sys.argv[<span class="hljs-number">1</span>], count = int(sys.argv[<span class="hljs-number">2</span>]), prn = PacketHandler)
+</code></pre>
+<h3 id="ex-7py"><a name="ex-7py" class="anchor-navigation-ex-anchor" href="#ex-7py"><i class="fa fa-link" aria-hidden="true"></i></a>ex-7.py</h3>
+<pre><code class="lang-python"><span class="hljs-comment">#!/usr/bin/python</span>
+
+<span class="hljs-keyword">import</span> sys
+<span class="hljs-keyword">from</span> scapy.all <span class="hljs-keyword">import</span> *
+
+mymac = <span class="hljs-string">&quot;aa:aa:aa:aa:aa:aa&quot;</span>
+brdmac = <span class="hljs-string">&quot;ff:ff:ff:ff:ff:ff&quot;</span>
+
+<span class="hljs-keyword">for</span> ssid <span class="hljs-keyword">in</span> open(sys.argv[<span class="hljs-number">1</span>], <span class="hljs-string">&apos;r&apos;</span>).readlines():
+    pkt = RadioTap() / Dot11(type = <span class="hljs-number">0</span>, subtype = <span class="hljs-number">4</span>, addr1 = brdmac, addr2 = mymac, addr3 = brdmac) / Dot11ProbeReq() / Dot11Elt(ID = <span class="hljs-number">0</span>, info = ssid.strip()) / Dot11Elt(ID = <span class="hljs-number">1</span>, info = <span class="hljs-string">&quot;\x02\x04\x0b\x16&quot;</span>) / Dot11Elt(ID = <span class="hljs-number">3</span>, info = <span class="hljs-string">&quot;\x08&quot;</span>)
+    <span class="hljs-keyword">print</span> <span class="hljs-string">&quot;Trying SSID:&quot;</span>, ssid
+    sendp(pkt, iface=<span class="hljs-string">&quot;wlan0mon&quot;</span>, count=<span class="hljs-number">3</span>, inter = <span class="hljs-number">0.3</span>)
+</code></pre>
+<h3 id="ex-8py"><a name="ex-8py" class="anchor-navigation-ex-anchor" href="#ex-8py"><i class="fa fa-link" aria-hidden="true"></i></a>ex-8.py</h3>
+<pre><code class="lang-python"><span class="hljs-comment">#!/usr/bin/env python</span>
+
+<span class="hljs-keyword">from</span> __future__ <span class="hljs-keyword">import</span> unicode_literals
+
+<span class="hljs-keyword">import</span> os
+<span class="hljs-keyword">import</span> sys
+<span class="hljs-keyword">import</span> logging
+logging.getLogger(<span class="hljs-string">&quot;scapy.runtime&quot;</span>).setLevel(logging.ERROR)
+<span class="hljs-keyword">from</span> scapy.all <span class="hljs-keyword">import</span> Dot11Elt, rdpcap
+
+pcap = sys.argv[<span class="hljs-number">1</span>]
+
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> os.path.isfile(pcap):
+    print(<span class="hljs-string">&apos;input file does not exist&apos;</span>)
+    exit(<span class="hljs-number">1</span>)
+
+beacon_null = set()
+ssids_hidden = set()
+
+pkts = rdpcap(pcap)
+
+<span class="hljs-keyword">for</span> pkt <span class="hljs-keyword">in</span> pkts:
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> pkt.haslayer(Dot11Elt):
+        <span class="hljs-keyword">continue</span>
+    <span class="hljs-keyword">if</span> pkt.subtype == <span class="hljs-number">8</span>:  <span class="hljs-comment"># Beacon Frame</span>
+        <span class="hljs-keyword">if</span> pkt.getlayer(Dot11Elt).info.decode(<span class="hljs-string">&apos;utf-8&apos;</span>).strip(<span class="hljs-string">&apos;\x00&apos;</span>) == <span class="hljs-string">&apos;&apos;</span>:
+            beacon_null.add(pkt.addr3)
+    <span class="hljs-keyword">elif</span> pkt.subtype == <span class="hljs-number">5</span>:  <span class="hljs-comment"># Probe Response</span>
+            <span class="hljs-keyword">if</span> pkt.addr3 <span class="hljs-keyword">in</span> beacon_null:
+                ssids_hidden.add(pkt.addr3 + <span class="hljs-string">&apos;----&apos;</span> + pkt.getlayer(Dot11Elt).info.decode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+
+<span class="hljs-keyword">for</span> essid <span class="hljs-keyword">in</span> ssids_hidden:
+    print(essid)
+</code></pre>
+<h3 id="ex-9py"><a name="ex-9py" class="anchor-navigation-ex-anchor" href="#ex-9py"><i class="fa fa-link" aria-hidden="true"></i></a>ex-9.py</h3>
+<pre><code class="lang-python"><span class="hljs-comment">#!/usr/bin/env python</span>
+
+<span class="hljs-keyword">import</span> os
+<span class="hljs-keyword">import</span> sys
+<span class="hljs-keyword">from</span> scapy.all <span class="hljs-keyword">import</span> Dot11Elt, rdpcap
+
+pcap = sys.argv[<span class="hljs-number">1</span>]
+
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> os.path.isfile(pcap):
+    print(<span class="hljs-string">&apos;input file does not exist&apos;</span>)
+    exit(<span class="hljs-number">1</span>)
+
+pkts = rdpcap(pcap)
+
+ssids = set()
+receive_response = {}
+probe_request = {}
+
+<span class="hljs-keyword">for</span> pkt <span class="hljs-keyword">in</span> pkts:
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> pkt.haslayer(Dot11Elt) <span class="hljs-keyword">or</span> pkt.getlayer(Dot11Elt).info.decode(<span class="hljs-string">&apos;utf-8&apos;</span>).strip(<span class="hljs-string">&apos;\x00&apos;</span>) == <span class="hljs-string">&apos;&apos;</span>:
+        <span class="hljs-keyword">continue</span>
+    <span class="hljs-keyword">if</span> pkt.subtype == <span class="hljs-number">5</span>: <span class="hljs-comment"># Probe Response</span>
+        <span class="hljs-keyword">if</span> pkt.addr1 <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> receive_response:
+            receive_response[pkt.addr1] = set()
+        receive_response[pkt.addr1].add(pkt.getlayer(Dot11Elt).info.decode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+    <span class="hljs-keyword">if</span> pkt.subtype == <span class="hljs-number">4</span>: <span class="hljs-comment"># Probe Request</span>
+        <span class="hljs-keyword">if</span> pkt.addr2 <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> probe_request:
+            probe_request[pkt.addr2] = set()
+        probe_request[pkt.addr2].add(pkt.getlayer(Dot11Elt).info.decode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+
+<span class="hljs-keyword">for</span> mac_addr <span class="hljs-keyword">in</span> receive_response.keys():
+    <span class="hljs-keyword">if</span> mac_addr <span class="hljs-keyword">in</span> probe_request:
+        probe_request.pop(mac_addr)
+
+<span class="hljs-keyword">for</span> mac_addr <span class="hljs-keyword">in</span> probe_request:
+    <span class="hljs-keyword">for</span> essid <span class="hljs-keyword">in</span> probe_request[mac_addr]:
+        print(essid)
+</code></pre>
+<h2 id="&#x5176;&#x4ED6;&#x8D44;&#x6E90;"><a name="&#x5176;&#x4ED6;&#x8D44;&#x6E90;" class="anchor-navigation-ex-anchor" href="#&#x5176;&#x4ED6;&#x8D44;&#x6E90;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5176;&#x4ED6;&#x8D44;&#x6E90;</h2>
+<ul>
+<li><a href="https://github.com/rpp0/scapy-fakeap" target="_blank">Fake wireless Access Point (AP) implementation using Python and Scapy, intended for convenient testing of 802.11 protocols and implementations.</a></li>
+</ul>
+<footer class="page-footer"><span class="copyright">&#xA9; <a href="https://www.zhihu.com/people/c4pr1c3" target="_blank">@&#x9EC4;&#x73AE;</a> all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-03-18 07:42:23
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="homework.html" class="navigation navigation-prev " aria-label="Previous page: 课后作业">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chap0x04/main.html" class="navigation navigation-next " aria-label="Next page: 第四章 移动通信安全概述">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Scapy","level":"1.4.3","depth":2,"next":{"title":"第四章 移动通信安全概述","level":"1.5","depth":1,"path":"chap0x04/main.md","ref":"chap0x04/main.md","articles":[{"title":"实验","level":"1.5.1","depth":2,"path":"chap0x04/exp.md","ref":"chap0x04/exp.md","articles":[]},{"title":"物联网实战初探笔记","level":"1.5.2","depth":2,"path":"chap0x04/smartconfig.md","ref":"chap0x04/smartconfig.md","articles":[]},{"title":"CVE-2019-12272","level":"1.5.3","depth":2,"path":"chap0x04/cve-2019-12272.md","ref":"chap0x04/cve-2019-12272.md","articles":[]}]},"previous":{"title":"课后作业","level":"1.4.2","depth":2,"path":"chap0x03/homework.md","ref":"chap0x03/homework.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchor-navigation-ex","tbfed-pagefooter","ga","image-captions","add-js-css","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy <a href='https://www.zhihu.com/people/c4pr1c3'>@黄玮</a>","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"search":{},"add-js-css":{"js":["js/custom.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"ga":{"configuration":"auto","token":"UA-4489768-14"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/c4pr1c3/cuc-mis/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"_CAPTION_","align":"center","variable_name":"_pictures"}},"theme":"default","author":"黄玮","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","align":"center","list_caption":"Figure: License: CC BY-NC-SA 4.0","alt":"License: CC BY-NC-SA 4.0","nro":1,"url":"https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg","index":1,"caption_template":"_CAPTION_","label":"License: CC BY-NC-SA 4.0","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"chap0x01/main.html#fig1.2.1","level":"1.2","align":"center","list_caption":"Figure: 图 1-1 移动互联网架构","alt":"图 1-1 移动互联网架构","nro":2,"url":"attach/chap0x01/mobile_net_arch.jpg","index":1,"caption_template":"_CAPTION_","label":"图 1-1 移动互联网架构","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"chap0x01/main.html#fig1.2.2","level":"1.2","align":"center","list_caption":"Figure: 图 1-2 无线网络通信协议家谱","alt":"图 1-2 无线网络通信协议家谱","nro":3,"url":"attach/chap0x01/wireless_protocols.png","index":2,"caption_template":"_CAPTION_","label":"图 1-2 无线网络通信协议家谱","attributes":{},"skip":false,"key":"1.2.2"},{"backlink":"chap0x01/main.html#fig1.2.3","level":"1.2","align":"center","list_caption":"Figure: 图 1-3 IEEE 802.11 完整架构","alt":"图 1-3 IEEE 802.11 完整架构","nro":4,"url":"attach/chap0x01/802.11.arch.png","index":3,"caption_template":"_CAPTION_","label":"图 1-3 IEEE 802.11 完整架构","attributes":{},"skip":false,"key":"1.2.3"},{"backlink":"chap0x01/main.html#fig1.2.4","level":"1.2","align":"center","list_caption":"Figure: 图 1-4 真实世界无限网络抓包结果示例","alt":"图 1-4 真实世界无限网络抓包结果示例","nro":5,"url":"attach/chap0x01/kismac.1.png","index":4,"caption_template":"_CAPTION_","label":"图 1-4 真实世界无限网络抓包结果示例","attributes":{},"skip":false,"key":"1.2.4"},{"backlink":"chap0x01/main.html#fig1.2.5","level":"1.2","align":"center","list_caption":"Figure: 图 1-5 802.11 协议历史时间线","alt":"图 1-5 802.11 协议历史时间线","nro":6,"url":"attach/chap0x01/802.11.timeline.png","index":5,"caption_template":"_CAPTION_","label":"图 1-5 802.11 协议历史时间线","attributes":{},"skip":false,"key":"1.2.5"},{"backlink":"chap0x01/main.html#fig1.2.6","level":"1.2","align":"center","list_caption":"Figure: 图 1-6 IEEE 802.11g 第1-14信道的频谱屏蔽范围定义","alt":"图 1-6 IEEE 802.11g 第1-14信道的频谱屏蔽范围定义","nro":7,"url":"attach/chap0x01/802.11.2.4.svg.png","index":6,"caption_template":"_CAPTION_","label":"图 1-6 IEEE 802.11g 第1-14信道的频谱屏蔽范围定义","attributes":{},"skip":false,"key":"1.2.6"},{"backlink":"chap0x01/main.html#fig1.2.7","level":"1.2","align":"center","list_caption":"Figure: 图 1.6 IEEE 802.11 协议标准对应最大带宽能力发展历史","alt":"图 1.6 IEEE 802.11 协议标准对应最大带宽能力发展历史","nro":8,"url":"attach/chap0x01/802.11.timeline.bandwidth.jpg","index":7,"caption_template":"_CAPTION_","label":"图 1.6 IEEE 802.11 协议标准对应最大带宽能力发展历史","attributes":{},"skip":false,"key":"1.2.7"},{"backlink":"chap0x01/main.html#fig1.2.8","level":"1.2","align":"center","list_caption":"Figure: 图 1-7 IEEE 802 家族主要协议对应 OSI 模型归属关系","alt":"图 1-7 IEEE 802 家族主要协议对应 OSI 模型归属关系","nro":9,"url":"attach/chap0x01/IEEE_802_family.png","index":8,"caption_template":"_CAPTION_","label":"图 1-7 IEEE 802 家族主要协议对应 OSI 模型归属关系","attributes":{},"skip":false,"key":"1.2.8"},{"backlink":"chap0x01/main.html#fig1.2.9","level":"1.2","align":"center","list_caption":"Figure: 图 1-8 STA 工作模式","alt":"图 1-8 STA 工作模式","nro":10,"url":"attach/chap0x01/wds.png","index":9,"caption_template":"_CAPTION_","label":"图 1-8 STA 工作模式","attributes":{},"skip":false,"key":"1.2.9"},{"backlink":"chap0x01/main.html#fig1.2.10","level":"1.2","align":"center","list_caption":"Figure: 图 1-9 IEEE 802.11 关联过程示例","alt":"图 1-9 IEEE 802.11 关联过程示例","nro":11,"url":"attach/chap0x01/802.11.open.association.png","index":10,"caption_template":"_CAPTION_","label":"图 1-9 IEEE 802.11 关联过程示例","attributes":{},"skip":false,"key":"1.2.10"},{"backlink":"chap0x01/main.html#fig1.2.11","level":"1.2","align":"center","list_caption":"Figure: 图 1-10 真实无线网络加入过程可视化","alt":"图 1-10 真实无线网络加入过程可视化","nro":12,"url":"attach/chap0x01/cuc.open.association.demo.png","index":11,"caption_template":"_CAPTION_","label":"图 1-10 真实无线网络加入过程可视化","attributes":{},"skip":false,"key":"1.2.11"},{"backlink":"chap0x01/main.html#fig1.2.12","level":"1.2","align":"center","list_caption":"Figure: 图 1-11 RSSI 实例-1","alt":"图 1-11 RSSI 实例-1","nro":13,"url":"attach/chap0x01/mac.wifi.rssi.png","index":12,"caption_template":"_CAPTION_","label":"图 1-11 RSSI 实例-1","attributes":{},"skip":false,"key":"1.2.12"},{"backlink":"chap0x01/main.html#fig1.2.13","level":"1.2","align":"center","list_caption":"Figure: 图 1-12 RSSI 实例-2","alt":"图 1-12 RSSI 实例-2","nro":14,"url":"attach/chap0x01/cts.png","index":13,"caption_template":"_CAPTION_","label":"图 1-12 RSSI 实例-2","attributes":{},"skip":false,"key":"1.2.13"},{"backlink":"chap0x01/main.html#fig1.2.14","level":"1.2","align":"center","list_caption":"Figure: 图 1-13 RSSI 变化趋势可视化","alt":"图 1-13 RSSI 变化趋势可视化","nro":15,"url":"attach/chap0x01/rssi_sample.png","index":14,"caption_template":"_CAPTION_","label":"图 1-13 RSSI 变化趋势可视化","attributes":{},"skip":false,"key":"1.2.14"},{"backlink":"chap0x01/main.html#fig1.2.15","level":"1.2","align":"center","list_caption":"Figure: 图 1-14 无线安全机制","alt":"图 1-14 无线安全机制","nro":16,"url":"attach/chap0x01/wifi-enc.png","index":15,"caption_template":"_CAPTION_","label":"图 1-14 无线安全机制","attributes":{},"skip":false,"key":"1.2.15"},{"backlink":"chap0x01/main.html#fig1.2.16","level":"1.2","align":"center","list_caption":"Figure: 图 1-15 WiFi Pineapple","alt":"图 1-15 WiFi Pineapple","nro":17,"url":"attach/chap0x01/wifi-pineapple.jpg","index":16,"caption_template":"_CAPTION_","label":"图 1-15 WiFi Pineapple","attributes":{},"skip":false,"key":"1.2.16"},{"backlink":"chap0x01/main.html#fig1.2.17","level":"1.2","align":"center","list_caption":"Figure: 图 1-16 自建个人热点","alt":"图 1-16 自建个人热点","nro":18,"url":"attach/chap0x01/adhoc-soft-ap.png","index":17,"caption_template":"_CAPTION_","label":"图 1-16 自建个人热点","attributes":{},"skip":false,"key":"1.2.17"},{"backlink":"chap0x02/exp.html#fig1.3.1.1","level":"1.3.1","align":"center","list_caption":"Figure: 图1 Wireshark开启监听模式","alt":"图1 Wireshark开启监听模式","nro":19,"url":"attach/chap0x02/media/wireshark_turn_on_monitor_mode.png","index":1,"caption_template":"_CAPTION_","label":"图1 Wireshark开启监听模式","attributes":{},"skip":false,"key":"1.3.1.1"},{"backlink":"chap0x04/smartconfig.html#fig1.5.2.1","level":"1.5.2","align":"center","list_caption":"Figure: 点击图片看原图","alt":"点击图片看原图","nro":20,"url":"attach/smartconfig/airkiss-1-small.png","index":1,"caption_template":"_CAPTION_","label":"点击图片看原图","attributes":{},"skip":false,"key":"1.5.2.1"},{"backlink":"chap0x04/smartconfig.html#fig1.5.2.2","level":"1.5.2","align":"center","list_caption":"Figure: 点击图片看原图","alt":"点击图片看原图","nro":21,"url":"attach/smartconfig/airkiss-2-small.png","index":2,"caption_template":"_CAPTION_","label":"点击图片看原图","attributes":{},"skip":false,"key":"1.5.2.2"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.1","level":"1.5.3","align":"center","list_caption":"Figure: NVD 记录的 CVE-2019-12272 漏洞详情","alt":"NVD 记录的 CVE-2019-12272 漏洞详情","nro":22,"url":"attach/CVE-2019-12272-CVSS-details.png","index":1,"caption_template":"_CAPTION_","label":"NVD 记录的 CVE-2019-12272 漏洞详情","attributes":{},"skip":false,"key":"1.5.3.1"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.2","level":"1.5.3","align":"center","list_caption":"Figure: NVD 官方原版 CVSS-3.0 评分 - BaseScore: 9.8","alt":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 9.8","nro":23,"url":"attach/CVE-2019-12272-CVSS-3.0-original.png","index":2,"caption_template":"_CAPTION_","label":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 9.8","attributes":{},"skip":false,"key":"1.5.3.2"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.3","level":"1.5.3","align":"center","list_caption":"Figure: CVSS-3.0 评分修正版 - BaseScore: 8.8","alt":"CVSS-3.0 评分修正版 - BaseScore: 8.8","nro":24,"url":"attach/CVE-2019-12272-CVSS-3.0-modified.png","index":3,"caption_template":"_CAPTION_","label":"CVSS-3.0 评分修正版 - BaseScore: 8.8","attributes":{},"skip":false,"key":"1.5.3.3"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.4","level":"1.5.3","align":"center","list_caption":"Figure: NVD 官方原版 CVSS-3.0 评分 - BaseScore: 7.5","alt":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 7.5","nro":25,"url":"attach/CVE-2019-12272-CVSS-2.0-original.png","index":4,"caption_template":"_CAPTION_","label":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 7.5","attributes":{},"skip":false,"key":"1.5.3.4"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.5","level":"1.5.3","align":"center","list_caption":"Figure: CVSS-2.0 评分修正版 - BaseScore 9.0","alt":"CVSS-2.0 评分修正版 - BaseScore 9.0","nro":26,"url":"attach/CVE-2019-12272-CVSS-2.0-modified.png","index":5,"caption_template":"_CAPTION_","label":"CVSS-2.0 评分修正版 - BaseScore 9.0","attributes":{},"skip":false,"key":"1.5.3.5"}]},"title":"移动互联网安全","language":"zh-hans","links":{"sidebar":{"中传信安课程网站":"https://c4pr1c3.github.io/cuc-wiki/"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]}},"gitbook":">=2.0.0","description":"本科信息安全专业教材@CUC"},"file":{"path":"chap0x03/scapy.md","mtime":"2022-03-18T07:42:23.608Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-18T07:43:09.415Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-add-js-css/af312876c5e0460630586c89a1e8141d-custom.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

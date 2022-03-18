@@ -1,0 +1,1076 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>iw phy输出参数详解 · 移动互联网安全</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="黄玮">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="wnda3100v3.html" />
+    
+    
+    <link rel="prev" href="rt3572l.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://c4pr1c3.github.io/cuc-wiki/" target="_blank" class="custom-link">中传信安课程网站</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chap0x01/main.html">
+            
+                <a href="../chap0x01/main.html">
+            
+                    
+                    第一章 无线网络安全基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chap0x01/exp.html">
+            
+                <a href="../chap0x01/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chap0x01/homework.html">
+            
+                <a href="../chap0x01/homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="main.html">
+            
+                <a href="main.html">
+            
+                    
+                    第二章 无线接入网监听
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="exp.html">
+            
+                <a href="exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="homework.html">
+            
+                <a href="homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="scapy.html">
+            
+                <a href="scapy.html">
+            
+                    
+                    Scapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="radiotap.html">
+            
+                <a href="radiotap.html">
+            
+                    
+                    RadioTap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="wifi_card_list.html">
+            
+                <a href="wifi_card_list.html">
+            
+                    
+                    常见无线网卡
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="alfa.html">
+            
+                <a href="alfa.html">
+            
+                    
+                    ALFA-AWUS036H
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="rtl8187.html">
+            
+                <a href="rtl8187.html">
+            
+                    
+                    Realtek RTL8187
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="wn722n.html">
+            
+                <a href="wn722n.html">
+            
+                    
+                    Atheros AR9271
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="wn822n.html">
+            
+                <a href="wn822n.html">
+            
+                    
+                    Realtek RTL8192CU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="rt5370.html">
+            
+                <a href="rt5370.html">
+            
+                    
+                    Ralink RT5370
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="rtl8811au.html">
+            
+                <a href="rtl8811au.html">
+            
+                    
+                    Realtek RTL8811AU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="8812au.html">
+            
+                <a href="8812au.html">
+            
+                    
+                    Realtek RTL8812AU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" data-path="rtl88x2bu.html">
+            
+                <a href="rtl88x2bu.html">
+            
+                    
+                    Realtek RTL88x2BU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.9" data-path="rtl8821cu.html">
+            
+                <a href="rtl8821cu.html">
+            
+                    
+                    Realtek RTL8821CU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.10" data-path="rt3572l.html">
+            
+                <a href="rt3572l.html">
+            
+                    
+                    Ralink RT3572L
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.5.10.1" data-path="rt3572l_explained.html">
+            
+                <a href="rt3572l_explained.html">
+            
+                    
+                    iw phy输出参数详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.11" data-path="wnda3100v3.html">
+            
+                <a href="wnda3100v3.html">
+            
+                    
+                    Netgear WNDA3100v3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chap0x03/main.html">
+            
+                <a href="../chap0x03/main.html">
+            
+                    
+                    第三章 无线接入网入侵与防御
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chap0x03/exp.html">
+            
+                <a href="../chap0x03/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chap0x03/homework.html">
+            
+                <a href="../chap0x03/homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chap0x03/scapy.html">
+            
+                <a href="../chap0x03/scapy.html">
+            
+                    
+                    Scapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chap0x04/main.html">
+            
+                <a href="../chap0x04/main.html">
+            
+                    
+                    第四章 移动通信安全概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chap0x04/exp.html">
+            
+                <a href="../chap0x04/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chap0x04/smartconfig.html">
+            
+                <a href="../chap0x04/smartconfig.html">
+            
+                    
+                    物联网实战初探笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chap0x04/cve-2019-12272.html">
+            
+                <a href="../chap0x04/cve-2019-12272.html">
+            
+                    
+                    CVE-2019-12272
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chap0x05/main.html">
+            
+                <a href="../chap0x05/main.html">
+            
+                    
+                    第五章 智能终端操作系统安全基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chap0x05/exp.html">
+            
+                <a href="../chap0x05/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chap0x06/main.html">
+            
+                <a href="../chap0x06/main.html">
+            
+                    
+                    第六章 安卓系统访问控制策略与机制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chap0x06/exp.html">
+            
+                <a href="../chap0x06/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chap0x07/main.html">
+            
+                <a href="../chap0x07/main.html">
+            
+                    
+                    第七章 移动终端应用逆向分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chap0x07/exp.html">
+            
+                <a href="../chap0x07/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chap0x08/main.html">
+            
+                <a href="../chap0x08/main.html">
+            
+                    
+                    第八章 移动终端应用攻防与代码最佳安全实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chap0x08/exp.html">
+            
+                <a href="../chap0x08/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chap0x08/homework.html">
+            
+                <a href="../chap0x08/homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    模拟测试
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../exam/2016.html">
+            
+                <a href="../exam/2016.html">
+            
+                    
+                    2016
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >iw phy输出参数详解</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#rt3572l"><b></b>RT3572L</a></li><ul><li><span class="title-icon "></span><a href="#&#x5E26;&#x53CC;&#x72EC;&#x7ACB;&#x53EF;&#x62C6;&#x5378;&#x5929;&#x7EBF;"><b></b>&#x5E26;&#x53CC;&#x72EC;&#x7ACB;&#x53EF;&#x62C6;&#x5378;&#x5929;&#x7EBF;</a></li></ul></ul></div><a href="#rt3572l" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="rt3572l"><a name="rt3572l" class="anchor-navigation-ex-anchor" href="#rt3572l"><i class="fa fa-link" aria-hidden="true"></i></a>RT3572L</h1>
+<h2 id="&#x5E26;&#x53CC;&#x72EC;&#x7ACB;&#x53EF;&#x62C6;&#x5378;&#x5929;&#x7EBF;"><a name="&#x5E26;&#x53CC;&#x72EC;&#x7ACB;&#x53EF;&#x62C6;&#x5378;&#x5929;&#x7EBF;" class="anchor-navigation-ex-anchor" href="#&#x5E26;&#x53CC;&#x72EC;&#x7ACB;&#x53EF;&#x62C6;&#x5378;&#x5929;&#x7EBF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E26;&#x53CC;&#x72EC;&#x7ACB;&#x53EF;&#x62C6;&#x5378;&#x5929;&#x7EBF;</h2>
+<p><img src="attach/wifi_card_iw_list/rt3572l_with_antenna.JPG" alt=""></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># ref: https://support.google.com/chrome/a/answer/6357444?hl=zh-Hans</span>
+<span class="hljs-comment"># &#x8BBE;&#x5907;&#x80FD;&#x591F;&#x626B;&#x63CF;&#x5E76;&#x8FDE;&#x63A5;&#x7684;&#x9690;&#x85CF; SSID &#x7F51;&#x7EDC;&#xFF08;&#x5DF2;&#x50A8;&#x5B58;&#xFF09;&#x7684;&#x6570;&#x91CF;&#x9650;&#x5236;</span>
+max <span class="hljs-comment"># scan SSIDs: 4</span>
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># ref: https://stackoverflow.com/questions/22437209/the-meaning-of-the-output-from-iwlist-scan</span>
+<span class="hljs-comment"># IE : Information Elements</span>
+    max scan IEs length: 2257 bytes
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># ref: https://books.google.co.jp/books?id=n9WFz7CWkhAC&amp;pg=PA594&amp;lpg=PA594&amp;dq=retry+short+limit+rts+threshold&amp;source=bl&amp;ots=gJ93Ach5vN&amp;sig=GbAZyghHDr8loH07s5sx3GoHm7U&amp;hl=en&amp;sa=X&amp;redir_esc=y#v=onepage&amp;q=retry%20short%20limit%20rts%20threshold&amp;f=false</span>
+<span class="hljs-comment"># Retry short limit &#x548C; Retry long limit &#x5B9A;&#x4E49;&#x4E86;AP&#x5728;&#xFF08;&#x94FE;&#x8DEF;&#x5C42;&#xFF09;&#x6570;&#x636E;&#x5E27;&#x4F20;&#x9001;&#x5931;&#x8D25;&#x65F6;&#x7684;&#x91CD;&#x8BD5;&#x6B21;&#x6570;&#x9650;&#x5236;&#xFF0C;&#x5206;&#x522B;&#x5BF9;&#x5E94;&#x4F20;&#x8F93;&#x7684;&#x6570;&#x636E;&#x5E27;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E;&#x6216;&#x5927;&#x4E8E;RTS&#x9608;&#x503C;&#x65F6;&#x7684;&#x6700;&#x5927;&#x91CD;&#x4F20;&#x6B21;&#x6570;&#x3002;</span>
+<span class="hljs-comment"># &#x964D;&#x4F4E;&#x8FD9;2&#x4E2A;&#x53C2;&#x6570;&#x503C;&#x53EF;&#x4EE5;&#x964D;&#x4F4E;&#x65E0;&#x7EBF;&#x8282;&#x70B9;&#x7684;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x7A7A;&#x95F4;&#x5360;&#x7528;&#x7387;&#xFF0C;&#x589E;&#x52A0;&#x8FD9;2&#x4E2A;&#x53C2;&#x6570;&#x503C;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x7684;&#x6210;&#x529F;&#x7387;&#xFF08;&#x7279;&#x522B;&#x662F;&#x5728;&#x7F51;&#x7EDC;&#x62E5;&#x585E;&#x4E25;&#x91CD;&#x72B6;&#x51B5;&#x6761;&#x4EF6;&#x4E0B;&#xFF09;&#x4F46;&#x53EF;&#x80FD;&#x4F1A;&#x964D;&#x4F4E;TCP&#x6570;&#x636E;&#x7684;&#x4F20;&#x8F93;&#x6027;&#x80FD;</span>
+    Retry short <span class="hljs-built_in">limit</span>: 7
+    Retry long <span class="hljs-built_in">limit</span>: 4
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># ref: http://trac.gateworks.com/wiki/wireless/wifi</span>
+<span class="hljs-comment"># ref: http://www.ie.itcr.ac.cr/acotoc/Ingenieria/Lab%20TEM%20II/Antenas/Especificacion%20802%2011-2007.pdf</span>
+<span class="hljs-comment"># &#x65E0;&#x7EBF;&#x7F51;&#x5361;&#x7684;&#x4FE1;&#x53F7;&#x8986;&#x76D6;&#x80FD;&#x529B;&#x53C2;&#x6570;</span>
+    Coverage class: 0 (up to 0m)
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># ref: http://etutorials.org/Networking/802.11+security.+wi-fi+protected+access+and+802.11i/Acronyms/</span>
+<span class="hljs-comment"># RSN: Robust Security Network</span>
+<span class="hljs-comment"># IBSS(Ad-Hoc): Independent Basic Service Set</span>
+    Device supports RSN-IBSS.
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x652F;&#x6301;&#x7684;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;</span>
+    Supported Ciphers:
+        * WEP40 (00-0f-ac:1)
+        * WEP104 (00-0f-ac:5)
+        * TKIP (00-0f-ac:2)
+        * CCMP (00-0f-ac:4)
+        * 00-0f-ac:10
+        * GCMP (00-0f-ac:8)
+        * 00-0f-ac:9
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x53EF;&#x7528;&#x5929;&#x7EBF;&#x6570;&#x91CF;</span>
+    Available Antennas: TX 0 RX 0
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># ref: https://wireless.wiki.kernel.org/en/users/Documentation/modes</span>
+<span class="hljs-comment"># &#x652F;&#x6301;&#x7684;&#x7F51;&#x5361;&#x6A21;&#x5F0F;</span>
+    Supported interface modes:
+         * IBSS (Ad-Hoc)
+         * managed (station)
+         * AP
+
+<span class="hljs-comment"># ref: http://linuxwireless.org/en/users/Documentation/hostapd/#Dynamic_VLAN_tagging</span>
+<span class="hljs-comment"># ref: https://blog.fem.tu-ilmenau.de/archives/1002-HowTo-enable-WiFi-roaming-with-hostapd-and-VLANs.html</span>
+<span class="hljs-comment"># &#x5BF9;&#x5E94;&#x5E38;&#x89C1;AP&#x7BA1;&#x7406;&#x9875;&#x9762;&#x63D0;&#x4F9B;&#x7684;&#xFF1A;&#x201C;&#x5BA2;&#x6237;&#x7AEF;&#x9694;&#x79BB;&#x201D;&#x529F;&#x80FD;&#x7684;&#x5E95;&#x5C42;&#x786C;&#x4EF6;&#x6280;&#x672F;&#x652F;&#x6301;</span>
+         * AP/VLAN
+         * WDS (Wireless Distribution System)
+         * monitor
+         * mesh point (&#x5728;&#x591A;&#x4E2A;&#x65E0;&#x7EBF;&#x8BBE;&#x5907;&#x4E4B;&#x95F4;&#x52A8;&#x6001;&#x5EFA;&#x7ACB;&#x667A;&#x80FD;&#x7684;&#x70B9;&#x5BF9;&#x70B9;&#x901A;&#x4FE1;&#x94FE;&#x8DEF;&#xFF09;
+</code></pre>
+<p><img src="attach/wifi_card_iw_list/2.4_GHz_Wi-Fi_channels_802.11b,g_WLAN.svg" alt=""></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x5DE5;&#x4F5C;&#x9891;&#x6BB5;&#xFF08;&#x5982;&#x679C;&#x65E0;&#x7EBF;&#x7F51;&#x5361;&#x652F;&#x6301;&#x6240;&#x8C13;&#x201C;&#x53CC;&#x9891;&#x201D;&#xFF0C;&#x5219;&#x8F93;&#x51FA;&#x65E5;&#x5FD7;&#x91CC;&#x5E94;&#x8BE5;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;Band 2:&#x533A;&#x6BB5;&#xFF09;</span>
+    Band 1:
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># ref: https://wireless.wiki.kernel.org/en/users/drivers/ath9k/spectral_scan</span>
+        Capabilities: 0x2f2
+
+<span class="hljs-comment"># ref: http://rfmw.em.keysight.com/wireless/helpfiles/89600b/webhelp/subsystems/wlan-mimo/Content/mimo_80211n_overview.htm</span>
+<span class="hljs-comment"># ref: http://support.huawei.com/enterprise/cn/knowledge/KB1000070549</span>
+<span class="hljs-comment"># HT: High Throughput&#xFF0C;&#x8FD9;&#x662F;802.11n&#x5F00;&#x59CB;&#x5F15;&#x5165;&#x7684;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5DE5;&#x4F5C;&#x6A21;&#x5F0F;</span>
+<span class="hljs-comment"># HT20&#x6A21;&#x5F0F;&#x7684;&#x4FE1;&#x9053;&#x5BBD;&#x5EA6;&#x4E3A;20MHz&#xFF0C;HT40&#x6A21;&#x5F0F;&#x7684;&#x4FE1;&#x9053;&#x5E26;&#x5BBD;&#x4E3A;40MHz&#x3002;&#x5C06;&#x4E24;&#x4E2A;&#x76F8;&#x90BB;&#x7684;20MHz&#x4FE1;&#x9053;&#x6346;&#x7ED1;&#x5728;&#x4E00;&#x8D77;&#x5F62;&#x6210;&#x4E00;&#x4E2A;40MHz&#x7684;&#x4FE1;&#x9053;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x662F;&#x4E3B;&#x4FE1;&#x9053;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x8F85;&#x4FE1;&#x9053;&#x3002;&#x4E3B;&#x4FE1;&#x9053;&#xFF1A;&#x53D1;&#x9001;beacon&#x62A5;&#x6587;&#x548C;&#x90E8;&#x5206;&#x6570;&#x636E;&#x62A5;&#x6587;&#xFF1B;&#x8F85;&#x4FE1;&#x9053;&#xFF1A;&#x53D1;&#x9001;&#x5176;&#x5B83;&#x62A5;&#x6587;&#x3002;</span>
+<span class="hljs-comment"># &#x5728;2.4GHz&#x4F7F;&#x7528;HT40&#x6A21;&#x5F0F;&#xFF0C;&#x9891;&#x6BB5;&#x5185;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x975E;&#x91CD;&#x53E0;&#x4FE1;&#x9053;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x5EFA;&#x8BAE;&#x5728;2.4GHz&#x4F7F;&#x7528;HT40&#x6A21;&#x5F0F;&#x3002;</span>
+            HT20/HT40
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># ref: https://www.vocal.com/networking/ieee-802-11n/</span>
+<span class="hljs-comment"># Spatial Multiplexing (SM) Power Save: &#x7A7A;&#x95F4;&#x5206;&#x96C6;&#x590D;&#x7528;&#x8282;&#x7535;</span>
+<span class="hljs-comment"># &#x5728;&#x9759;&#x6001;SM Power Save&#x6A21;&#x5F0F;&#x4E2D;&#xFF0C;&#x6240;&#x6709;&#x7684;802.11n&#x5BA2;&#x6237;&#x7AEF;&#x53EA;&#x6709;&#x4E00;&#x6839;&#x5929;&#x7EBF;&#x5DE5;&#x4F5C;&#x3002;&#x8FD9;&#x79CD;&#x5DE5;&#x4F5C;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x5C31;&#x548C;802.11a&#x548C;802.11g&#x5B8C;&#x5168;&#x7B49;&#x4EF7;&#x4E86;&#x3002;&#x4E3A;&#x4E86;&#x8BA9;AP&#x5F97;&#x77E5;&#x5BA2;&#x6237;&#x7AEF;&#x5904;&#x4E8E;&#x9759;&#x6001;SM Power Save&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;802.11n&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x65B0;&#x5B9A;&#x4E49;&#x7684;&#x5E27;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x5C06;&#x8FD9;&#x4E2A;&#x5E27;&#x53D1;&#x9001;&#x5230;AP&#x540E;&#xFF0C;AP&#x5C31;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x5BA2;&#x6237;&#x7AEF;&#x5904;&#x5728;&#x4E86;&#x9759;&#x6001;SM Power Save&#x6A21;&#x5F0F;&#x4E0B;</span>
+            Static SM Power Save
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># ref: http://www.summitdata.com/blog/wi-fi-and-greenfield-mode-functionality/</span>
+<span class="hljs-comment"># &#x7EFF;&#x706F;&#x6A21;&#x5F0F;&#x662F;802.11n AP&#x7528;&#x4E8E;&#x4EC5;&#x652F;&#x6301;802.11n&#x5BA2;&#x6237;&#x7AEF;&#x901A;&#x4FE1;&#x7684;&#x4E00;&#x79CD;&#x201C;&#x9AD8;&#x901F;&#x201D;&#x3001;&#x201C;&#x4E0D;&#x5411;&#x540E;&#x517C;&#x5BB9;&#x201D;&#x6A21;&#x5F0F;&#x3002;802.11n&#x4E4B;&#x524D;&#x7248;&#x672C;&#x7684;&#x65E0;&#x7EBF;&#x6570;&#x636E;&#x5E27;&#x5747;&#x88AB;&#x89C6;&#x4E3A;&#x566A;&#x97F3;&#x6570;&#x636E;&#x800C;&#x5FFD;&#x7565;&#x3002;</span>
+<span class="hljs-comment"># &#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;802.11n&#x534F;&#x8BAE;&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x53E6;&#x5916;2&#x79CD;&#x5DE5;&#x4F5C;&#x6A21;&#x5F0F;&#xFF1A;&#x7ECF;&#x5178;&#xFF08;Non-HT / Legacy&#xFF09;&#x6A21;&#x5F0F;&#x548C;&#x6DF7;&#x5408;&#xFF08;Mixed&#xFF09;&#x6A21;&#x5F0F;&#x3002;</span>
+            RX Greenfield
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># ref: https://www.sonicwall.com/en-us/support/knowledge-base/170504672960493</span>
+<span class="hljs-comment"># SGI: Short guard interval&#xFF0C;&#x4E3A;&#x4E86;&#x7F29;&#x77ED;&#x4E24;&#x4E2A;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x95F4;&#x9694;&#xFF0C;&#x7528;&#x4E8E;&#x63D0;&#x9AD8;&#x6548;&#x7387;&#xFF0C;802.11a/b/g&#x4F20;&#x8F93;&#x95F4;&#x9694;&#x662F;800ns&#xFF0C;short gi&#x5C06;&#x95F4;&#x9694;&#x7F29;&#x77ED;&#x81F3;400ns&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x6548;&#x7387;&#x63D0;&#x9AD8;10%&#x5DE6;&#x53F3;&#x3002;</span>
+<span class="hljs-comment"># &#x5728;&#x591A;&#x8DEF;&#x5F84;&#xFF08;multipath&#xFF09;&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x540E;&#x4E00;&#x6570;&#x636E;&#x5E27;&#x7684;&#x524D;&#x7AEF;&#x6709;&#x53EF;&#x80FD;&#x6BD4;&#x524D;&#x4E00;&#x6570;&#x636E;&#x5E27;&#x7684;&#x672B;&#x7AEF;&#x66F4;&#x5FEB;&#x5230;&#x8FBE;&#x63A5;&#x6536;&#x673A;&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x6570;&#x636E;&#x5E27;&#x95F4;&#x4EA7;&#x751F;&#x5E72;&#x6270;&#x3002;&#x4FDD;&#x62A4;&#x95F4;&#x9694;&#x662F;&#x524D;&#x540E;&#x6570;&#x636E;&#x5E27;&#x95F4;&#x7684;&#x4E00;&#x6BB5;&#x7A7A;&#x767D;&#x65F6;&#x95F4;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x5EF6;&#x8FDF;&#x4FE1;&#x53F7;&#x63D0;&#x4F9B;&#x66F4;&#x957F;&#x7684;&#x7F13;&#x51B2;&#x65F6;&#x95F4;&#x3002;</span>
+<span class="hljs-comment"># &#x5728;&#x591A;&#x8DEF;&#x5F84;&#x6548;&#x5E94;&#x4E0D;&#x660E;&#x663E;&#x7684;&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x542F;&#x7528;SGI&#x3002;</span>
+            RX HT20 SGI
+            RX HT40 SGI
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># ref: https://en.wikipedia.org/wiki/Space%E2%80%93time_block_code</span>
+<span class="hljs-comment"># STBC: Space&#x2013;Time Block Coding&#xFF0C;&#x7A7A;&#x65F6;&#x5206;&#x7EC4;&#x7801;&#xFF0C;&#x662F;&#x65E0;&#x7EBF;&#x901A;&#x4FE1;&#x6280;&#x672F;&#x4E2D;&#x4E00;&#x79CD;&#x5728;&#x4E0D;&#x540C;&#x65F6;&#x523B;&#x3001;&#x4E0D;&#x540C;&#x5929;&#x7EBF;&#x4E0A;&#x53D1;&#x5C04;&#x6570;&#x636E;&#x7684;&#x591A;&#x4E2A;&#x526F;&#x672C;&#xFF0C;&#x4ECE;&#x800C;&#x5229;&#x7528;&#x65F6;&#x95F4;&#x548C;&#x7A7A;&#x95F4;&#x5206;&#x96C6;&#x4EE5;&#x63D0;&#x9AD8;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x53EF;&#x9760;&#x6027;&#x7684;&#x7F16;&#x7801;&#x3002;</span>
+            TX STBC
+            RX STBC 2-streams
+</code></pre>
+<p><img src="attach/wifi_card_iw_list/a-mpdu-02.png" alt=""></p>
+<pre><code class="lang-bash"><span class="hljs-comment"># ref: https://wlanlessonslearned.wordpress.com/tag/a-mpdu/</span>
+<span class="hljs-comment"># ref: https://mrncciew.com/2013/04/11/a-mpdu-a-msdu/</span>
+<span class="hljs-comment"># AMSDU / A-MSDU: Aggregate MAC Service Data Unit </span>
+<span class="hljs-comment"># AMPDU / A-MPDU: Aggregate MAC Protocol Data Unit</span>
+            Max AMSDU length: 3839 bytes
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># DSSS / CCK / OFDM &#x5BF9;&#x5E94;&#x4E0D;&#x540C;&#x7684;&#x65E0;&#x7EBF;&#x4FE1;&#x53F7;&#x8C03;&#x5236;&#x65B9;&#x5F0F;</span>
+<span class="hljs-comment"># DSSS is used to provide support for 1 Mbps and 2 Mbps data rate. </span>
+<span class="hljs-comment"># CCK for 5.5 and 11 Mbps while OFDM is used for higher data rate applications. </span>
+<span class="hljs-comment"># OFDM is used in IEEE 802.11a, 11g, 11n, 11ac and 11ad versions. OFDM is employed along with MIMO to increase the data rate further.</span>
+<span class="hljs-comment"># ref: http://www.rfwireless-world.com/Terminology/CCK-vs-DSSS-vs-OFDM.html</span>
+            No DSSS/CCK HT40
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># AMPDU / A-MPDU: Aggregate MAC Protocol Data Unit</span>
+        Maximum RX AMPDU length 65535 bytes (exponent: 0x003)
+        Minimum RX AMPDU time spacing: 2 usec (0x04)
+
+<span class="hljs-comment"># ref: https://wireless.wiki.kernel.org/en/developers/documentation/ieee80211/802.11n</span>
+<span class="hljs-comment"># ref: http://www.digitalairwireless.com/wireless-blog/recent/demystifying-modulation-and-coding-scheme-index-values.html</span>
+<span class="hljs-comment"># MCS: Modulation and Coding Schemes </span>
+        HT RX MCS rate indexes supported: 0-15, 32
+        TX unequal modulation not supported
+        HT TX Max spatial streams: 2
+        HT TX MCS rate indexes supported may differ
+</code></pre>
+<pre><code class="lang-bash">...
+
+<span class="hljs-comment"># ref: https://superuser.com/questions/809282/wifi-5ghz-ap-mode-what-does-no-ir-means-and-can-i-bypass-it</span>
+<span class="hljs-comment"># no IR &#x8868;&#x793A;&#x5728;&#x8BE5;&#x9891;&#x6BB5;&#x4E0A;&#xFF0C;&#x7981;&#x7528;&#x9700;&#x8981;&#x65E0;&#x7EBF;&#x7F51;&#x5361;&#x4E3B;&#x52A8;&#x53D1;&#x8D77;&#x901A;&#x4FE1;&#x7684;&#x64CD;&#x4F5C;&#x6A21;&#x5F0F;&#x3002;</span>
+<span class="hljs-comment"># &#x4F8B;&#x5982;AP&#xFF0C;IBSS&#x7B49;&#x6A21;&#x5F0F;&#x4E0B;&#x4E3B;&#x52A8;&#x53D1;&#x8D77;&#x7684;beacon&#x8BF7;&#x6C42;&#x5728;&#x8BE5;&#x9891;&#x6BB5;&#x4E0A;&#x88AB;&#x7981;&#x6B62;&#x3002;</span>
+<span class="hljs-comment"># &#x8FD9;&#x662F;&#x5728;&#x8BBE;&#x5907;&#x5382;&#x5546;&#x5728;&#x751F;&#x4EA7;&#x65F6;&#x7269;&#x7406;&#x4E0A;&#x7981;&#x6B62;&#x4E86;&#x5728;&#x8BE5;&#x9891;&#x6BB5;&#x4E0A;&#x6267;&#x884C;&#x4E3B;&#x52A8;&#x626B;&#x63CF;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4F46;&#x4E0D;&#x5F71;&#x54CD;&#x88AB;&#x52A8;&#x626B;&#x63CF;&#x80FD;&#x529B;&#x3002;</span>
+            * 5700 MHz [140] (20.0 dBm) (no IR, radar detection)
+
+<span class="hljs-comment"># ref: http://wifi-insider.com/wlan/dfs.htm</span>
+<span class="hljs-comment"># DFS: Dynamic Frequency Selection&#xFF0C;&#x7528;&#x4E8E;&#x907F;&#x514D;&#x65E0;&#x7EBF;&#x4FE1;&#x53F7;&#x5E72;&#x6270;&#x7684;&#x52A8;&#x6001;&#x9891;&#x7387;&#x9009;&#x62E9;&#x673A;&#x5236;</span>
+              DFS state: usable (<span class="hljs-keyword">for</span> 264 sec)
+
+<span class="hljs-comment"># ref: https://wireless.wiki.kernel.org/en/developers/dfs</span>
+<span class="hljs-comment"># CAC: Channel Availability Check</span>
+              DFS CAC time: 60000 ms
+            * 5745 MHz [149] (20.0 dBm) (no IR)
+
+...
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># ref: http://linuxwireless.org/en/users/Documentation/iw/</span>
+<span class="hljs-comment"># ref: man iw</span>
+    Supported commands:
+         * new_interface
+         * <span class="hljs-built_in">set</span>_interface
+         * new_key
+         * start_ap
+         * new_station
+         * new_mpath
+         * <span class="hljs-built_in">set</span>_mesh_config
+         * <span class="hljs-built_in">set</span>_bss
+         * authenticate
+         * associate
+         * deauthenticate
+         * disassociate
+         * join_ibss
+         * join_mesh
+         * <span class="hljs-built_in">set</span>_tx_bitrate_mask
+         * frame
+         * frame_<span class="hljs-built_in">wait</span>_cancel
+         * <span class="hljs-built_in">set</span>_wiphy_netns
+         * <span class="hljs-built_in">set</span>_channel
+         * <span class="hljs-built_in">set</span>_wds_peer
+         * probe_client
+         * <span class="hljs-built_in">set</span>_noack_map
+         * register_beacons
+         * start_p2p_device
+         * <span class="hljs-built_in">set</span>_mcast_rate
+         * Unknown <span class="hljs-built_in">command</span> (104)
+         * connect
+         * disconnect
+</code></pre>
+<pre><code class="lang-bash">    Supported TX frame types:
+         * IBSS: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+         * managed: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+         * AP: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+         * AP/VLAN: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+         * mesh point: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+         * P2P-client: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+         * P2P-GO: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+         * P2P-device: 0x00 0x10 0x20 0x30 0x40 0x50 0x60 0x70 0x80 0x90 0xa0 0xb0 0xc0 0xd0 0xe0 0xf0
+</code></pre>
+<pre><code class="lang-bash">    Supported RX frame types:
+         * IBSS: 0x40 0xb0 0xc0 0xd0
+         * managed: 0x40 0xd0
+         * AP: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0
+         * AP/VLAN: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0
+         * mesh point: 0xb0 0xc0 0xd0
+         * P2P-client: 0x40 0xd0
+         * P2P-GO: 0x00 0x20 0x40 0xa0 0xb0 0xc0 0xd0
+         * P2P-device: 0x40 0xd0
+</code></pre>
+<pre><code class="lang-bash">    software interface modes (can always be added):
+         * AP/VLAN
+         * monitor
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-comment"># ref: https://wiki.archlinux.org/index.php/software_access_point</span>
+<span class="hljs-comment"># &#x8F6F;&#x4EF6;&#x70ED;&#x70B9;&#x7684;&#x521B;&#x5EFA;&#x548C;&#x7CFB;&#x7EDF;&#x7684;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;(&#x4EE5;&#x592A;&#x7F51;,&#x65E0;&#x7EBF;&#x7F51;) &#x662F;&#x72EC;&#x7ACB;&#x7684;&#x3002;&#x8BB8;&#x591A;&#x65E0;&#x7EBF;&#x8BBE;&#x5907;&#x751A;&#x81F3;&#x652F;&#x6301;&#x5E76;&#x5B58;&#x64CD;&#x4F5C;, &#x540C;&#x65F6;&#x4F5C;&#x4E3A;&#x70ED;&#x70B9;&#x548C;&#x4E3A;&#x65E0;&#x7EBF;&#x5BA2;&#x6237;&#x7AEF;&#x3002;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x53EF;&#x4EE5;&#x4E3A;&#x73B0;&#x6709;&#x7F51;&#x7EDC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8F6F;&#x4EF6;&#x70ED;&#x70B9;&#xFF0C;&#x4F5C;&#x4E3A;&#x65E0;&#x7EBF;&#x4E2D;&#x7EE7;&#x5668;</span>
+<span class="hljs-comment"># &#x7EA6;&#x675F;#channels &lt;= 1&#x8BF4;&#x660E;&#x8F6F;&#x4EF6;&#x70ED;&#x70B9;&#x5FC5;&#x987B;&#x548C; Wi-fi &#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x5904;&#x4E8E;&#x540C;&#x4E00;&#x4FE1;&#x9053;</span>
+<span class="hljs-comment"># TL-WN722N&#x4E4B;&#x6240;&#x4EE5;&#x88AB;&#x79F0;&#x4E3A;&#x65E0;&#x7EBF;&#x55C5;&#x63A2;&#x795E;&#x5668;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x539F;&#x56E0;&#x5C31;&#x662F;&#x8BE5;&#x7F51;&#x5361;&#x652F;&#x6301;&#x540C;&#x65F6;&#x5DE5;&#x4F5C;&#x4E3A;&#x65E0;&#x7EBF;&#x5BA2;&#x6237;&#x7AEF;&#x548C;Soft AP</span>
+<span class="hljs-comment"># &#x4EE5;&#x4E0B;&#x53C2;&#x6570;&#x4E2D;&#x7684; total &lt;= 8&#x8BF4;&#x660E;&#x8BE5;&#x65E0;&#x7EBF;&#x7F51;&#x5361;&#x652F;&#x6301;&#x540C;&#x65F6;&#x6A21;&#x62DF;8&#x4E2A;&#x72EC;&#x7ACB;&#x7684;SSID</span>
+<span class="hljs-comment"># &#x901A;&#x8FC7;&#x6DFB;&#x52A0;&#x865A;&#x62DF;&#x7F51;&#x5361;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E00;&#x5757;&#x7269;&#x7406;&#x7F51;&#x5361;&#xFF0C;&#x540C;&#x65F6;&#x5DE5;&#x4F5C;&#x5728;AP&#x6A21;&#x5F0F;&#x548C;&#x76D1;&#x542C;&#x6A21;&#x5F0F;&#xFF08;&#x4E0D;&#x540C;&#x7684;&#x865A;&#x62DF;&#x7F51;&#x5361;&#x6765;&#x627F;&#x8F7D;&#x4E0D;&#x540C;&#x6A21;&#x5F0F;&#xFF09;</span>
+<span class="hljs-comment"># iw dev &lt;wireless_interface_name&gt; interface add &lt;newly_created_virtual_interface_name&gt; type [monitor | managed | ap]</span>
+    valid interface combinations:
+         * <span class="hljs-comment">#{ AP, mesh point } &lt;= 8,</span>
+           total &lt;= 8, <span class="hljs-comment">#channels &lt;= 1</span>
+</code></pre>
+<pre><code class="lang-bash">    HT Capability overrides:
+         * MCS: ff ff ff ff ff ff ff ff ff ff
+         * maximum A-MSDU length
+         * supported channel width
+         * short GI <span class="hljs-keyword">for</span> 40 MHz
+         * max A-MPDU length exponent
+         * min MPDU start spacing
+</code></pre>
+<pre><code class="lang-bash">    Device supports TX status socket option.
+    Device supports HT-IBSS.
+    Device supports SAE with AUTHENTICATE <span class="hljs-built_in">command</span>
+    Device supports low priority scan.
+    Device supports scan flush.
+
+<span class="hljs-comment"># &#x5F53;&#x65E0;&#x7EBF;&#x7F51;&#x5361;&#x5DE5;&#x4F5C;&#x5728;AP&#x6A21;&#x5F0F;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;iw dev &lt;wireless_interface_name&gt; scan ap-force</span>
+<span class="hljs-comment"># &#x5F53;&#x65E0;&#x7EBF;&#x7F51;&#x5361;&#x5DE5;&#x4F5C;&#x5728;managed&#x6A21;&#x5F0F;&#x65F6;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;iw dev &lt;wireless_interface_name&gt; scan </span>
+    Device supports AP scan.
+    Device supports per-vif TX power setting
+    Driver supports full state transitions <span class="hljs-keyword">for</span> AP/GO clients
+    Driver supports a userspace MPM
+</code></pre>
+<footer class="page-footer"><span class="copyright">&#xA9; <a href="https://www.zhihu.com/people/c4pr1c3" target="_blank">@&#x9EC4;&#x73AE;</a> all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-03-18 07:42:23
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="rt3572l.html" class="navigation navigation-prev " aria-label="Previous page: Ralink RT3572L">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="wnda3100v3.html" class="navigation navigation-next " aria-label="Next page: Netgear WNDA3100v3">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"iw phy输出参数详解","level":"1.3.5.10.1","depth":4,"next":{"title":"Netgear WNDA3100v3","level":"1.3.5.11","depth":3,"path":"chap0x02/wnda3100v3.md","ref":"chap0x02/wnda3100v3.md","articles":[]},"previous":{"title":"Ralink RT3572L","level":"1.3.5.10","depth":3,"path":"chap0x02/rt3572l.md","ref":"chap0x02/rt3572l.md","articles":[{"title":"iw phy输出参数详解","level":"1.3.5.10.1","depth":4,"path":"chap0x02/rt3572l_explained.md","ref":"chap0x02/rt3572l_explained.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchor-navigation-ex","tbfed-pagefooter","ga","image-captions","add-js-css","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy <a href='https://www.zhihu.com/people/c4pr1c3'>@黄玮</a>","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"search":{},"add-js-css":{"js":["js/custom.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"ga":{"configuration":"auto","token":"UA-4489768-14"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/c4pr1c3/cuc-mis/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"_CAPTION_","align":"center","variable_name":"_pictures"}},"theme":"default","author":"黄玮","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","align":"center","list_caption":"Figure: License: CC BY-NC-SA 4.0","alt":"License: CC BY-NC-SA 4.0","nro":1,"url":"https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg","index":1,"caption_template":"_CAPTION_","label":"License: CC BY-NC-SA 4.0","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"chap0x01/main.html#fig1.2.1","level":"1.2","align":"center","list_caption":"Figure: 图 1-1 移动互联网架构","alt":"图 1-1 移动互联网架构","nro":2,"url":"attach/chap0x01/mobile_net_arch.jpg","index":1,"caption_template":"_CAPTION_","label":"图 1-1 移动互联网架构","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"chap0x01/main.html#fig1.2.2","level":"1.2","align":"center","list_caption":"Figure: 图 1-2 无线网络通信协议家谱","alt":"图 1-2 无线网络通信协议家谱","nro":3,"url":"attach/chap0x01/wireless_protocols.png","index":2,"caption_template":"_CAPTION_","label":"图 1-2 无线网络通信协议家谱","attributes":{},"skip":false,"key":"1.2.2"},{"backlink":"chap0x01/main.html#fig1.2.3","level":"1.2","align":"center","list_caption":"Figure: 图 1-3 IEEE 802.11 完整架构","alt":"图 1-3 IEEE 802.11 完整架构","nro":4,"url":"attach/chap0x01/802.11.arch.png","index":3,"caption_template":"_CAPTION_","label":"图 1-3 IEEE 802.11 完整架构","attributes":{},"skip":false,"key":"1.2.3"},{"backlink":"chap0x01/main.html#fig1.2.4","level":"1.2","align":"center","list_caption":"Figure: 图 1-4 真实世界无限网络抓包结果示例","alt":"图 1-4 真实世界无限网络抓包结果示例","nro":5,"url":"attach/chap0x01/kismac.1.png","index":4,"caption_template":"_CAPTION_","label":"图 1-4 真实世界无限网络抓包结果示例","attributes":{},"skip":false,"key":"1.2.4"},{"backlink":"chap0x01/main.html#fig1.2.5","level":"1.2","align":"center","list_caption":"Figure: 图 1-5 802.11 协议历史时间线","alt":"图 1-5 802.11 协议历史时间线","nro":6,"url":"attach/chap0x01/802.11.timeline.png","index":5,"caption_template":"_CAPTION_","label":"图 1-5 802.11 协议历史时间线","attributes":{},"skip":false,"key":"1.2.5"},{"backlink":"chap0x01/main.html#fig1.2.6","level":"1.2","align":"center","list_caption":"Figure: 图 1-6 IEEE 802.11g 第1-14信道的频谱屏蔽范围定义","alt":"图 1-6 IEEE 802.11g 第1-14信道的频谱屏蔽范围定义","nro":7,"url":"attach/chap0x01/802.11.2.4.svg.png","index":6,"caption_template":"_CAPTION_","label":"图 1-6 IEEE 802.11g 第1-14信道的频谱屏蔽范围定义","attributes":{},"skip":false,"key":"1.2.6"},{"backlink":"chap0x01/main.html#fig1.2.7","level":"1.2","align":"center","list_caption":"Figure: 图 1.6 IEEE 802.11 协议标准对应最大带宽能力发展历史","alt":"图 1.6 IEEE 802.11 协议标准对应最大带宽能力发展历史","nro":8,"url":"attach/chap0x01/802.11.timeline.bandwidth.jpg","index":7,"caption_template":"_CAPTION_","label":"图 1.6 IEEE 802.11 协议标准对应最大带宽能力发展历史","attributes":{},"skip":false,"key":"1.2.7"},{"backlink":"chap0x01/main.html#fig1.2.8","level":"1.2","align":"center","list_caption":"Figure: 图 1-7 IEEE 802 家族主要协议对应 OSI 模型归属关系","alt":"图 1-7 IEEE 802 家族主要协议对应 OSI 模型归属关系","nro":9,"url":"attach/chap0x01/IEEE_802_family.png","index":8,"caption_template":"_CAPTION_","label":"图 1-7 IEEE 802 家族主要协议对应 OSI 模型归属关系","attributes":{},"skip":false,"key":"1.2.8"},{"backlink":"chap0x01/main.html#fig1.2.9","level":"1.2","align":"center","list_caption":"Figure: 图 1-8 STA 工作模式","alt":"图 1-8 STA 工作模式","nro":10,"url":"attach/chap0x01/wds.png","index":9,"caption_template":"_CAPTION_","label":"图 1-8 STA 工作模式","attributes":{},"skip":false,"key":"1.2.9"},{"backlink":"chap0x01/main.html#fig1.2.10","level":"1.2","align":"center","list_caption":"Figure: 图 1-9 IEEE 802.11 关联过程示例","alt":"图 1-9 IEEE 802.11 关联过程示例","nro":11,"url":"attach/chap0x01/802.11.open.association.png","index":10,"caption_template":"_CAPTION_","label":"图 1-9 IEEE 802.11 关联过程示例","attributes":{},"skip":false,"key":"1.2.10"},{"backlink":"chap0x01/main.html#fig1.2.11","level":"1.2","align":"center","list_caption":"Figure: 图 1-10 真实无线网络加入过程可视化","alt":"图 1-10 真实无线网络加入过程可视化","nro":12,"url":"attach/chap0x01/cuc.open.association.demo.png","index":11,"caption_template":"_CAPTION_","label":"图 1-10 真实无线网络加入过程可视化","attributes":{},"skip":false,"key":"1.2.11"},{"backlink":"chap0x01/main.html#fig1.2.12","level":"1.2","align":"center","list_caption":"Figure: 图 1-11 RSSI 实例-1","alt":"图 1-11 RSSI 实例-1","nro":13,"url":"attach/chap0x01/mac.wifi.rssi.png","index":12,"caption_template":"_CAPTION_","label":"图 1-11 RSSI 实例-1","attributes":{},"skip":false,"key":"1.2.12"},{"backlink":"chap0x01/main.html#fig1.2.13","level":"1.2","align":"center","list_caption":"Figure: 图 1-12 RSSI 实例-2","alt":"图 1-12 RSSI 实例-2","nro":14,"url":"attach/chap0x01/cts.png","index":13,"caption_template":"_CAPTION_","label":"图 1-12 RSSI 实例-2","attributes":{},"skip":false,"key":"1.2.13"},{"backlink":"chap0x01/main.html#fig1.2.14","level":"1.2","align":"center","list_caption":"Figure: 图 1-13 RSSI 变化趋势可视化","alt":"图 1-13 RSSI 变化趋势可视化","nro":15,"url":"attach/chap0x01/rssi_sample.png","index":14,"caption_template":"_CAPTION_","label":"图 1-13 RSSI 变化趋势可视化","attributes":{},"skip":false,"key":"1.2.14"},{"backlink":"chap0x01/main.html#fig1.2.15","level":"1.2","align":"center","list_caption":"Figure: 图 1-14 无线安全机制","alt":"图 1-14 无线安全机制","nro":16,"url":"attach/chap0x01/wifi-enc.png","index":15,"caption_template":"_CAPTION_","label":"图 1-14 无线安全机制","attributes":{},"skip":false,"key":"1.2.15"},{"backlink":"chap0x01/main.html#fig1.2.16","level":"1.2","align":"center","list_caption":"Figure: 图 1-15 WiFi Pineapple","alt":"图 1-15 WiFi Pineapple","nro":17,"url":"attach/chap0x01/wifi-pineapple.jpg","index":16,"caption_template":"_CAPTION_","label":"图 1-15 WiFi Pineapple","attributes":{},"skip":false,"key":"1.2.16"},{"backlink":"chap0x01/main.html#fig1.2.17","level":"1.2","align":"center","list_caption":"Figure: 图 1-16 自建个人热点","alt":"图 1-16 自建个人热点","nro":18,"url":"attach/chap0x01/adhoc-soft-ap.png","index":17,"caption_template":"_CAPTION_","label":"图 1-16 自建个人热点","attributes":{},"skip":false,"key":"1.2.17"},{"backlink":"chap0x02/exp.html#fig1.3.1.1","level":"1.3.1","align":"center","list_caption":"Figure: 图1 Wireshark开启监听模式","alt":"图1 Wireshark开启监听模式","nro":19,"url":"attach/chap0x02/media/wireshark_turn_on_monitor_mode.png","index":1,"caption_template":"_CAPTION_","label":"图1 Wireshark开启监听模式","attributes":{},"skip":false,"key":"1.3.1.1"},{"backlink":"chap0x04/smartconfig.html#fig1.5.2.1","level":"1.5.2","align":"center","list_caption":"Figure: 点击图片看原图","alt":"点击图片看原图","nro":20,"url":"attach/smartconfig/airkiss-1-small.png","index":1,"caption_template":"_CAPTION_","label":"点击图片看原图","attributes":{},"skip":false,"key":"1.5.2.1"},{"backlink":"chap0x04/smartconfig.html#fig1.5.2.2","level":"1.5.2","align":"center","list_caption":"Figure: 点击图片看原图","alt":"点击图片看原图","nro":21,"url":"attach/smartconfig/airkiss-2-small.png","index":2,"caption_template":"_CAPTION_","label":"点击图片看原图","attributes":{},"skip":false,"key":"1.5.2.2"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.1","level":"1.5.3","align":"center","list_caption":"Figure: NVD 记录的 CVE-2019-12272 漏洞详情","alt":"NVD 记录的 CVE-2019-12272 漏洞详情","nro":22,"url":"attach/CVE-2019-12272-CVSS-details.png","index":1,"caption_template":"_CAPTION_","label":"NVD 记录的 CVE-2019-12272 漏洞详情","attributes":{},"skip":false,"key":"1.5.3.1"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.2","level":"1.5.3","align":"center","list_caption":"Figure: NVD 官方原版 CVSS-3.0 评分 - BaseScore: 9.8","alt":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 9.8","nro":23,"url":"attach/CVE-2019-12272-CVSS-3.0-original.png","index":2,"caption_template":"_CAPTION_","label":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 9.8","attributes":{},"skip":false,"key":"1.5.3.2"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.3","level":"1.5.3","align":"center","list_caption":"Figure: CVSS-3.0 评分修正版 - BaseScore: 8.8","alt":"CVSS-3.0 评分修正版 - BaseScore: 8.8","nro":24,"url":"attach/CVE-2019-12272-CVSS-3.0-modified.png","index":3,"caption_template":"_CAPTION_","label":"CVSS-3.0 评分修正版 - BaseScore: 8.8","attributes":{},"skip":false,"key":"1.5.3.3"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.4","level":"1.5.3","align":"center","list_caption":"Figure: NVD 官方原版 CVSS-3.0 评分 - BaseScore: 7.5","alt":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 7.5","nro":25,"url":"attach/CVE-2019-12272-CVSS-2.0-original.png","index":4,"caption_template":"_CAPTION_","label":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 7.5","attributes":{},"skip":false,"key":"1.5.3.4"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.5","level":"1.5.3","align":"center","list_caption":"Figure: CVSS-2.0 评分修正版 - BaseScore 9.0","alt":"CVSS-2.0 评分修正版 - BaseScore 9.0","nro":26,"url":"attach/CVE-2019-12272-CVSS-2.0-modified.png","index":5,"caption_template":"_CAPTION_","label":"CVSS-2.0 评分修正版 - BaseScore 9.0","attributes":{},"skip":false,"key":"1.5.3.5"}]},"title":"移动互联网安全","language":"zh-hans","links":{"sidebar":{"中传信安课程网站":"https://c4pr1c3.github.io/cuc-wiki/"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]}},"gitbook":">=2.0.0","description":"本科信息安全专业教材@CUC"},"file":{"path":"chap0x02/rt3572l_explained.md","mtime":"2022-03-18T07:42:23.556Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-18T07:43:09.415Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-add-js-css/af312876c5e0460630586c89a1e8141d-custom.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

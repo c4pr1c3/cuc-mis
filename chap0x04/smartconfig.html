@@ -1,0 +1,968 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>物联网实战初探笔记 · 移动互联网安全</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="黄玮">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="cve-2019-12272.html" />
+    
+    
+    <link rel="prev" href="exp.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://c4pr1c3.github.io/cuc-wiki/" target="_blank" class="custom-link">中传信安课程网站</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chap0x01/main.html">
+            
+                <a href="../chap0x01/main.html">
+            
+                    
+                    第一章 无线网络安全基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chap0x01/exp.html">
+            
+                <a href="../chap0x01/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chap0x01/homework.html">
+            
+                <a href="../chap0x01/homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chap0x02/main.html">
+            
+                <a href="../chap0x02/main.html">
+            
+                    
+                    第二章 无线接入网监听
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chap0x02/exp.html">
+            
+                <a href="../chap0x02/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chap0x02/homework.html">
+            
+                <a href="../chap0x02/homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chap0x02/scapy.html">
+            
+                <a href="../chap0x02/scapy.html">
+            
+                    
+                    Scapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chap0x02/radiotap.html">
+            
+                <a href="../chap0x02/radiotap.html">
+            
+                    
+                    RadioTap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chap0x02/wifi_card_list.html">
+            
+                <a href="../chap0x02/wifi_card_list.html">
+            
+                    
+                    常见无线网卡
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../chap0x02/alfa.html">
+            
+                <a href="../chap0x02/alfa.html">
+            
+                    
+                    ALFA-AWUS036H
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../chap0x02/rtl8187.html">
+            
+                <a href="../chap0x02/rtl8187.html">
+            
+                    
+                    Realtek RTL8187
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../chap0x02/wn722n.html">
+            
+                <a href="../chap0x02/wn722n.html">
+            
+                    
+                    Atheros AR9271
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../chap0x02/wn822n.html">
+            
+                <a href="../chap0x02/wn822n.html">
+            
+                    
+                    Realtek RTL8192CU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../chap0x02/rt5370.html">
+            
+                <a href="../chap0x02/rt5370.html">
+            
+                    
+                    Ralink RT5370
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../chap0x02/rtl8811au.html">
+            
+                <a href="../chap0x02/rtl8811au.html">
+            
+                    
+                    Realtek RTL8811AU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="../chap0x02/8812au.html">
+            
+                <a href="../chap0x02/8812au.html">
+            
+                    
+                    Realtek RTL8812AU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" data-path="../chap0x02/rtl88x2bu.html">
+            
+                <a href="../chap0x02/rtl88x2bu.html">
+            
+                    
+                    Realtek RTL88x2BU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.9" data-path="../chap0x02/rtl8821cu.html">
+            
+                <a href="../chap0x02/rtl8821cu.html">
+            
+                    
+                    Realtek RTL8821CU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.10" data-path="../chap0x02/rt3572l.html">
+            
+                <a href="../chap0x02/rt3572l.html">
+            
+                    
+                    Ralink RT3572L
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.10.1" data-path="../chap0x02/rt3572l_explained.html">
+            
+                <a href="../chap0x02/rt3572l_explained.html">
+            
+                    
+                    iw phy输出参数详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.11" data-path="../chap0x02/wnda3100v3.html">
+            
+                <a href="../chap0x02/wnda3100v3.html">
+            
+                    
+                    Netgear WNDA3100v3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chap0x03/main.html">
+            
+                <a href="../chap0x03/main.html">
+            
+                    
+                    第三章 无线接入网入侵与防御
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chap0x03/exp.html">
+            
+                <a href="../chap0x03/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chap0x03/homework.html">
+            
+                <a href="../chap0x03/homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chap0x03/scapy.html">
+            
+                <a href="../chap0x03/scapy.html">
+            
+                    
+                    Scapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="main.html">
+            
+                <a href="main.html">
+            
+                    
+                    第四章 移动通信安全概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="exp.html">
+            
+                <a href="exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="smartconfig.html">
+            
+                <a href="smartconfig.html">
+            
+                    
+                    物联网实战初探笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="cve-2019-12272.html">
+            
+                <a href="cve-2019-12272.html">
+            
+                    
+                    CVE-2019-12272
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chap0x05/main.html">
+            
+                <a href="../chap0x05/main.html">
+            
+                    
+                    第五章 智能终端操作系统安全基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chap0x05/exp.html">
+            
+                <a href="../chap0x05/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chap0x06/main.html">
+            
+                <a href="../chap0x06/main.html">
+            
+                    
+                    第六章 安卓系统访问控制策略与机制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chap0x06/exp.html">
+            
+                <a href="../chap0x06/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chap0x07/main.html">
+            
+                <a href="../chap0x07/main.html">
+            
+                    
+                    第七章 移动终端应用逆向分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chap0x07/exp.html">
+            
+                <a href="../chap0x07/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chap0x08/main.html">
+            
+                <a href="../chap0x08/main.html">
+            
+                    
+                    第八章 移动终端应用攻防与代码最佳安全实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chap0x08/exp.html">
+            
+                <a href="../chap0x08/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chap0x08/homework.html">
+            
+                <a href="../chap0x08/homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    模拟测试
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../exam/2016.html">
+            
+                <a href="../exam/2016.html">
+            
+                    
+                    2016
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >物联网实战初探笔记</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x4EE5;wifi&#x534F;&#x8BAE;&#x4E3A;&#x57FA;&#x7840;&#x7684;&#x7269;&#x8054;&#x7F51;&#x8BBE;&#x5907;&#x8054;&#x7F51;&#x521D;&#x59CB;&#x5316;&#x914D;&#x7F6E;&#x5206;&#x6790;&#x624B;&#x8BB0;"><b></b>&#x4EE5;WiFi&#x534F;&#x8BAE;&#x4E3A;&#x57FA;&#x7840;&#x7684;&#x7269;&#x8054;&#x7F51;&#x8BBE;&#x5907;&#x201C;&#x8054;&#x7F51;&#x521D;&#x59CB;&#x5316;&#x914D;&#x7F6E;&#x201D;&#x5206;&#x6790;&#x624B;&#x8BB0;</a></li><ul><li><span class="title-icon "></span><a href="#&#x73B0;&#x72B6;"><b></b>&#x73B0;&#x72B6;</a></li><li><span class="title-icon "></span><a href="#&#x4EE5;&#x6C49;&#x738B;&#x973E;&#x8868;n2&#x4E3A;&#x4F8B;&#x5B9E;&#x6218;&#x5206;&#x6790;"><b></b>&#x4EE5;&#x201C;&#x6C49;&#x738B;&#x973E;&#x8868;N2&#x201D;&#x4E3A;&#x4F8B;&#x5B9E;&#x6218;&#x5206;&#x6790;</a></li><li><span class="title-icon "></span><a href="#&#x5FAE;&#x4FE1;--&#x786C;&#x4EF6;&#x5E73;&#x53F0;-&#x4E4B;-airkiss"><b></b>&#x5FAE;&#x4FE1; | &#x786C;&#x4EF6;&#x5E73;&#x53F0; &#x4E4B; AirKiss</a></li><li><span class="title-icon "></span><a href="#&#x5EF6;&#x4F38;&#x9605;&#x8BFB;"><b></b>&#x5EF6;&#x4F38;&#x9605;&#x8BFB;</a></li></ul></ul></div><a href="#&#x4EE5;wifi&#x534F;&#x8BAE;&#x4E3A;&#x57FA;&#x7840;&#x7684;&#x7269;&#x8054;&#x7F51;&#x8BBE;&#x5907;&#x8054;&#x7F51;&#x521D;&#x59CB;&#x5316;&#x914D;&#x7F6E;&#x5206;&#x6790;&#x624B;&#x8BB0;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x4EE5;wifi&#x534F;&#x8BAE;&#x4E3A;&#x57FA;&#x7840;&#x7684;&#x7269;&#x8054;&#x7F51;&#x8BBE;&#x5907;&#x8054;&#x7F51;&#x521D;&#x59CB;&#x5316;&#x914D;&#x7F6E;&#x5206;&#x6790;&#x624B;&#x8BB0;"><a name="&#x4EE5;wifi&#x534F;&#x8BAE;&#x4E3A;&#x57FA;&#x7840;&#x7684;&#x7269;&#x8054;&#x7F51;&#x8BBE;&#x5907;&#x8054;&#x7F51;&#x521D;&#x59CB;&#x5316;&#x914D;&#x7F6E;&#x5206;&#x6790;&#x624B;&#x8BB0;" class="anchor-navigation-ex-anchor" href="#&#x4EE5;wifi&#x534F;&#x8BAE;&#x4E3A;&#x57FA;&#x7840;&#x7684;&#x7269;&#x8054;&#x7F51;&#x8BBE;&#x5907;&#x8054;&#x7F51;&#x521D;&#x59CB;&#x5316;&#x914D;&#x7F6E;&#x5206;&#x6790;&#x624B;&#x8BB0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE5;WiFi&#x534F;&#x8BAE;&#x4E3A;&#x57FA;&#x7840;&#x7684;&#x7269;&#x8054;&#x7F51;&#x8BBE;&#x5907;&#x201C;&#x8054;&#x7F51;&#x521D;&#x59CB;&#x5316;&#x914D;&#x7F6E;&#x201D;&#x5206;&#x6790;&#x624B;&#x8BB0;</h1>
+<p>&#x7269;&#x8054;&#x7F51;&#x5DF2;&#x7ECF;&#x5728;&#x667A;&#x80FD;&#x5BB6;&#x5C45;&#x9886;&#x57DF;&#x83B7;&#x5F97;&#x4E86;&#x91CD;&#x8981;&#x7684;&#x666E;&#x53CA;&#xFF0C;&#x7535;&#x89C6;&#x3001;&#x6D17;&#x8863;&#x673A;&#x3001;&#x51B0;&#x7BB1;&#x3001;&#x7A7A;&#x8C03;&#x7B49;&#x7B49;&#x7EB7;&#x7EB7;&#x5F00;&#x59CB;&#x4E0A;&#x7F51;&#x3002;&#x5728;&#x8FD9;&#x4E9B;&#x8BBE;&#x5907;&#x4E2D;&#xFF0C;&#x7535;&#x89C6;&#x7531;&#x4E8E;&#x5929;&#x7136;&#x5C31;&#x662F;&#x4E00;&#x5757;&#x5927;&#x5C4F;&#x5E55;&#xFF0C;&#x6240;&#x4EE5;&#x5BF9;&#x4E8E;&#x7535;&#x89C6;&#x8054;&#x7F51;&#x7684;&#x914D;&#x7F6E;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x7167;&#x642C;&#x7535;&#x8111;&#x3001;&#x624B;&#x673A;&#x7B49;&#x8FD9;&#x4E9B;&#x5C0F;&#x5C4F;&#x5E55;&#x8BBE;&#x5907;&#x7684;&#x8054;&#x7F51;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x663E;&#x793A;&#x5C4F;&#x5982;&#x6D17;&#x8863;&#x673A;&#x3001;&#x51B0;&#x7BB1;&#x548C;&#x7A7A;&#x8C03;&#x4EEC;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x8054;&#x5165;&#x5BB6;&#x91CC;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#xFF0C;&#x8FDB;&#x800C;&#x88AB;&#x624B;&#x673A;&#x63A7;&#x5236;&#xFF0C;&#x5B9E;&#x73B0;&#x201C;&#x667A;&#x80FD;&#x5BB6;&#x5C45;&#x201D;&#x5462;&#xFF1F;</p>
+<p>&#x672C;&#x5C0F;&#x8282;&#x7684;&#x5185;&#x5BB9;&#x5C31;&#x5C1D;&#x8BD5;&#x5E26;&#x9886;&#x5927;&#x5BB6;&#x5BF9;&#x4EE5;WiFi&#x534F;&#x8BAE;&#x4E3A;&#x57FA;&#x7840;&#x7684;&#x201C;&#x65E0;&#x5C4F;&#x5E55;&#x201D;&#x6216;&#x201C;&#x65E0;&#x952E;&#x76D8;&#x8F93;&#x5165;&#x8BBE;&#x5907;&#x201D;&#x7684;&#x8BBE;&#x5907;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x4E0A;&#x7F51;&#x914D;&#x7F6E;&#x4E00;&#x63A2;&#x7A76;&#x7ADF;&#x3002;</p>
+<h2 id="&#x73B0;&#x72B6;"><a name="&#x73B0;&#x72B6;" class="anchor-navigation-ex-anchor" href="#&#x73B0;&#x72B6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x73B0;&#x72B6;</h2>
+<p>&#x76EE;&#x524D;&#x6D41;&#x884C;&#x7684;&#x667A;&#x80FD;&#x8BBE;&#x5907;WiFi&#x914D;&#x7F6E;&#x6A21;&#x5F0F;&#x4E00;&#x822C;&#x6709;&#x4EE5;&#x4E0B;2&#x79CD;:</p>
+<ol>
+<li><p>&#x667A;&#x80FD;&#x8BBE;&#x5907;&#x5F00;&#x542F;AP&#x6A21;&#x5F0F;&#xFF0C;&#x624B;&#x673A;&#x5904;&#x4E8E;Managed&#x6A21;&#x5F0F;&#xFF0C;&#x624B;&#x673A;&#x8FDE;&#x63A5;&#x667A;&#x80FD;&#x8BBE;&#x5907;&#x7684;&#x8F6F;AP&#x540E;&#x7EC4;&#x6210;&#x65E0;&#x7EBF;&#x5C40;&#x57DF;&#x7F51;&#x3002;&#x624B;&#x673A;&#x53D1;&#x9001;&#x667A;&#x80FD;&#x8BBE;&#x5907;&#x9700;&#x8981;&#x8FDE;&#x63A5;&#x65E0;&#x7EBF;&#x8DEF;&#x7531;&#x5668;&#x7684;SSID&#x53CA;&#x5BC6;&#x7801;&#x81F3;&#x667A;&#x80FD;&#x8BBE;&#x5907;&#xFF0C;&#x667A;&#x80FD;&#x8BBE;&#x5907;&#x4E3B;&#x52A8;&#x53BB;&#x8FDE;&#x63A5;&#x6307;&#x5B9A;&#x65E0;&#x7EBF;&#x8DEF;&#x7531;&#x5668;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x5B8C;&#x6210;&#x667A;&#x80FD;&#x8BBE;&#x5907;&#x7684;&#x4E92;&#x8054;&#x7F51;&#x8FDE;&#x63A5;&#x914D;&#x7F6E;&#x3002;</p>
+</li>
+<li><p>&#x4E00;&#x952E;&#x914D;&#x7F6E;&#x6A21;&#x5F0F;&#xFF1A;&#x667A;&#x80FD;&#x786C;&#x4EF6;&#x5185;&#x7F6E;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x5361;&#x5F00;&#x542F;&#x6DF7;&#x6742;&#x6A21;&#x5F0F;&#xFF0C;&#x76D1;&#x542C;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x62A5;&#x6587;&#x3002;&#x4E0E;&#x667A;&#x80FD;&#x8BBE;&#x5907;&#x914D;&#x5957;&#x7684;&#x624B;&#x673A;&#x4E13;&#x7528;&#x201C;&#x914D;&#x7F51;&#x201D;&#x8F6F;&#x4EF6;&#x5C06;SSID&#x548C;&#x5BC6;&#x7801;&#x7F16;&#x7801;&#x5230;UDP&#x62A5;&#x6587;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;&#x65E0;&#x7EBF;&#x5E7F;&#x64AD;&#x5305;&#x6216;&#x7EC4;&#x64AD;&#x5305;&#x53D1;&#x9001;&#x3002;&#x667A;&#x80FD;&#x8BBE;&#x5907;&#x63A5;&#x6536;&#x5230;&#x5E7F;&#x64AD;&#x6216;&#x7EC4;&#x64AD;&#x62A5;&#x6587;&#x540E;&#x89E3;&#x7801;&#xFF0C;&#x5F97;&#x5230;&#x6B63;&#x786E;&#x7684;SSID&#x548C;&#x5BC6;&#x7801;&#xFF0C;&#x7136;&#x540E;&#x4E3B;&#x52A8;&#x8FDE;&#x63A5;&#x6307;&#x5B9A;SSID&#x7684;&#x65E0;&#x7EBF;&#x8DEF;&#x7531;&#x5668;&#xFF0C;&#x5B8C;&#x6210;&#x667A;&#x80FD;&#x8BBE;&#x5907;&#x7684;&#x4E92;&#x8054;&#x7F51;&#x8FDE;&#x63A5;&#x914D;&#x7F6E;&#x3002;</p>
+</li>
+</ol>
+<p>&#x4EE5;&#x4E0A;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x90FD;&#x53EF;&#x4EE5;&#x8FBE;&#x5230;&#x8BA9;&#x667A;&#x80FD;&#x8BBE;&#x5907;&#x8FDE;&#x63A5;&#x81F3;&#x6307;&#x5B9A;&#x65E0;&#x7EBF;&#x8DEF;&#x7531;&#x5668;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x4F46;&#x662F;AP&#x6A21;&#x5F0F;&#x9700;&#x8981;&#x7528;&#x6237;<strong>&#x624B;&#x52A8;&#x5207;&#x6362;</strong>&#x624B;&#x673A;&#x5F53;&#x524D;&#x8FDE;&#x63A5;&#x7684;WiFi&#x7F51;&#x7EDC;&#xFF08;&#x624B;&#x673A;&#x4E0A;&#x7684;&#x8F6F;&#x4EF6;&#x901A;&#x5E38;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x6216;&#x9700;&#x8981;&#x9AD8;&#x7CFB;&#x7EDF;&#x6743;&#x9650;&#x624D;&#x80FD;&#x5E2E;&#x52A9;&#x7528;&#x6237;&#x53BB;&#x4E3B;&#x52A8;&#x5207;&#x6362;&#x6B63;&#x5728;&#x8FDE;&#x63A5;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;App&#x662F;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x9759;&#x9ED8;&#x5207;&#x6362;&#x7528;&#x6237;&#x6B63;&#x5728;&#x8FDE;&#x63A5;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x7684;&#xFF09;&#xFF0C;&#x5148;&#x8FDE;&#x63A5;&#x667A;&#x80FD;&#x8BBE;&#x5907;&#x7684;&#x8F6F;AP&#x7F51;&#x7EDC;&#xFF0C;&#x914D;&#x7F6E;&#x5B8C;&#x6210;&#x540E;&#x518D;&#x6062;&#x590D;&#x8FDE;&#x63A5;&#x6B63;&#x5E38;WiFi&#x7F51;&#x7EDC;&#xFF0C;&#x5BF9;&#x666E;&#x901A;&#x7528;&#x6237;&#x6765;&#x8BF4;&#x64CD;&#x4F5C;&#x8F83;&#x4E3A;&#x590D;&#x6742;&#xFF0C;&#x9700;&#x8981;&#x4E00;&#x5B9A;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x4F7F;&#x7528;&#x7ECF;&#x9A8C;&#x548C;&#x4E13;&#x4E1A;&#x77E5;&#x8BC6;&#x3002;</p>
+<p>&#x4E1A;&#x754C;&#x4EE5;TI&#x4E3A;&#x4EE3;&#x8868;&#xFF0C;&#x7387;&#x5148;&#x7814;&#x53D1;&#x51FA;&#x4E86;&#x771F;&#x6B63;&#x201C;&#x4E00;&#x952E;&#x8054;&#x7F51;&#x201D;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;<a href="http://www.ti.com.cn/tool/cn/smartconfig#descriptionArea" target="_blank">SimpleLink&#x2122; Wi-Fi SmartConfig&#x2122; &#x6280;&#x672F;</a></p>
+<blockquote>
+<p>TI &#x7684; SimpleLink Wi-Fi CC3000 &#x6A21;&#x5757;&#x9644;&#x5E26; TI &#x7684;&#x72EC;&#x7279; SmartConfig&#x2122; &#x6280;&#x672F;&#xFF0C;&#x8BE5;&#x6280;&#x672F;&#x662F;&#x4E00;&#x6B65;&#x5F0F; Wi-Fi &#x8BBE;&#x7F6E;&#x8FC7;&#x7A0B;&#xFF0C;&#x5141;&#x8BB8;&#x591A;&#x4E2A;&#x5BB6;&#x7528;&#x8BBE;&#x5907;&#x5FEB;&#x901F;&#x9AD8;&#x6548;&#x5730;&#x8FDE;&#x63A5;&#x5230; Wi-Fi &#x7F51;&#x7EDC;&#x3002;&#x8003;&#x8651;&#x5230;&#x5E94;&#x7528;&#x901A;&#x5E38;&#x6CA1;&#x6709;&#x7528;&#x4E8E;&#x8F93;&#x5165; Wi-Fi &#x7F51;&#x7EDC;&#x540D;&#x79F0;&#x548C;&#x5BC6;&#x7801;&#x7684;&#x663E;&#x793A;&#x5C4F;&#x6216;&#x952E;&#x76D8;&#xFF0C;SmartConfig &#x6280;&#x672F;&#x4E3A;&#x6700;&#x7EC8;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x4E86;&#x5C06;&#x5176;&#x57FA;&#x4E8E; CC3000 &#x7684;&#x8BBE;&#x5907;&#x8F7B;&#x677E;&#x8FDE;&#x63A5;&#x5230;&#x63A5;&#x5165;&#x70B9;&#x7684;&#x80FD;&#x529B;&#x3002;&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x7684; SmartConfig &#x6280;&#x672F;&#x63A5;&#x53E3;&#xFF0C;&#x6D88;&#x8D39;&#x8005;&#x53EA;&#x9700;&#x5229;&#x7528;&#x7B80;&#x5355;&#x7684; Web &#x6D4F;&#x89C8;&#x5668;&#x4FBF;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; iOS &#x6216; Android &#x667A;&#x80FD;&#x624B;&#x673A;/&#x5E73;&#x677F;&#x7535;&#x8111;&#x6216;&#x5BB6;&#x5EAD; PC&#x3002;&#x6B64;&#x9875;&#x4E0A;&#x7684;&#x8F6F;&#x4EF6;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE; SmartConfig &#x5E93;&#x548C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6E90;&#x4EE3;&#x7801;&#xFF0C;&#x4EE5;&#x4FBF;&#x60A8;&#x4F7F;&#x7528; TI &#x7684; SmartConfig &#x6280;&#x672F;&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x7684;&#x5E94;&#x7528;&#x3002;</p>
+</blockquote>
+<p>&#x6709;&#x610F;&#x601D;&#x7684;&#x662F;&#xFF0C;TI&#x5B98;&#x65B9;&#x4F3C;&#x4E4E;&#x5E76;&#x4E0D;&#x613F;&#x610F;&#x5C06;&#x8FD9;&#x4E2A;&#x6280;&#x672F;&#x201C;&#x516C;&#x5F00;&#x201D;&#x51FA;&#x6765;&#xFF0C;&#x8BC1;&#x636E;&#x5728;&#x8FD9;&#x91CC;&#xFF1A;<a href="http://e2e.ti.com/support/wireless_connectivity/simplelink_wifi_cc3000/f/851/t/253463?tisearch=e2e-quicksearch&amp;keymatch=smart%20config" target="_blank">TI&#x5B98;&#x65B9;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x95EE;&#x7B54;&#x8D34;</a>&#xFF0C;&#x6709;&#x610F;&#x601D;&#x7684;&#x662F;&#x524D;&#x540E;&#x6709;2&#x540D;TI&#x7684;&#x5458;&#x5DE5;&#x5BA3;&#x79F0;&#xFF1A;SmartConfig&#x4F20;&#x8F93;SSID&#x548C;&#x5BC6;&#x7801;&#x7684;&#x7F16;&#x89E3;&#x7801;&#x7B97;&#x6CD5;&#x662F;&#x4E0D;&#x53EF;&#x516C;&#x5F00;&#x3001;&#x53D7;&#x4E13;&#x5229;&#x4FDD;&#x62A4;&#x7684;&#x3002;</p>
+<blockquote>
+<p> First Yael Oz claims &quot;the configuration algorithm is under patent thus can&apos;t be exposed&quot;.</p>
+<p>Then a second TI employee claims &quot;the algorithm is proprietary. This is also for security purposes :)&quot;</p>
+</blockquote>
+<p>&#x4E0D;&#x8FC7;&#x5DF2;&#x7ECF;&#x6709;&#x7F51;&#x53CB;&#x5C06;TI&#x7684;&#x8FD9;&#x4E2A;&#x201C;&#x4FDD;&#x5BC6;&#x201D;&#x7F16;&#x7801;&#x65B9;&#x6848;&#x7ED9;&#x201C;&#x7834;&#x89E3;&#x201D;&#x5E76;&#x516C;&#x5E03;&#x4E86;&#x51FA;&#x6765;&#xFF1A;<a href="http://depletionregion.blogspot.jp/2013/10/cc3000-smart-config-transmitting-ssid.html" target="_blank">CC3000 Smart Config - transmitting SSID and keyphrase</a></p>
+<p>SmartConfig&#x6280;&#x672F;&#x7684;&#x6838;&#x5FC3;&#x601D;&#x60F3;&#x53EF;&#x4EE5;&#x5F52;&#x7EB3;&#x4E3A;&#xFF1A;</p>
+<ol>
+<li>&#x5F85;&#x914D;&#x7F6E;&#x7684;&#x8054;&#x7F51;&#x8BBE;&#x5907;&#x6CA1;&#x6709;&#x6216;&#x53EA;&#x6709;&#x6709;&#x9650;&#x7684;&#x8BBE;&#x5907;&#x4EA4;&#x4E92;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x80FD;&#x529B;&#xFF08;&#x4F8B;&#x5982;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6309;&#x952E;&#xFF09;</li>
+<li>&#x7531;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#xFF0C;&#x6709;&#x7684;&#x542F;&#x7528;&#x4E86;&#x52A0;&#x5BC6;&#xFF0C;&#x6709;&#x7684;&#x6CA1;&#x6709;&#x542F;&#x7528;&#x52A0;&#x5BC6;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x4ECE;&#x517C;&#x5BB9;&#x6027;&#x89D2;&#x5EA6;&#x51FA;&#x53D1;&#xFF0C;SmartConfig&#x6280;&#x672F;&#x8BBE;&#x8BA1;&#x7684;&#x57FA;&#x672C;&#x5047;&#x8BBE;&#x662F;&#xFF1A;&#x5F53;&#x524D;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x5DF2;&#x7ECF;&#x542F;&#x7528;&#x4E86;&#x52A0;&#x5BC6;&#x673A;&#x5236;&#xFF1B;</li>
+<li>&#x5728;&#x4E00;&#x4E2A;&#x5DF2;&#x52A0;&#x5BC6;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x4E2D;&#xFF0C;&#x7EC4;&#x64AD;&#x548C;&#x5E7F;&#x64AD;&#x6570;&#x636E;&#x7684;&#x8D1F;&#x8F7D;&#x90FD;&#x662F;&#x5DF2;&#x52A0;&#x5BC6;&#x7684;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x8BD5;&#x56FE;&#x901A;&#x8FC7;UDP&#x7EC4;&#x64AD;&#x6216;&#x5E7F;&#x64AD;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x4F20;&#x9001;&#x6570;&#x636E;&#x7ED9;&#x672A;&#x8054;&#x7F51;&#x8BBE;&#x5907;&#x662F;&#x4E0D;&#x53EF;&#x884C;&#x7684;&#x3002;&#x4F46;SmartConfig&#x6280;&#x672F;&#x5DE7;&#x5999;&#x7684;&#x5229;&#x7528;&#x4E86;&#x7EC4;&#x64AD;&#x6570;&#x636E;&#x5E27;&#x4E2D;&#x7684;&#x201C;&#x6570;&#x636E;&#x957F;&#x5EA6;&#x201D;&#x5B57;&#x6BB5;&#x6765;&#x201C;&#x7F16;&#x7801;&#x201D;SSID&#x548C;&#x5BC6;&#x7801;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x9700;&#x8981;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x624B;&#x673A;&#x8F6F;&#x4EF6;&#x7F16;&#x7801;&#x51FA;&#x7684;&#x660E;&#x6587;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5BF9;&#x79F0;&#x52A0;&#x5BC6;&#x7684;&#x65B9;&#x5F0F;&#x52A0;&#x5BC6;&#x540E;&#x518D;&#x7F16;&#x7801;&#x5230;&#x201C;&#x6570;&#x636E;&#x957F;&#x5EA6;&#x201D;&#x3002;&#x81F3;&#x4E8E;&#x5BF9;&#x79F0;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x5219;&#x53EF;&#x4EE5;&#x7531;&#x8BBE;&#x5907;&#x5236;&#x9020;&#x5546;&#x81EA;&#x5DF1;&#x6765;&#x9884;&#x5B9A;&#x4E49;&#x3001;&#x786C;&#x7F16;&#x7801;&#x5230;&#x8BBE;&#x5907;&#x82AF;&#x7247;&#x548C;&#x624B;&#x673A;&#x8F6F;&#x4EF6;&#x4E4B;&#x4E2D;&#xFF0C;&#x79D8;&#x94A5;&#x7684;&#x83B7;&#x53D6;&#x5219;&#x53EF;&#x4EE5;&#x501F;&#x52A9;&#x8BBE;&#x5907;&#x552F;&#x4E00;&#x7F16;&#x53F7;&#x6765;&#x8FDB;&#x884C;&#x4E91;&#x7AEF;&#x67E5;&#x8BE2;&#x7684;&#x65B9;&#x5F0F;&#x83B7;&#x53D6;&#xFF08;&#x4EC5;&#x4EC5;&#x662F;&#x4E2A;&#x4EBA;&#x63A8;&#x6D4B;&#xFF0C;TI&#x5B98;&#x65B9;&#x5E76;&#x6CA1;&#x6709;&#x516C;&#x5E03;&#x5177;&#x4F53;&#x7684;&#x7F16;&#x7801;&#x548C;&#x52A0;&#x5BC6;&#x65B9;&#x6848;&#xFF09;&#x3002;</li>
+</ol>
+<p>&#x9664;&#x4E86;SmartConfig&#x6280;&#x672F;&#x4E4B;&#x5916;&#xFF0C;TI&#x5B98;&#x7F51;&#x7684;Wiki&#x4E0A;&#x6709;&#x4E00;&#x4E2A;<a href="http://processors.wiki.ti.com/index.php/Wireless_Connectivity" target="_blank">&#x65E0;&#x7EBF;&#x8054;&#x7F51;&#x6280;&#x672F;&#x603B;&#x7ED3;&#x8868;&#x683C;</a>&#xFF0C;&#x8FD9;&#x4E2A;&#x8868;&#x683C;&#x4E5F;&#x57FA;&#x672C;&#x56CA;&#x62EC;&#x4E86;&#x4E3B;&#x8981;&#x7684;&#x7269;&#x8054;&#x7F51;&#x8054;&#x7F51;&#x57FA;&#x7840;&#x6280;&#x672F;&#xFF1A;</p>
+<ul>
+<li>&#x8FD1;&#x8DDD;&#x79BB;/&#x63A5;&#x89E6;&#x5F0F;<ul>
+<li>NFC/RFID</li>
+</ul>
+</li>
+<li>&#x4E2A;&#x4EBA;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;<ul>
+<li>&#x84DD;&#x7259;/&#x4F4E;&#x529F;&#x8017;&#x84DD;&#x7259;</li>
+<li>&#x79C1;&#x6709;2.4GHz&#x534F;&#x8BAE;</li>
+</ul>
+</li>
+<li>&#x672C;&#x5730;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;<ul>
+<li>ZigBee</li>
+<li>6LoWPAN</li>
+<li>Wi-Fi</li>
+</ul>
+</li>
+<li>&#x53CB;&#x90BB;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;<ul>
+<li>&#x79C1;&#x6709;1GHz&#x4EE5;&#x4E0B;&#x9891;&#x6BB5;&#x534F;&#x8BAE;</li>
+</ul>
+</li>
+</ul>
+<p>&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x5382;&#x5546;&#x5DE7;&#x5999;&#x7684;&#x5229;&#x7528;&#x4E86;&#x201C;&#x58F0;&#x6CE2;&#x201D;&#x6765;&#x7F16;&#x7801;&#x53D1;&#x9001;&#x548C;&#x63A5;&#x6536;SSID&#x548C;&#x5BC6;&#x7801;&#xFF0C;&#x5B9E;&#x73B0;&#x667A;&#x80FD;&#x8BBE;&#x5907;&#x8054;&#x7F51;&#x3002;&#x53EF;&#x89C1;&#xFF0C;&#x7269;&#x8054;&#x7F51;&#x7684;&#x201C;&#x4E0A;&#x7F51;&#x201D;&#x65B9;&#x5F0F;&#x5E76;&#x4E0D;&#x662F;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x6240;&#x8C13;&#x6807;&#x51C6;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x5F53;&#x524D;&#x7684;&#x5E94;&#x7528;&#x73B0;&#x72B6;&#x5C31;&#x662F;&#xFF1A;&#x516B;&#x4ED9;&#x8FC7;&#x6D77;&#xFF0C;&#x5404;&#x663E;&#x795E;&#x901A;&#xFF0C;&#x80FD;&#x8BA9;&#x8BBE;&#x5907;&#x5C3D;&#x53EF;&#x80FD;&#x7B80;&#x5355;&#x7684;&#x201C;&#x4E00;&#x952E;&#x8054;&#x7F51;&#x201D;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<h2 id="&#x4EE5;&#x6C49;&#x738B;&#x973E;&#x8868;n2&#x4E3A;&#x4F8B;&#x5B9E;&#x6218;&#x5206;&#x6790;"><a name="&#x4EE5;&#x6C49;&#x738B;&#x973E;&#x8868;n2&#x4E3A;&#x4F8B;&#x5B9E;&#x6218;&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#&#x4EE5;&#x6C49;&#x738B;&#x973E;&#x8868;n2&#x4E3A;&#x4F8B;&#x5B9E;&#x6218;&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE5;&#x201C;&#x6C49;&#x738B;&#x973E;&#x8868;N2&#x201D;&#x4E3A;&#x4F8B;&#x5B9E;&#x6218;&#x5206;&#x6790;</h2>
+<p>&#x6C49;&#x738B;&#x973E;&#x8868;N2&#x662F;&#x4E00;&#x6B3E;&#x53EF;&#x4EE5;&#x63A2;&#x6D4B;&#x7A7A;&#x6C14;&#x6E29;&#x5EA6;&#x3001;&#x6E7F;&#x5EA6;&#x3001;PM2.5&#x548C;&#x7532;&#x919B;&#x6307;&#x6570;&#x7684;&#x5BB6;&#x7528;&#x63A7;&#x5236;&#x8D28;&#x91CF;&#x68C0;&#x6D4B;&#x4EEA;&#x8868;&#xFF0C;&#x8BE5;&#x8BBE;&#x5907;&#x5177;&#x5907;&#x8054;&#x7F51;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x65F6;&#x5C06;&#x4EEA;&#x8868;&#x8BFB;&#x6570;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x53D1;&#x9001;&#x5230;&#x624B;&#x673A;&#x8F6F;&#x4EF6;&#x4E0A;&#x8FDB;&#x884C;&#x67E5;&#x770B;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x5BF9;&#x8BE5;&#x8BBE;&#x5907;&#x7684;&#x9996;&#x6B21;&#x8054;&#x7F51;&#x8FC7;&#x7A0B;&#x8FDB;&#x884C;&#x5206;&#x6790;&#x7684;&#x5B8C;&#x6574;&#x8BB0;&#x5F55;&#xFF1A;</p>
+<p>&#x5982;&#x4E0B;&#xFF0C;&#x524D;3&#x5F20;&#x56FE;&#x5BF9;&#x5E94;&#x624B;&#x673A;&#x8F6F;&#x4EF6;&#x4E0A;&#x7684;&#x5411;&#x5BFC;&#x5F0F;&#x8054;&#x7F51;&#x914D;&#x7F6E;&#x8FC7;&#x7A0B;&#x622A;&#x56FE;&#xFF0C;&#x7B2C;4&#x5F20;&#x56FE;&#x662F;&#x5B9E;&#x62CD;&#x7684;&#x973E;&#x8868;N2&#x4E0A;&#x6700;&#x540E;&#x4E00;&#x6B65;&#x7684;&#x72B6;&#x6001;&#x62CD;&#x7167;&#x8BB0;&#x5F55;&#x3002;</p>
+<p><img src="attach/smartconfig/hanwang-1.PNG" alt=""></p>
+<p><img src="attach/smartconfig/hanwang-4.JPG" alt=""></p>
+<p>&#x5728;&#x624B;&#x673A;&#x8F6F;&#x4EF6;&#x5F00;&#x59CB;&#x914D;&#x7F6E;N2&#x8054;&#x7F51;&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x4F7F;&#x7528;<code>airodump-ng</code>&#x8FDB;&#x5165;&#x76D1;&#x542C;&#x6A21;&#x5F0F;&#x6293;&#x5305;&#xFF0C;&#x57FA;&#x4E8E;&#x5148;&#x9A8C;&#x7684;&#x4E00;&#x4E9B;&#x5B9E;&#x9A8C;&#x548C;&#x8C03;&#x7814;&#xFF0C;&#x6211;&#x4EEC;&#x6307;&#x5B9A;<code>airodump-ng</code>&#x76D1;&#x542C;&#x5F53;&#x524D;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x7684;&#x5DE5;&#x4F5C;channel&#x8FDB;&#x884C;&#x5B9A;&#x5411;&#x76D1;&#x542C;&#xFF08;&#x5173;&#x95ED;<code>airodump-ng</code>&#x7684;<code>channel hopping</code>&#x6A21;&#x5F0F;&#xFF0C;&#x4EE5;&#x4FDD;&#x8BC1;&#x5C3D;&#x53EF;&#x80FD;100%&#x6355;&#x83B7;&#x624B;&#x673A;&#x8F6F;&#x4EF6;&#x53D1;&#x9001;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x5305;&#xFF09;&#xFF1A;</p>
+<p><img src="attach/smartconfig/802.11-ipv4mcast-io-graphs.png" alt=""></p>
+<p>&#x4E0A;&#x56FE;&#x662F;&#x5BF9;&#x5E94;&#x624B;&#x673A;&#x95F4;&#x9694;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;2&#x6B21;&#x914D;&#x7F6E;N2&#x8054;&#x7F51;&#x8FC7;&#x7A0B;&#x7684;&#x6293;&#x5305;&#x7EDF;&#x8BA1;&#x53EF;&#x89C6;&#x5316;&#x7ED3;&#x679C;&#xFF08;&#x5982;&#x56FE;&#xFF0C;&#x5DF2;&#x8BBE;&#x7F6E;&#x4E86;wireshark&#x7684;<code>display filter</code>&#xFF0C;&#x65E0;&#x5173;&#x6570;&#x636E;&#x6CA1;&#x6709;&#x5728;&#x56FE;&#x4E2D;&#x4F53;&#x73B0;&#xFF09;&#x3002;&#x56FE;&#x4E2D;&#x8BBE;&#x5907;&#x7684;<code>display filter</code>&#x4E2D;&#x7528;&#x5230;&#x7684;MAC&#x5730;&#x5740;&#x524D;&#x7F00;&#x201C;01:00:5e&#x201D;&#x662F;<a href="https://en.wikipedia.org/wiki/IP_multicast" target="_blank">&#x4EE5;&#x592A;&#x7F51;&#x534F;&#x8BAE;&#x89C4;&#x8303;&#x4E2D;&#x89C4;&#x5B9A;&#x7684;2&#x5C42;&#x53EF;&#x7528;&#x7EC4;&#x64AD;&#x5730;&#x5740;&#x524D;&#x7F00;</a>&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;2&#x5F20;&#x56FE;&#x5C55;&#x793A;&#x4E86;&#x5F53;&#x524D;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#xFF1A;&#x542F;&#x7528;&#x4E86;CCMP(AES)&#x5BF9;&#x79F0;&#x52A0;&#x5BC6;&#xFF0C;&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x5E27;&#x4E2D;&#x7684;&#x521D;&#x59CB;&#x5316;&#x5411;&#x91CF;&#x90FD;&#x662F;&#x968F;&#x673A;&#x4EA7;&#x751F;&#x7684;&#x3002;</p>
+<p><img src="attach/smartconfig/802.11-ipv4mcast-iv-1.png" alt=""></p>
+<p><img src="attach/smartconfig/802.11-ipv4mcast-iv-2.png" alt=""></p>
+<p>&#x6700;&#x540E;&#x8FD9;&#x5F20;&#x56FE;&#x5219;&#x6309;&#x7167;&#x6293;&#x5305;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x7AEF;&#x5230;&#x7AEF;&#x901A;&#x4FE1;&#x6570;&#x636E;&#x5E27;&#x6570;&#x91CF;&#x9006;&#x5E8F;&#x6392;&#x5E8F;&#x7684;&#x6536;&#x53D1;&#x6570;&#x636E;&#x7EDF;&#x8BA1;&#x7ED3;&#x679C;&#x3002;</p>
+<p><img src="attach/smartconfig/802.11-ipv4mcast-statistics.png" alt=""></p>
+<p>&#x4F7F;&#x7528;<code>tshark</code>&#x8FDB;&#x4E00;&#x6B65;&#x5206;&#x6790;&#x6293;&#x5305;&#x7ED3;&#x679C;&#x4F1A;&#x53D1;&#x73B0;&#xFF1A;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># tshark -r 20170821-04.cap -Y &apos;(wlan.addr contains 01:00:5e) &amp;&amp; (wlan.sa == xx:xx:xx:xx:xx:19)&apos; -n -T fields -e frame.number -e frame.time -e wlan.da -e data.len | head -n 10</span>
+4085    Aug 21, 2017 14:49:11.123380000 CST 01:00:5e:01:01:01   559
+4086    Aug 21, 2017 14:49:11.123379000 CST 01:00:5e:01:01:01   558
+4087    Aug 21, 2017 14:49:11.123892000 CST 01:00:5e:01:01:01   557
+4088    Aug 21, 2017 14:49:11.126962000 CST 01:00:5e:01:01:01   556
+4089    Aug 21, 2017 14:49:11.129522000 CST 01:00:5e:02:02:02   559
+4090    Aug 21, 2017 14:49:11.132081000 CST 01:00:5e:02:02:02   558
+4091    Aug 21, 2017 14:49:11.135155000 CST 01:00:5e:02:02:02   557
+4092    Aug 21, 2017 14:49:11.137715000 CST 01:00:5e:02:02:02   556
+4093    Aug 21, 2017 14:49:11.140274000 CST 01:00:5e:03:03:03   559
+4094    Aug 21, 2017 14:49:11.142835000 CST 01:00:5e:03:03:03   558
+
+<span class="hljs-comment"># tshark -nr 20170821-04.cap -o wlan.enable_decryption:TRUE -o &quot;uat:80211_keys:\&quot;wpa-pwd\&quot;,\&quot;ApPasswordHere\&quot;&quot; -Y &apos;udp &amp;&amp; ip.addr==mobile_ip_here&apos; -T fields -e &apos;frame.number&apos; -e frame.time -e &apos;ip.dst&apos; -e &apos;udp.length&apos; | head -n 10</span>
+4085    Aug 21, 2017 14:49:11.123380000 CST 234.1.1.1   523
+4086    Aug 21, 2017 14:49:11.123379000 CST 234.1.1.1   522
+4087    Aug 21, 2017 14:49:11.123892000 CST 234.1.1.1   521
+4088    Aug 21, 2017 14:49:11.126962000 CST 234.1.1.1   520
+4089    Aug 21, 2017 14:49:11.129522000 CST 234.2.2.2   523
+4090    Aug 21, 2017 14:49:11.132081000 CST 234.2.2.2   522
+4091    Aug 21, 2017 14:49:11.135155000 CST 234.2.2.2   521
+4092    Aug 21, 2017 14:49:11.137715000 CST 234.2.2.2   520
+4093    Aug 21, 2017 14:49:11.140274000 CST 234.3.3.3   523
+4094    Aug 21, 2017 14:49:11.142835000 CST 234.3.3.3   522
+</code></pre>
+<ul>
+<li>&#x624B;&#x673A;App&#x4F7F;&#x7528;&#x7684;&#x662F;UDP&#x7EC4;&#x64AD;&#x7684;&#x65B9;&#x5F0F;&#x53D1;&#x9001;&#x8BBE;&#x5907;&#x201C;&#x914D;&#x7F51;&#x201D;&#x6570;&#x636E;&#xFF1B;</li>
+<li>&#x6570;&#x636E;&#x94FE;&#x8DEF;&#x5C42;&#x7EC4;&#x64AD;&#x5730;&#x5740;&#x662F;&#x56FA;&#x5B9A;<code>01:00:53</code>&#xFF0C;&#x987A;&#x5E8F;&#x9012;&#x589E;&#x8BBE;&#x7F6E;MAC&#x5730;&#x5740;&#x540E;3&#x5B57;&#x8282;&#x3002;&#x5BF9;&#x5E94;&#x7684;&#xFF0C;IP&#x5C42;&#x7EC4;&#x64AD;&#x5730;&#x5740;&#x662F;&#x56FA;&#x5B9A;<code>234</code>&#x524D;&#x7F00;&#xFF0C;&#x987A;&#x5E8F;&#x9012;&#x589E;&#x8BBE;&#x7F6E;IP&#x5730;&#x5740;&#x540E;3&#x5B57;&#x8282;&#xFF1B;</li>
+<li>&#xFF08;&#x5E76;&#x975E;&#x4EE5;&#x4E0A;&#x547D;&#x4EE4;&#xFF09;&#x6211;&#x4EEC;&#x5206;&#x6790;&#x7684;&#x8FD9;&#x4E2A;&#x8BBE;&#x5907;&#x5E76;&#x6CA1;&#x6709;&#x4E00;&#x4E0A;&#x6765;&#x76F4;&#x63A5;&#x5C31;&#x5F00;&#x59CB;&#x53D1;&#x9001;&#x7F16;&#x7801;&#x540E;&#x7684;&#x201C;SSDI&#x548C;&#x5BC6;&#x7801;&#x201D;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x662F;&#x901A;&#x8FC7;&#x5468;&#x671F;&#x6027;&#x91CD;&#x590D;&#x53D1;&#x9001;&#x591A;&#x7EC4;&#x6570;&#x636E;&#x957F;&#x5EA6;&#x5E8F;&#x5217;&#x4E3A;559&#x3001;558&#x3001;557&#x3001;556&#x7684;&#x6570;&#x636E;&#x5E27;&#xFF0C;&#x4F3C;&#x4E4E;&#x5728;&#x8BA9;&#x5F85;&#x8054;&#x7F51;&#x8BBE;&#x5907;&#x4E0E;&#x624B;&#x673A;&#x8F6F;&#x4EF6;&#x8FDB;&#x884C;&#x65F6;&#x5E8F;&#x201C;&#x540C;&#x6B65;&#x201D;&#xFF1B;</li>
+<li>&#xFF08;&#x5E76;&#x975E;&#x4EE5;&#x4E0A;&#x547D;&#x4EE4;&#xFF09;&#x5728;&#x5B8C;&#x6210;&#x201C;&#x540C;&#x6B65;&#x201D;&#x9636;&#x6BB5;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x5F00;&#x59CB;&#x6B63;&#x5F0F;&#x53D1;&#x9001;&#x201C;SSID&#x548C;&#x5BC6;&#x7801;&#x201D;&#x7F16;&#x7801;&#x540E;&#x7684;&#x6570;&#x636E;&#x3002;&#x5B8C;&#x6210;&#x4E00;&#x8F6E;&#x53D1;&#x9001;&#xFF08;100&#x4E2A;&#x6570;&#x636E;&#x5E27;&#xFF09;&#x4E4B;&#x540E;&#xFF0C;&#x518D;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x201C;&#x540C;&#x6B65;&#x201D;&#x8FC7;&#x7A0B;&#xFF0C;&#x7136;&#x540E;&#x7EE7;&#x7EED;&#x91CD;&#x590D;&#x53D1;&#x9001;&#x201C;SSID&#x548C;&#x5BC6;&#x7801;&#x201D;&#x7F16;&#x7801;&#x540E;&#x7684;&#x6570;&#x636E;&#xFF08;&#x4E5F;&#x53EF;&#x80FD;&#x662F;SSID&#x548C;&#x5BC6;&#x7801;&#x5206;&#x5F00;&#x53D1;&#x9001;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x7F16;&#x7801;&#x6216;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x4E4B;&#x4E2D;&#x6709;&#x6DF7;&#x6DC6;&#x7B97;&#x6CD5;&#xFF0C;&#x907F;&#x514D;&#x76F8;&#x540C;&#x6570;&#x636E;&#x591A;&#x6B21;&#x7F16;&#x7801;&#x7ED3;&#x679C;&#x76F8;&#x540C;&#xFF09;&#xFF1B;</li>
+<li>&#x9A8C;&#x8BC1;&#x4E86;<a href="http://depletionregion.blogspot.jp/2013/10/cc3000-smart-config-transmitting-ssid.html" target="_blank">CC3000 Smart Config - transmitting SSID and keyphrase</a>&#x65E0;&#x6CD5;&#x89E3;&#x7801;N2&#x7684;&#x624B;&#x673A;&#x7AEF;&#x8F6F;&#x4EF6;&#x53D1;&#x9001;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x79C1;&#x6709;&#x7684;&#x7F16;&#x7801;&#x7B97;&#x6CD5;&#x3002;</li>
+</ul>
+<h2 id="&#x5FAE;&#x4FE1;--&#x786C;&#x4EF6;&#x5E73;&#x53F0;-&#x4E4B;-airkiss"><a name="&#x5FAE;&#x4FE1;--&#x786C;&#x4EF6;&#x5E73;&#x53F0;-&#x4E4B;-airkiss" class="anchor-navigation-ex-anchor" href="#&#x5FAE;&#x4FE1;--&#x786C;&#x4EF6;&#x5E73;&#x53F0;-&#x4E4B;-airkiss"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5FAE;&#x4FE1; | &#x786C;&#x4EF6;&#x5E73;&#x53F0; &#x4E4B; AirKiss</h2>
+<p>&#x56FD;&#x5185;&#x7684;&#x5FAE;&#x4FE1;&#x63D0;&#x51FA;&#x4E86;&#x540D;&#x4E3A;<a href="http://iot.weixin.qq.com/wiki/document-7_1.html" target="_blank">AirKiss</a>&#x6280;&#x672F;&#xFF1A;</p>
+<blockquote>
+<p>AirKiss&#x662F;&#x5FAE;&#x4FE1;&#x786C;&#x4EF6;&#x5E73;&#x53F0;&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x79CD;WIFI&#x8BBE;&#x5907;&#x5FEB;&#x901F;&#x5165;&#x7F51;&#x914D;&#x7F6E;&#x6280;&#x672F;&#xFF0C;&#x8981;&#x4F7F;&#x7528;&#x5FAE;&#x4FE1;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x65B9;&#x5F0F;&#x914D;&#x7F6E;&#x8BBE;&#x5907;&#x5165;&#x7F51;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x5907;&#x652F;&#x6301;AirKiss&#x6280;&#x672F;&#x3002;&#x76EE;&#x524D;&#x5DF2;&#x7ECF;&#x6709;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684;&#x82AF;&#x7247;&#x548C;&#x6A21;&#x5757;&#x5382;&#x5546;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x652F;&#x6301;AirKiss&#x6280;&#x672F;&#x7684;&#x65B9;&#x6848;&#x3002;</p>
+</blockquote>
+<p>&#x5176;&#x4E3B;&#x8981;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>&#x5F85;&#x63A5;&#x5165;&#x4E92;&#x8054;&#x7F51;&#x7684;&#x8BBE;&#x5907;&#x4E0D;&#x5177;&#x5907;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x80FD;&#x529B;&#xFF0C;&#x5982;&#x7A7A;&#x8C03;&#x3001;&#x7A7A;&#x6C14;&#x51C0;&#x5316;&#x5668;&#x3001;&#x70DF;&#x96FE;&#x62A5;&#x8B66;&#x5668;&#x7B49;&#x3002;</p>
+<p>&#x7528;&#x6237;&#x4E0D;&#x5177;&#x5907;&#x901A;&#x8FC7;&#x8BBE;&#x5907;&#x70ED;&#x70B9;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x5982;&#x8001;&#x4EBA;&#x3001;&#x5BB6;&#x5EAD;&#x4E3B;&#x5987;&#x7B49;&#x7F3A;&#x4E4F;&#x76F8;&#x5173;IT&#x77E5;&#x8BC6;&#x7684;&#x7528;&#x6237;&#x4EBA;&#x7FA4;&#x3002;</p>
+</blockquote>
+<p>&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x5B98;&#x7F51;&#x6587;&#x6863;&#x66F4;&#x65B0;&#x5BFC;&#x81F4;&#x65E0;&#x6CD5;&#x67E5;&#x770B;&#xFF0C;&#x4EE5;&#x4E0B;2&#x5F20;&#x662F;&#x5B98;&#x7F51;&#x5F53;&#x524D;&#x7684;&#x6280;&#x672F;&#x6587;&#x6863;&#x5B8C;&#x6574;&#x622A;&#x56FE;&#xFF0C;&#x53EF;&#x70B9;&#x51FB;&#x56FE;&#x7247;&#x67E5;&#x770B;&#x539F;&#x56FE;&#x3002;</p>
+<a href="attach/smartconfig/airkiss-1.png"><figure id="fig1.5.2.1"><img src="attach/smartconfig/airkiss-1-small.png" alt="&#x70B9;&#x51FB;&#x56FE;&#x7247;&#x770B;&#x539F;&#x56FE;"><figcaption class="center">&#x70B9;&#x51FB;&#x56FE;&#x7247;&#x770B;&#x539F;&#x56FE;</figcaption></figure></a>
+<a href="attach/smartconfig/airkiss-2.png"><figure id="fig1.5.2.2"><img src="attach/smartconfig/airkiss-2-small.png" alt="&#x70B9;&#x51FB;&#x56FE;&#x7247;&#x770B;&#x539F;&#x56FE;"><figcaption class="center">&#x70B9;&#x51FB;&#x56FE;&#x7247;&#x770B;&#x539F;&#x56FE;</figcaption></figure></a>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;AirKiss&#x6280;&#x672F;&#x540C;&#x65F6;&#x652F;&#x6301;&#x975E;&#x52A0;&#x5BC6;&#x548C;&#x52A0;&#x5BC6;2&#x79CD;&#x914D;&#x7F51;&#x6A21;&#x5F0F;&#xFF0C;&#x8FD9;&#x5C31;&#x610F;&#x5473;&#x7740;&#x5982;&#x679C;&#x8BBE;&#x5907;&#x6CA1;&#x6709;&#x542F;&#x7528;&#x52A0;&#x5BC6;&#x914D;&#x7F51;&#x6A21;&#x5F0F;&#xFF0C;&#x5219;&#x5B58;&#x5728;&#x660E;&#x6587;&#x6CC4;&#x6F0F;&#xFF08;&#x867D;&#x7136;&#x91C7;&#x53D6;&#x4E86;&#x7F16;&#x7801;&#x65B9;&#x6848;&#xFF0C;&#x4F46;&#x7531;&#x4E8E;&#x6709;&#x5B98;&#x7F51;SDK&#xFF0C;&#x6240;&#x4EE5;&#x89E3;&#x7801;&#x662F;&#x53EF;&#x884C;&#x7684;&#xFF09;&#x5F53;&#x524D;&#x7F51;&#x7EDC;&#x52A0;&#x5BC6;&#x53E3;&#x4EE4;&#x7684;&#x98CE;&#x9669;&#x3002;&#x5373;&#x4F7F;&#x8BBE;&#x5907;&#x542F;&#x7528;&#x4E86;&#x52A0;&#x5BC6;&#x914D;&#x7F51;&#x6A21;&#x5F0F;&#xFF0C;&#x4F46;&#x5982;&#x679C;<strong>&#x7167;&#x6284;</strong>&#x4E86;&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF0C;&#x5219;&#x5F88;&#x53EF;&#x80FD;&#x7167;&#x642C;&#x4E86;&#x9ED8;&#x8BA4;&#x7684;&#x52A0;&#x5BC6;&#x53E3;&#x4EE4;&#xFF1A;<code>Wechatiothardwav</code></p>
+<p><a href="http://iot.weixin.qq.com/wiki/airkiss_developer_manual.pdf" target="_blank"><img src="attach/smartconfig/airkiss-3.png" alt=""></a></p>
+<h2 id="&#x5EF6;&#x4F38;&#x9605;&#x8BFB;"><a name="&#x5EF6;&#x4F38;&#x9605;&#x8BFB;" class="anchor-navigation-ex-anchor" href="#&#x5EF6;&#x4F38;&#x9605;&#x8BFB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5EF6;&#x4F38;&#x9605;&#x8BFB;</h2>
+<ul>
+<li><a href="https://electronics.stackexchange.com/questions/61704/how-does-ti-cc3000-wifi-smart-config-work" target="_blank">How does TI CC3000 wifi smart config work?</a></li>
+<li><a href="http://www.tp-link.com/common/Promo/en/Smart-Connect/Smart-Connect.html" target="_blank">Smart Connect by TP-LINK</a></li>
+</ul>
+<footer class="page-footer"><span class="copyright">&#xA9; <a href="https://www.zhihu.com/people/c4pr1c3" target="_blank">@&#x9EC4;&#x73AE;</a> all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-03-18 07:42:23
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="exp.html" class="navigation navigation-prev " aria-label="Previous page: 实验">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="cve-2019-12272.html" class="navigation navigation-next " aria-label="Next page: CVE-2019-12272">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"物联网实战初探笔记","level":"1.5.2","depth":2,"next":{"title":"CVE-2019-12272","level":"1.5.3","depth":2,"path":"chap0x04/cve-2019-12272.md","ref":"chap0x04/cve-2019-12272.md","articles":[]},"previous":{"title":"实验","level":"1.5.1","depth":2,"path":"chap0x04/exp.md","ref":"chap0x04/exp.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchor-navigation-ex","tbfed-pagefooter","ga","image-captions","add-js-css","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy <a href='https://www.zhihu.com/people/c4pr1c3'>@黄玮</a>","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"search":{},"add-js-css":{"js":["js/custom.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"ga":{"configuration":"auto","token":"UA-4489768-14"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/c4pr1c3/cuc-mis/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"_CAPTION_","align":"center","variable_name":"_pictures"}},"theme":"default","author":"黄玮","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","align":"center","list_caption":"Figure: License: CC BY-NC-SA 4.0","alt":"License: CC BY-NC-SA 4.0","nro":1,"url":"https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg","index":1,"caption_template":"_CAPTION_","label":"License: CC BY-NC-SA 4.0","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"chap0x01/main.html#fig1.2.1","level":"1.2","align":"center","list_caption":"Figure: 图 1-1 移动互联网架构","alt":"图 1-1 移动互联网架构","nro":2,"url":"attach/chap0x01/mobile_net_arch.jpg","index":1,"caption_template":"_CAPTION_","label":"图 1-1 移动互联网架构","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"chap0x01/main.html#fig1.2.2","level":"1.2","align":"center","list_caption":"Figure: 图 1-2 无线网络通信协议家谱","alt":"图 1-2 无线网络通信协议家谱","nro":3,"url":"attach/chap0x01/wireless_protocols.png","index":2,"caption_template":"_CAPTION_","label":"图 1-2 无线网络通信协议家谱","attributes":{},"skip":false,"key":"1.2.2"},{"backlink":"chap0x01/main.html#fig1.2.3","level":"1.2","align":"center","list_caption":"Figure: 图 1-3 IEEE 802.11 完整架构","alt":"图 1-3 IEEE 802.11 完整架构","nro":4,"url":"attach/chap0x01/802.11.arch.png","index":3,"caption_template":"_CAPTION_","label":"图 1-3 IEEE 802.11 完整架构","attributes":{},"skip":false,"key":"1.2.3"},{"backlink":"chap0x01/main.html#fig1.2.4","level":"1.2","align":"center","list_caption":"Figure: 图 1-4 真实世界无限网络抓包结果示例","alt":"图 1-4 真实世界无限网络抓包结果示例","nro":5,"url":"attach/chap0x01/kismac.1.png","index":4,"caption_template":"_CAPTION_","label":"图 1-4 真实世界无限网络抓包结果示例","attributes":{},"skip":false,"key":"1.2.4"},{"backlink":"chap0x01/main.html#fig1.2.5","level":"1.2","align":"center","list_caption":"Figure: 图 1-5 802.11 协议历史时间线","alt":"图 1-5 802.11 协议历史时间线","nro":6,"url":"attach/chap0x01/802.11.timeline.png","index":5,"caption_template":"_CAPTION_","label":"图 1-5 802.11 协议历史时间线","attributes":{},"skip":false,"key":"1.2.5"},{"backlink":"chap0x01/main.html#fig1.2.6","level":"1.2","align":"center","list_caption":"Figure: 图 1-6 IEEE 802.11g 第1-14信道的频谱屏蔽范围定义","alt":"图 1-6 IEEE 802.11g 第1-14信道的频谱屏蔽范围定义","nro":7,"url":"attach/chap0x01/802.11.2.4.svg.png","index":6,"caption_template":"_CAPTION_","label":"图 1-6 IEEE 802.11g 第1-14信道的频谱屏蔽范围定义","attributes":{},"skip":false,"key":"1.2.6"},{"backlink":"chap0x01/main.html#fig1.2.7","level":"1.2","align":"center","list_caption":"Figure: 图 1.6 IEEE 802.11 协议标准对应最大带宽能力发展历史","alt":"图 1.6 IEEE 802.11 协议标准对应最大带宽能力发展历史","nro":8,"url":"attach/chap0x01/802.11.timeline.bandwidth.jpg","index":7,"caption_template":"_CAPTION_","label":"图 1.6 IEEE 802.11 协议标准对应最大带宽能力发展历史","attributes":{},"skip":false,"key":"1.2.7"},{"backlink":"chap0x01/main.html#fig1.2.8","level":"1.2","align":"center","list_caption":"Figure: 图 1-7 IEEE 802 家族主要协议对应 OSI 模型归属关系","alt":"图 1-7 IEEE 802 家族主要协议对应 OSI 模型归属关系","nro":9,"url":"attach/chap0x01/IEEE_802_family.png","index":8,"caption_template":"_CAPTION_","label":"图 1-7 IEEE 802 家族主要协议对应 OSI 模型归属关系","attributes":{},"skip":false,"key":"1.2.8"},{"backlink":"chap0x01/main.html#fig1.2.9","level":"1.2","align":"center","list_caption":"Figure: 图 1-8 STA 工作模式","alt":"图 1-8 STA 工作模式","nro":10,"url":"attach/chap0x01/wds.png","index":9,"caption_template":"_CAPTION_","label":"图 1-8 STA 工作模式","attributes":{},"skip":false,"key":"1.2.9"},{"backlink":"chap0x01/main.html#fig1.2.10","level":"1.2","align":"center","list_caption":"Figure: 图 1-9 IEEE 802.11 关联过程示例","alt":"图 1-9 IEEE 802.11 关联过程示例","nro":11,"url":"attach/chap0x01/802.11.open.association.png","index":10,"caption_template":"_CAPTION_","label":"图 1-9 IEEE 802.11 关联过程示例","attributes":{},"skip":false,"key":"1.2.10"},{"backlink":"chap0x01/main.html#fig1.2.11","level":"1.2","align":"center","list_caption":"Figure: 图 1-10 真实无线网络加入过程可视化","alt":"图 1-10 真实无线网络加入过程可视化","nro":12,"url":"attach/chap0x01/cuc.open.association.demo.png","index":11,"caption_template":"_CAPTION_","label":"图 1-10 真实无线网络加入过程可视化","attributes":{},"skip":false,"key":"1.2.11"},{"backlink":"chap0x01/main.html#fig1.2.12","level":"1.2","align":"center","list_caption":"Figure: 图 1-11 RSSI 实例-1","alt":"图 1-11 RSSI 实例-1","nro":13,"url":"attach/chap0x01/mac.wifi.rssi.png","index":12,"caption_template":"_CAPTION_","label":"图 1-11 RSSI 实例-1","attributes":{},"skip":false,"key":"1.2.12"},{"backlink":"chap0x01/main.html#fig1.2.13","level":"1.2","align":"center","list_caption":"Figure: 图 1-12 RSSI 实例-2","alt":"图 1-12 RSSI 实例-2","nro":14,"url":"attach/chap0x01/cts.png","index":13,"caption_template":"_CAPTION_","label":"图 1-12 RSSI 实例-2","attributes":{},"skip":false,"key":"1.2.13"},{"backlink":"chap0x01/main.html#fig1.2.14","level":"1.2","align":"center","list_caption":"Figure: 图 1-13 RSSI 变化趋势可视化","alt":"图 1-13 RSSI 变化趋势可视化","nro":15,"url":"attach/chap0x01/rssi_sample.png","index":14,"caption_template":"_CAPTION_","label":"图 1-13 RSSI 变化趋势可视化","attributes":{},"skip":false,"key":"1.2.14"},{"backlink":"chap0x01/main.html#fig1.2.15","level":"1.2","align":"center","list_caption":"Figure: 图 1-14 无线安全机制","alt":"图 1-14 无线安全机制","nro":16,"url":"attach/chap0x01/wifi-enc.png","index":15,"caption_template":"_CAPTION_","label":"图 1-14 无线安全机制","attributes":{},"skip":false,"key":"1.2.15"},{"backlink":"chap0x01/main.html#fig1.2.16","level":"1.2","align":"center","list_caption":"Figure: 图 1-15 WiFi Pineapple","alt":"图 1-15 WiFi Pineapple","nro":17,"url":"attach/chap0x01/wifi-pineapple.jpg","index":16,"caption_template":"_CAPTION_","label":"图 1-15 WiFi Pineapple","attributes":{},"skip":false,"key":"1.2.16"},{"backlink":"chap0x01/main.html#fig1.2.17","level":"1.2","align":"center","list_caption":"Figure: 图 1-16 自建个人热点","alt":"图 1-16 自建个人热点","nro":18,"url":"attach/chap0x01/adhoc-soft-ap.png","index":17,"caption_template":"_CAPTION_","label":"图 1-16 自建个人热点","attributes":{},"skip":false,"key":"1.2.17"},{"backlink":"chap0x02/exp.html#fig1.3.1.1","level":"1.3.1","align":"center","list_caption":"Figure: 图1 Wireshark开启监听模式","alt":"图1 Wireshark开启监听模式","nro":19,"url":"attach/chap0x02/media/wireshark_turn_on_monitor_mode.png","index":1,"caption_template":"_CAPTION_","label":"图1 Wireshark开启监听模式","attributes":{},"skip":false,"key":"1.3.1.1"},{"backlink":"chap0x04/smartconfig.html#fig1.5.2.1","level":"1.5.2","align":"center","list_caption":"Figure: 点击图片看原图","alt":"点击图片看原图","nro":20,"url":"attach/smartconfig/airkiss-1-small.png","index":1,"caption_template":"_CAPTION_","label":"点击图片看原图","attributes":{},"skip":false,"key":"1.5.2.1"},{"backlink":"chap0x04/smartconfig.html#fig1.5.2.2","level":"1.5.2","align":"center","list_caption":"Figure: 点击图片看原图","alt":"点击图片看原图","nro":21,"url":"attach/smartconfig/airkiss-2-small.png","index":2,"caption_template":"_CAPTION_","label":"点击图片看原图","attributes":{},"skip":false,"key":"1.5.2.2"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.1","level":"1.5.3","align":"center","list_caption":"Figure: NVD 记录的 CVE-2019-12272 漏洞详情","alt":"NVD 记录的 CVE-2019-12272 漏洞详情","nro":22,"url":"attach/CVE-2019-12272-CVSS-details.png","index":1,"caption_template":"_CAPTION_","label":"NVD 记录的 CVE-2019-12272 漏洞详情","attributes":{},"skip":false,"key":"1.5.3.1"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.2","level":"1.5.3","align":"center","list_caption":"Figure: NVD 官方原版 CVSS-3.0 评分 - BaseScore: 9.8","alt":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 9.8","nro":23,"url":"attach/CVE-2019-12272-CVSS-3.0-original.png","index":2,"caption_template":"_CAPTION_","label":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 9.8","attributes":{},"skip":false,"key":"1.5.3.2"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.3","level":"1.5.3","align":"center","list_caption":"Figure: CVSS-3.0 评分修正版 - BaseScore: 8.8","alt":"CVSS-3.0 评分修正版 - BaseScore: 8.8","nro":24,"url":"attach/CVE-2019-12272-CVSS-3.0-modified.png","index":3,"caption_template":"_CAPTION_","label":"CVSS-3.0 评分修正版 - BaseScore: 8.8","attributes":{},"skip":false,"key":"1.5.3.3"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.4","level":"1.5.3","align":"center","list_caption":"Figure: NVD 官方原版 CVSS-3.0 评分 - BaseScore: 7.5","alt":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 7.5","nro":25,"url":"attach/CVE-2019-12272-CVSS-2.0-original.png","index":4,"caption_template":"_CAPTION_","label":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 7.5","attributes":{},"skip":false,"key":"1.5.3.4"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.5","level":"1.5.3","align":"center","list_caption":"Figure: CVSS-2.0 评分修正版 - BaseScore 9.0","alt":"CVSS-2.0 评分修正版 - BaseScore 9.0","nro":26,"url":"attach/CVE-2019-12272-CVSS-2.0-modified.png","index":5,"caption_template":"_CAPTION_","label":"CVSS-2.0 评分修正版 - BaseScore 9.0","attributes":{},"skip":false,"key":"1.5.3.5"}]},"title":"移动互联网安全","language":"zh-hans","links":{"sidebar":{"中传信安课程网站":"https://c4pr1c3.github.io/cuc-wiki/"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]}},"gitbook":">=2.0.0","description":"本科信息安全专业教材@CUC"},"file":{"path":"chap0x04/smartconfig.md","mtime":"2022-03-18T07:42:23.688Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-18T07:43:09.415Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-add-js-css/af312876c5e0460630586c89a1e8141d-custom.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

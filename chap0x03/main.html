@@ -1,0 +1,1157 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第三章 无线接入网入侵与防御 · 移动互联网安全</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="黄玮">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="exp.html" />
+    
+    
+    <link rel="prev" href="../chap0x02/wnda3100v3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://c4pr1c3.github.io/cuc-wiki/" target="_blank" class="custom-link">中传信安课程网站</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chap0x01/main.html">
+            
+                <a href="../chap0x01/main.html">
+            
+                    
+                    第一章 无线网络安全基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chap0x01/exp.html">
+            
+                <a href="../chap0x01/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chap0x01/homework.html">
+            
+                <a href="../chap0x01/homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chap0x02/main.html">
+            
+                <a href="../chap0x02/main.html">
+            
+                    
+                    第二章 无线接入网监听
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chap0x02/exp.html">
+            
+                <a href="../chap0x02/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chap0x02/homework.html">
+            
+                <a href="../chap0x02/homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chap0x02/scapy.html">
+            
+                <a href="../chap0x02/scapy.html">
+            
+                    
+                    Scapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chap0x02/radiotap.html">
+            
+                <a href="../chap0x02/radiotap.html">
+            
+                    
+                    RadioTap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chap0x02/wifi_card_list.html">
+            
+                <a href="../chap0x02/wifi_card_list.html">
+            
+                    
+                    常见无线网卡
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../chap0x02/alfa.html">
+            
+                <a href="../chap0x02/alfa.html">
+            
+                    
+                    ALFA-AWUS036H
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../chap0x02/rtl8187.html">
+            
+                <a href="../chap0x02/rtl8187.html">
+            
+                    
+                    Realtek RTL8187
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../chap0x02/wn722n.html">
+            
+                <a href="../chap0x02/wn722n.html">
+            
+                    
+                    Atheros AR9271
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../chap0x02/wn822n.html">
+            
+                <a href="../chap0x02/wn822n.html">
+            
+                    
+                    Realtek RTL8192CU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../chap0x02/rt5370.html">
+            
+                <a href="../chap0x02/rt5370.html">
+            
+                    
+                    Ralink RT5370
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../chap0x02/rtl8811au.html">
+            
+                <a href="../chap0x02/rtl8811au.html">
+            
+                    
+                    Realtek RTL8811AU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="../chap0x02/8812au.html">
+            
+                <a href="../chap0x02/8812au.html">
+            
+                    
+                    Realtek RTL8812AU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" data-path="../chap0x02/rtl88x2bu.html">
+            
+                <a href="../chap0x02/rtl88x2bu.html">
+            
+                    
+                    Realtek RTL88x2BU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.9" data-path="../chap0x02/rtl8821cu.html">
+            
+                <a href="../chap0x02/rtl8821cu.html">
+            
+                    
+                    Realtek RTL8821CU
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.10" data-path="../chap0x02/rt3572l.html">
+            
+                <a href="../chap0x02/rt3572l.html">
+            
+                    
+                    Ralink RT3572L
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.10.1" data-path="../chap0x02/rt3572l_explained.html">
+            
+                <a href="../chap0x02/rt3572l_explained.html">
+            
+                    
+                    iw phy输出参数详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.11" data-path="../chap0x02/wnda3100v3.html">
+            
+                <a href="../chap0x02/wnda3100v3.html">
+            
+                    
+                    Netgear WNDA3100v3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="main.html">
+            
+                <a href="main.html">
+            
+                    
+                    第三章 无线接入网入侵与防御
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="exp.html">
+            
+                <a href="exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="homework.html">
+            
+                <a href="homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="scapy.html">
+            
+                <a href="scapy.html">
+            
+                    
+                    Scapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chap0x04/main.html">
+            
+                <a href="../chap0x04/main.html">
+            
+                    
+                    第四章 移动通信安全概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chap0x04/exp.html">
+            
+                <a href="../chap0x04/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chap0x04/smartconfig.html">
+            
+                <a href="../chap0x04/smartconfig.html">
+            
+                    
+                    物联网实战初探笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chap0x04/cve-2019-12272.html">
+            
+                <a href="../chap0x04/cve-2019-12272.html">
+            
+                    
+                    CVE-2019-12272
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chap0x05/main.html">
+            
+                <a href="../chap0x05/main.html">
+            
+                    
+                    第五章 智能终端操作系统安全基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../chap0x05/exp.html">
+            
+                <a href="../chap0x05/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chap0x06/main.html">
+            
+                <a href="../chap0x06/main.html">
+            
+                    
+                    第六章 安卓系统访问控制策略与机制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../chap0x06/exp.html">
+            
+                <a href="../chap0x06/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chap0x07/main.html">
+            
+                <a href="../chap0x07/main.html">
+            
+                    
+                    第七章 移动终端应用逆向分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../chap0x07/exp.html">
+            
+                <a href="../chap0x07/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chap0x08/main.html">
+            
+                <a href="../chap0x08/main.html">
+            
+                    
+                    第八章 移动终端应用攻防与代码最佳安全实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../chap0x08/exp.html">
+            
+                <a href="../chap0x08/exp.html">
+            
+                    
+                    实验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../chap0x08/homework.html">
+            
+                <a href="../chap0x08/homework.html">
+            
+                    
+                    课后作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    模拟测试
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../exam/2016.html">
+            
+                <a href="../exam/2016.html">
+            
+                    
+                    2016
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第三章 无线接入网入侵与防御</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7B2C;&#x4E09;&#x7AE0;-&#x65E0;&#x7EBF;&#x63A5;&#x5165;&#x7F51;&#x5165;&#x4FB5;&#x4E0E;&#x9632;&#x5FA1;"><b></b>&#x7B2C;&#x4E09;&#x7AE0; &#x65E0;&#x7EBF;&#x63A5;&#x5165;&#x7F51;&#x5165;&#x4FB5;&#x4E0E;&#x9632;&#x5FA1;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7ED5;&#x8FC7;&#x90A3;&#x4E9B;&#x4F3C;&#x662F;&#x800C;&#x975E;&#x7684;&#x5B89;&#x5168;&#x673A;&#x5236;"><b></b>&#x7ED5;&#x8FC7;&#x90A3;&#x4E9B;&#x4F3C;&#x662F;&#x800C;&#x975E;&#x7684;&#x5B89;&#x5168;&#x673A;&#x5236;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7981;&#x2F4C;ssid&#x2F34;&#x64AD;"><b></b>&#x7981;&#x2F4C;SSID&#x2F34;&#x64AD;</a></li><li><span class="title-icon "></span><a href="#mac&#x5730;&#x5740;&#x8FC7;&#x6EE4;"><b></b>MAC&#x5730;&#x5740;&#x8FC7;&#x6EE4;</a></li><li><span class="title-icon "></span><a href="#&#x7981;&#x7528;dhcp&#xFF0C;&#x4F7F;&#x7528;&#x9759;&#x6001;ip&#x5730;&#x5740;&#x5206;&#x914D;"><b></b>&#x7981;&#x7528;DHCP&#xFF0C;&#x4F7F;&#x7528;&#x9759;&#x6001;IP&#x5730;&#x5740;&#x5206;&#x914D;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5DF2;&#x6709;&#x5B89;&#x5168;&#x673A;&#x5236;&#x7684;&#x6F0F;&#x6D1E;&#x539F;&#x7406;"><b></b>&#x5DF2;&#x6709;&#x5B89;&#x5168;&#x673A;&#x5236;&#x7684;&#x6F0F;&#x6D1E;&#x539F;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5F00;&#x653E;&#x5F0F;&#x8BA4;&#x8BC1;"><b></b>&#x5F00;&#x653E;&#x5F0F;&#x8BA4;&#x8BC1;</a></li><li><span class="title-icon "></span><a href="#evil-twin"><b></b>Evil Twin</a></li><li><span class="title-icon "></span><a href="#evil-essid"><b></b>Evil ESSID</a></li><li><span class="title-icon "></span><a href="#tkip&#x7F3A;&#x9677;"><b></b>TKIP&#x7F3A;&#x9677;</a></li><li><span class="title-icon "></span><a href="#wpawpa2-psk&#x7834;&#x89E3;"><b></b>WPA/WPA2 PSK&#x7834;&#x89E3;</a></li><li><span class="title-icon "></span><a href="#wps&#x5DF2;&#x77E5;&#x8106;&#x5F31;&#x6027;&#x548C;&#x6F0F;&#x6D1E;&#x5229;&#x7528;&#x2F45;&#x6CD5;"><b></b>WPS&#x5DF2;&#x77E5;&#x8106;&#x5F31;&#x6027;&#x548C;&#x6F0F;&#x6D1E;&#x5229;&#x7528;&#x2F45;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#&#x653B;&#x51FB;-wpawpa2-&#x4F01;&#x4E1A;&#x7EA7;&#x8BA4;&#x8BC1;&#x2F46;&#x7EBF;&#x2F79;&#x7EDC;"><b></b>&#x653B;&#x51FB; WPA/WPA2 &#x4F01;&#x4E1A;&#x7EA7;&#x8BA4;&#x8BC1;&#x2F46;&#x7EBF;&#x2F79;&#x7EDC;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x5168;&#x673A;&#x5236;&#x6F0F;&#x6D1E;&#x5229;&#x7528;&#x5B9E;&#x4F8B;"><b></b>&#x5B89;&#x5168;&#x673A;&#x5236;&#x6F0F;&#x6D1E;&#x5229;&#x7528;&#x5B9E;&#x4F8B;</a></li><li><span class="title-icon "></span><a href="#&#x6784;&#x5EFA;&#x5B89;&#x5168;&#x7684;&#x65E0;&#x7EBF;&#x5C40;&#x57DF;&#x7F51;"><b></b>&#x6784;&#x5EFA;&#x5B89;&#x5168;&#x7684;&#x65E0;&#x7EBF;&#x5C40;&#x57DF;&#x7F51;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EBA;"><b></b>&#x4EBA;</a></li><li><span class="title-icon "></span><a href="#&#x5E94;&#x7528;&#x5C42;"><b></b>&#x5E94;&#x7528;&#x5C42;</a></li><li><span class="title-icon "></span><a href="#&#x7F51;&#x7EDC;&#x5C42;"><b></b>&#x7F51;&#x7EDC;&#x5C42;</a></li><li><span class="title-icon "></span><a href="#&#x94FE;&#x8DEF;&#x5C42;"><b></b>&#x94FE;&#x8DEF;&#x5C42;</a></li><li><span class="title-icon "></span><a href="#&#x7269;&#x7406;&#x5C42;"><b></b>&#x7269;&#x7406;&#x5C42;</a></li></ul></ul></ul></div><a href="#&#x7B2C;&#x4E09;&#x7AE0;-&#x65E0;&#x7EBF;&#x63A5;&#x5165;&#x7F51;&#x5165;&#x4FB5;&#x4E0E;&#x9632;&#x5FA1;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7B2C;&#x4E09;&#x7AE0;-&#x65E0;&#x7EBF;&#x63A5;&#x5165;&#x7F51;&#x5165;&#x4FB5;&#x4E0E;&#x9632;&#x5FA1;"><a name="&#x7B2C;&#x4E09;&#x7AE0;-&#x65E0;&#x7EBF;&#x63A5;&#x5165;&#x7F51;&#x5165;&#x4FB5;&#x4E0E;&#x9632;&#x5FA1;" class="anchor-navigation-ex-anchor" href="#&#x7B2C;&#x4E09;&#x7AE0;-&#x65E0;&#x7EBF;&#x63A5;&#x5165;&#x7F51;&#x5165;&#x4FB5;&#x4E0E;&#x9632;&#x5FA1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7B2C;&#x4E09;&#x7AE0; &#x65E0;&#x7EBF;&#x63A5;&#x5165;&#x7F51;&#x5165;&#x4FB5;&#x4E0E;&#x9632;&#x5FA1;</h1>
+<h2 id="&#x7ED5;&#x8FC7;&#x90A3;&#x4E9B;&#x4F3C;&#x662F;&#x800C;&#x975E;&#x7684;&#x5B89;&#x5168;&#x673A;&#x5236;"><a name="&#x7ED5;&#x8FC7;&#x90A3;&#x4E9B;&#x4F3C;&#x662F;&#x800C;&#x975E;&#x7684;&#x5B89;&#x5168;&#x673A;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x7ED5;&#x8FC7;&#x90A3;&#x4E9B;&#x4F3C;&#x662F;&#x800C;&#x975E;&#x7684;&#x5B89;&#x5168;&#x673A;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7ED5;&#x8FC7;&#x90A3;&#x4E9B;&#x4F3C;&#x662F;&#x800C;&#x975E;&#x7684;&#x5B89;&#x5168;&#x673A;&#x5236;</h2>
+<h3 id="&#x7981;&#x2F4C;ssid&#x2F34;&#x64AD;"><a name="&#x7981;&#x2F4C;ssid&#x2F34;&#x64AD;" class="anchor-navigation-ex-anchor" href="#&#x7981;&#x2F4C;ssid&#x2F34;&#x64AD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7981;&#x2F4C;SSID&#x2F34;&#x64AD;</h3>
+<p>AP&#x5728;&#x4E3B;&#x52A8;&#x5E7F;&#x64AD;&#x7684;<code>beacon frame</code>&#x4E2D;&#x5305;&#x542B;SSID&#x5B57;&#x6BB5;&#x503C;&#xFF0C;&#x6240;&#x6709;AP&#x7684;&#x9ED8;&#x8BA4;&#x51FA;&#x5382;&#x8BBE;&#x7F6E;&#x90FD;&#x662F;&#x5F00;&#x542F;&#x4E86;SSID&#x5E7F;&#x64AD;&#x529F;&#x80FD;&#x7684;&#x3002;&#x4F46;&#x540C;&#x65F6;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x5173;&#x95ED;SSID&#x5E7F;&#x64AD;&#x529F;&#x80FD;&#x7684;&#x5F00;&#x5173;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="media/ap-ssid-broadcast-settings.png" alt=""></p>
+<p>AP&#x5982;&#x679C;&#x5173;&#x95ED;&#x4E86;SSID&#x5E7F;&#x64AD;&#x529F;&#x80FD;&#xFF08;&#x90E8;&#x5206;&#x4EA7;&#x54C1;&#x7684;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x4F7F;&#x7528;&#x7684;&#x529F;&#x80FD;&#x672F;&#x8BED;&#x662F;&#xFF1A;&#x9690;&#x85CF;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#xFF09;&#xFF0C;&#x624B;&#x673A;&#x7B49;&#x65E0;&#x7EBF;&#x5BA2;&#x6237;&#x7AEF;&#x5728;&#x201C;&#x5237;&#x65B0;&#x201D;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x5217;&#x8868;&#x65F6;&#x4F1A;&#x5FFD;&#x7565;&#x6389;&#x8FD9;&#x4E9B;&#x7F51;&#x7EDC;&#xFF08;&#x56E0;&#x4E3A;&#x6536;&#x5230;&#x7684;AP&#x5E7F;&#x64AD;<code>beacon frame</code>&#x4E2D;&#x6CA1;&#x6709;&#x7F51;&#x7EDC;&#x540D;&#x79F0;&#x4FE1;&#x606F;&#xFF0C;&#x6240;&#x4EE5;&#x65E0;&#x6CD5;&#x5728;&#x754C;&#x9762;&#x4E0A;&#x201C;&#x663E;&#x793A;&#x201D;&#xFF09;&#xFF0C;&#x9020;&#x6210;&#x4E86;&#x8FD9;&#x4E9B;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x4F3C;&#x4E4E;&#x5C31;&#x201C;&#x9690;&#x8EAB;&#x201D;&#x4E86;&#x7684;&#x5047;&#x8C61;&#xFF0C;&#x8FDB;&#x800C;&#x7ED9;&#x4EBA;&#x4E00;&#x79CD;&#x5047;&#x8C61;&#xFF1A;</p>
+<blockquote>
+<p>&#x653B;&#x51FB;&#x8005;&#x53D1;&#x73B0;&#x4E0D;&#x4E86;&#x6211;&#x7684;&#x7F51;&#x7EDC;&#xFF0C;&#x5C31;&#x65E0;&#x6CD5;&#x53D1;&#x8D77;&#x653B;&#x51FB;&#xFF0C;&#x6240;&#x4EE5;&#x7F51;&#x7EDC;&#x5C31;&#x5B89;&#x5168;&#x4E86;&#x3002;</p>
+</blockquote>
+<p>&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x201C;&#x88AB;&#x52A8;&#x53D1;&#x73B0;&#x201D;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x201C;&#x53D1;&#x73B0;&#x201D;&#x7981;&#x6B62;SSID&#x5E7F;&#x64AD;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li>&#x5F53;&#x6709;STA&#x52A0;&#x2F0A;&#x9690;&#x85CF;SSID&#x7684;AP&#x65F6;&#xFF0C;<code>Probe Request</code> &#x4E2D;&#x5305;&#x542B;&#x8BE5;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x7684;SSID&#xFF1B;</li>
+<li>&#x8BE5;AP&#x4E0B;&#x5BA2;&#x6237;&#x7AEF;&#x65AD;&#x7EBF;&#x91CD;&#x8FDE;AP&#x65F6;&#x53D1;&#x9001;&#x7684;<code>Association Request</code>&#x3001;<code>Probe Request</code>&#x548C;AP&#x53D1;&#x9001;&#x7684;<code>Probe Response</code>&#x4E2D;&#x90FD;&#x4F1A;&#x5305;&#x542B;&#x76EE;&#x6807;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x7684;SSID&#x3002;</li>
+</ul>
+<p>&#x653B;&#x51FB;&#x8005;&#x53EA;&#x9700;&#x8981;&#x201C;&#x9759;&#x9759;&#x201D;&#x7684;&#x6293;&#x5305;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x201C;&#x53D1;&#x73B0;&#x201D;&#x76EE;&#x6807;&#x7F51;&#x7EDC;&#x7684;SSID&#x3002;</p>
+<p>&#x6F14;&#x793A;&#x5B9E;&#x9A8C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="media/HiddenSSID-5.png" alt=""></p>
+<p>&#x4E0A;&#x56FE;&#x4E2D;&#xFF0C;&#x7EA2;&#x8272;&#x65B9;&#x6846;&#x9AD8;&#x4EAE;&#x7684;BSSID&#xFF1A;<code>08:57:00:6B:11:D0</code>&#x5BF9;&#x5E94;AP&#x5728;<code>airodump-ng</code>&#x7684;&#x63A7;&#x5236;&#x53F0;&#x4E2D;ESSID&#x5B57;&#x6BB5;&#x663E;&#x793A;&#x4E3A;<code>&lt;length:  0&gt;</code>&#xFF0C;&#x8FD9;&#x8868;&#x793A;&#x6293;&#x5230;&#x7684;&#x8BE5;AP&#x5E7F;&#x64AD;&#x7684;<code>beacon frame</code>&#x4E2D;ESSID&#x5B57;&#x6BB5;&#x503C;&#x4E3A;&#x7A7A;&#xFF0C;&#x7B26;&#x5408;&#x201C;&#x7981;&#x6B62;SSID&#x5E7F;&#x64AD;&#x201D;&#x8BBE;&#x7F6E;&#x7684;AP&#x7684;&#x8868;&#x73B0;&#x3002;</p>
+<blockquote>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x4E0D;&#x540C;AP&#x7684;&#x201C;&#x7981;&#x6B62;SSID&#x5E7F;&#x64AD;&#x201D;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x4F1A;&#x6709;&#x5DEE;&#x5F02;&#xFF0C;&#x6709;&#x4E9B;&#x5382;&#x5546;&#x7684;AP&#x4F1A;&#x5728;<code>beacon frame</code>&#x5B57;&#x6BB5;&#x4E2D;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x7F51;&#x7EDC;&#x7684;SSID&#x5B57;&#x6BB5;&#x957F;&#x5EA6;&#xFF08;&#x5047;&#x8BBE;&#x4E3A;N&#x5B57;&#x8282;&#xFF09;&#x586B;&#x5145;&#x5BF9;&#x5E94;&#x957F;&#x5EA6;&#x7684;<code>\x00</code>&#x5B57;&#x7B26;&#xFF0C;&#x8FD9;&#x65F6;&#x5728;airodump-ng&#x7684;&#x63A7;&#x5236;&#x53F0;&#x4E2D;ESSID&#x5B57;&#x6BB5;&#x5C31;&#x4F1A;&#x663E;&#x793A;&#x4E3A;<code>&lt;length:  N&gt;</code>&#x3002;</p>
+</blockquote>
+<p>&#x4E0B;&#x56FE;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;&#x5411;&#x6307;&#x5B9A;AP&#x53D1;&#x9001;1&#x4E2A;&#x89E3;&#x9664;&#x8BA4;&#x8BC1;&#x2F34;&#x64AD;&#x5305;&#xFF0C;&#x5E76;&#x7B49;&#x5F85;&#x5BA2;&#x6237;&#x7AEF;&#x91CD;&#x8FDE;&#x548C;&#x89C2;&#x5BDF;airodump-ng&#x7684;&#x8F93;&#x51FA;&#x4FE1;&#x606F;&#x53D8;&#x5316;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x539F;&#x5148;BSSID <code>08:57:00:6B:11:D0</code> &#x5BF9;&#x5E94; AP &#x5728;<code>airodump-ng</code>&#x7684;&#x63A7;&#x5236;&#x53F0;&#x4E2D;ESSID&#x5B57;&#x6BB5;&#x53D8;&#x5316;&#x4E3A;<code>HackMeIfYouCanHidden</code>&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x521A;&#x624D;&#x9690;&#x85CF;&#x7684;&#x76EE;&#x6807;&#x7F51;&#x7EDC;SSID&#x88AB;&#x6211;&#x4EEC;&#x201C;&#x53D1;&#x73B0;&#x201D;&#x4E86;&#x3002;</p>
+<pre><code class="lang-bash">aireplay-ng --deauth 1 <span class="hljs-_">-a</span> 08:57:00:6B:11:D0 mon0 --ignore-negative-one
+</code></pre>
+<p><img src="media/HiddenSSID-4.png" alt=""></p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x6CE8;&#x610F;&#x5230;&#xFF0C;&#x8BE5;&#x76EE;&#x6807;&#x7F51;&#x7EDC;&#x5F53;&#x524D;&#x786E;&#x5B9E;&#x6709;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5904;&#x4E8E;&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#x7684;&#x65E0;&#x7EBF;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x5B83;&#x7684;MAC&#x5730;&#x5740;&#x662F;&#xFF1A;<code>E0:F8:47:DC:38:C4</code>&#x3002;</p>
+<p>&#x4E0B;&#x56FE;&#x662F;&#x6211;&#x4EEC;&#x7528;wireshark&#x5206;&#x6790;&#x6211;&#x4EEC;&#x521A;&#x624D;&#x5728;&#x201C;&#x53D1;&#x73B0;&#x9690;&#x85CF;SSID&#x201D;&#x6F14;&#x793A;&#x5B9E;&#x9A8C;&#x4E2D;&#x7684;&#x6293;&#x5305;&#x7ED3;&#x679C;&#x622A;&#x56FE;&#xFF0C;&#x5176;&#x4E2D;<code>HackMeIfYouCanHidden</code>&#x786E;&#x5B9E;&#x51FA;&#x73B0;&#x5728;&#x4E86;&#x65E0;&#x7EBF;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x7ED9;AP&#x7684;<code>Association Request</code>&#x5E27;&#x4E4B;&#x4E2D;&#x3002;</p>
+<p><img src="media/HiddenSSID-1.png" alt=""></p>
+<p><img src="media/HiddenSSID-6.png" alt=""></p>
+<p>&#x5982;&#x4E0A;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;<code>iwlist wlan11 scanning | grep -A 30 &apos;08:57:00:6B:11:D0&apos;</code>&#x53EF;&#x4EE5;&#x518D;&#x6B21;&#x8BC1;&#x660E;&#xFF0C;&#x8BE5;AP&#x7684;&#x5E7F;&#x64AD;beacon frame&#x4E2D;&#x786E;&#x5B9E;&#x6CA1;&#x6709;&#x6709;&#x6548;&#x7684;ESSID&#x503C;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x201C;&#x9690;&#x85CF;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x201D;&#x3002;</p>
+<h3 id="mac&#x5730;&#x5740;&#x8FC7;&#x6EE4;"><a name="mac&#x5730;&#x5740;&#x8FC7;&#x6EE4;" class="anchor-navigation-ex-anchor" href="#mac&#x5730;&#x5740;&#x8FC7;&#x6EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>MAC&#x5730;&#x5740;&#x8FC7;&#x6EE4;</h3>
+<p>&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x662F;&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684;MAC&#x5730;&#x5740;&#x8FC7;&#x6EE4;&#x8BBE;&#x7F6E;&#x754C;&#x9762;&#xFF0C;&#x56FE;&#x4E2D;&#x7684;&#x8FC7;&#x6EE4;&#x89C4;&#x5219;&#x91CC;&#x7684;&#x201C;&#x7981;&#x6B62;&#x201D;&#x548C;&#x201C;&#x5141;&#x8BB8;&#x201D;&#x5206;&#x522B;&#x5BF9;&#x5E94;&#x201C;&#x9ED1;&#x540D;&#x5355;&#x201D;&#x548C;&#x201C;&#x767D;&#x540D;&#x5355;&#x201D;&#x673A;&#x5236;&#x3002;&#x7531;&#x4E8E;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x5373;&#x4F7F;&#x542F;&#x7528;&#x4E86;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x529F;&#x80FD;&#xFF0C;&#x4F46;MAC&#x5730;&#x5740;&#x4F9D;&#x7136;&#x662F;&#x660E;&#x6587;&#x5305;&#x542B;&#x5728;&#x65E0;&#x7EBF;&#x6570;&#x636E;&#x5E27;&#x4E2D;&#x7684;&#xFF0C;&#x901A;&#x8FC7;&#x55C5;&#x63A2;&#x6A21;&#x5F0F;&#x6293;&#x5305;&#x53EF;&#x4EE5;&#x8F7B;&#x6613;&#x7684;&#x4E86;&#x89E3;&#x5230;&#x76EE;&#x6807;&#x7F51;&#x7EDC;&#x4E2D;&#x6709;&#x54EA;&#x4E9B;&#x8BBE;&#x5907;&#x5904;&#x4E8E;&#x5DF2;&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#x3002;&#x5BF9;&#x4E8E;&#x767D;&#x540D;&#x5355;&#x8FC7;&#x6EE4;&#x6A21;&#x5F0F;&#x6765;&#x8BF4;&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x53EA;&#x9700;&#x8981;&#x628A;&#x81EA;&#x5DF1;&#x8BBE;&#x5907;&#x7684;MAC&#x5730;&#x5740;&#x4FEE;&#x6539;&#x4E3A;&#x7F51;&#x7EDC;&#x4E2D;&#x5DF2;&#x8FDE;&#x63A5;&#x5BA2;&#x6237;&#x7AEF;&#x7684;MAC&#x5730;&#x5740;&#xFF0C;&#x5373;&#x53EF;&#x7ED5;&#x8FC7;&#x767D;&#x540D;&#x5355;&#x9650;&#x5236;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x9ED1;&#x540D;&#x5355;&#x9650;&#x5236;&#x5C31;&#x66F4;&#x5BB9;&#x6613;&#x7ED5;&#x8FC7;&#x4E86;&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x5982;&#x679C;&#x6000;&#x7591;&#x81EA;&#x5DF1;&#x7684;MAC&#x5730;&#x5740;&#x88AB;&#x52A0;&#x5165;&#x5230;&#x4E86;MAC&#x5730;&#x5740;&#x8FC7;&#x6EE4;&#x9ED1;&#x540D;&#x5355;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x6389;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;MAC&#x5730;&#x5740;&#x91CD;&#x65B0;&#x5C1D;&#x8BD5;&#x8FDE;&#x63A5;&#x5373;&#x53EF;&#x3002;</p>
+<p><img src="media/mac-addr-filter.png" alt=""></p>
+<p>&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E2D;&#x4FEE;&#x6539;&#x7F51;&#x5361;MAC&#x5730;&#x5740;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-bash">ifconfig wlan0 hw ether 00:11:22:33:44:55
+</code></pre>
+<p>Windows&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x6CE8;&#x518C;&#x8868;&#x9879;&#xFF08;&#x4F8B;&#x5982;&#xFF1A;<code>HKLM\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}</code>&#xFF0C;&#x53D6;&#x51B3;&#x4E8E;&#x7F51;&#x5361;&#x9A71;&#x52A8;&#x548C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x652F;&#x6301;&#x60C5;&#x51B5;&#xFF09;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x7B2C;&#x4E09;&#x65B9;&#x5DE5;&#x5177;&#xFF0C;&#x4F8B;&#x5982;TMAC&#x3001;MAC Makeup&#x7B49;&#x3002;</p>
+<p>&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;<code>wpa_supplicant</code>&#x8FDE;&#x63A5;WPA/WPA2&#x8BA4;&#x8BC1;&#x65B9;&#x5F0F;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x3002;&#x9996;&#x5148;&#x628A;&#x660E;&#x6587;Passphrase&#x901A;&#x8FC7;Hash&#x8FD0;&#x7B97;&#x751F;&#x6210;PSK&#xFF0C;&#x8FD9;&#x4F1A;&#x7528;&#x5230;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177; <code>wpa_passphrase</code> &#x751F;&#x6210; wpa_supplicant &#x6240;&#x9700;&#x7684;&#x6700;&#x5C0F;&#x914D;&#x7F6E;&#xFF0C;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x8FDE;&#x63A5;&#x5230;&#x5DF2;&#x77E5; SSID &#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-bash">$ wpa_passphrase TargetSSID
+<span class="hljs-comment"># reading passphrase from stdin</span>
+hellopassword
+network={
+    ssid=<span class="hljs-string">&quot;TargetSSID&quot;</span>
+    <span class="hljs-comment">#psk=&quot;hellopassword&quot;</span>
+    psk=4cc54666ad54da9f19f3e6fde3b8521bd3e06d8be19928c3864aea13db3d5a75
+}
+</code></pre>
+<p>&#x4E0A;&#x4F8B;&#x8868;&#x660E;&#xFF0C;wpa_supplicant &#x53EF;&#x4EE5;&#x4E0E; wpa_passphrase &#x534F;&#x540C;&#x5DE5;&#x4F5C;&#xFF0C;&#x53EA;&#x9700;&#x7B80;&#x5355;&#x5730;&#x8FD9;&#x6837;&#x5373;&#x53EF;&#x505A;&#xFF1A;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x6CE8;&#x610F;: &#x7531;&#x4E8E;&#x5B58;&#x5728;&#x8FDB;&#x7A0B;&#x66FF;&#x6362;&#xFF0C;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x4E0D;&#x80FD;&#x5E26;&#x7740; sudo &#x6267;&#x884C;&#xFF0C;&#x5FC5;&#x987B;&#x5207;&#x6362;&#x5230; root &#x8EAB;&#x4EFD;&#x3002;&#x5426;&#x5219;&#x4F1A;&#x62A5;&#x9519;&#xFF1A;</span>
+<span class="hljs-comment"># &#x4E0A;&#x4E00;&#x6B65; wpa_passphrase &#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4FDD;&#x5B58;&#x4E3A;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x8FD9;&#x4E00;&#x6B65;&#x5C31;&#x53EF;&#x4EE5;&#x66FF;&#x6362; -c &#x53C2;&#x6570;&#x7684;&#x503C;&#x4E3A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</span>
+<span class="hljs-comment"># wpa_supplicant -B -i wlan1 -c &lt;(wpa_passphrase TargetSSID hellopassword)</span>
+</code></pre>
+<p>&#x4E00;&#x65E6;&#x5B8C;&#x6210;&#x4E86;&#x7F51;&#x7EDC;&#x8BA4;&#x8BC1;&#x8FC7;&#x7A0B;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x5C31;&#x53EF;&#x4EE5;&#x548C;&#x6B63;&#x5E38;&#x81EA;&#x52A8;&#x8FDE;&#x63A5;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x4E00;&#x6837;&#xFF0C;&#x624B;&#x5DE5;&#x901A;&#x8FC7;<code>dhclient wlan1</code>&#x8FD9;&#x6837;&#x7684;&#x547D;&#x4EE4;&#x6765;&#x6267;&#x884C;DHCP&#x8BF7;&#x6C42;&#xFF0C;&#x83B7;&#x53D6;&#x7F51;&#x7EDC;&#x81EA;&#x52A8;&#x914D;&#x7F6E;&#x3002;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x5C55;&#x793A;&#x4E86;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x7528;&#x5230;&#x7684;&#x4E3B;&#x8981;&#x547D;&#x4EE4;&#x548C;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x3002;</p>
+<p><img src="media/bypass-mac-addr-filter.png" alt=""></p>
+<h3 id="&#x7981;&#x7528;dhcp&#xFF0C;&#x4F7F;&#x7528;&#x9759;&#x6001;ip&#x5730;&#x5740;&#x5206;&#x914D;"><a name="&#x7981;&#x7528;dhcp&#xFF0C;&#x4F7F;&#x7528;&#x9759;&#x6001;ip&#x5730;&#x5740;&#x5206;&#x914D;" class="anchor-navigation-ex-anchor" href="#&#x7981;&#x7528;dhcp&#xFF0C;&#x4F7F;&#x7528;&#x9759;&#x6001;ip&#x5730;&#x5740;&#x5206;&#x914D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7981;&#x7528;DHCP&#xFF0C;&#x4F7F;&#x7528;&#x9759;&#x6001;IP&#x5730;&#x5740;&#x5206;&#x914D;</h3>
+<p>&#x65E0;&#x8BBA;&#x662F;&#x6709;&#x7EBF;&#x5C40;&#x57DF;&#x7F51;&#x8FD8;&#x662F;&#x65E0;&#x7EBF;&#x5C40;&#x57DF;&#x7F51;&#xFF0C;&#x76D1;&#x542C;ARP&#x5E7F;&#x64AD;&#x90FD;&#x662F;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#x5F53;&#x524D;&#x7F51;&#x7EDC;IP&#x5730;&#x5740;&#x6BB5;&#x914D;&#x7F6E;&#x7684;&#x6700;&#x4F73;&#x65B9;&#x6CD5;&#x3002;ARP&#x5E7F;&#x64AD;&#x7684;&#x5178;&#x578B;&#x53D1;&#x751F;&#x573A;&#x666F;&#x5305;&#x62EC;&#x4E86;&#xFF1A;&#x540C;&#x2F00;&#x5C40;&#x57DF;&#x2F79;&#x4E0B;&#x5BA2;&#x6237;&#x7AEF;&#x76F8;&#x4E92;&#x4E4B;&#x95F4;&#x9996;&#x6B21;&#x8BBF;&#x95EE;&#xFF1B;&#x5BA2;&#x6237;&#x7AEF;&#x8981;&#x8BBF;&#x95EE;&#x5916;&#x2F79;&#xFF0C;&#x5BFB;&#x627E;&#x2F79;&#x5173;&#x5730;&#x5740;&#x3002;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x6B63;&#x5E38;&#x63D0;&#x4F9B;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x6765;&#x8BF4;&#xFF0C;ARP&#x5E7F;&#x64AD;&#x662F;&#x975E;&#x5E38;&#x9891;&#x7E41;&#x53D1;&#x751F;&#x7684;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x53EA;&#x8981;&#x6211;&#x4EEC;&#x5B8C;&#x6210;&#x4E86;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x7684;&#x8EAB;&#x4EFD;&#x8BA4;&#x8BC1;&#x548C;&#x94FE;&#x8DEF;&#x5C42;&#x8FDE;&#x63A5;&#x5EFA;&#x7ACB;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x53EA;&#x9700;&#x8981;&#x8010;&#x5FC3;&#x7684;&#x76D1;&#x542C;ARP&#x5E7F;&#x64AD;&#x548C;&#x5206;&#x6790;&#x5C31;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x5F53;&#x524D;&#x7F51;&#x7EDC;&#x7684;IP&#x5730;&#x5740;&#x914D;&#x7F6E;&#x548C;&#x7F51;&#x5173;IP&#x3002;</p>
+<h2 id="&#x5DF2;&#x6709;&#x5B89;&#x5168;&#x673A;&#x5236;&#x7684;&#x6F0F;&#x6D1E;&#x539F;&#x7406;"><a name="&#x5DF2;&#x6709;&#x5B89;&#x5168;&#x673A;&#x5236;&#x7684;&#x6F0F;&#x6D1E;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x5DF2;&#x6709;&#x5B89;&#x5168;&#x673A;&#x5236;&#x7684;&#x6F0F;&#x6D1E;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5DF2;&#x6709;&#x5B89;&#x5168;&#x673A;&#x5236;&#x7684;&#x6F0F;&#x6D1E;&#x539F;&#x7406;</h2>
+<h3 id="&#x5F00;&#x653E;&#x5F0F;&#x8BA4;&#x8BC1;"><a name="&#x5F00;&#x653E;&#x5F0F;&#x8BA4;&#x8BC1;" class="anchor-navigation-ex-anchor" href="#&#x5F00;&#x653E;&#x5F0F;&#x8BA4;&#x8BC1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F00;&#x653E;&#x5F0F;&#x8BA4;&#x8BC1;</h3>
+<p>&#x5F00;&#x653E;&#x5F0F;&#x8BA4;&#x8BC1;&#x7684;&#x672C;&#x8D28;&#x5C31;&#x662F;&#x4F7F;&#x7528;&#x660E;&#x6587;&#x901A;&#x4FE1;&#x534F;&#x8BAE;&#xFF0C;&#x800C;&#x65E0;&#x7EBF;&#x55C5;&#x63A2;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x83B7;&#x5F97;&#x2F46;&#x7EBF;&#x6570;&#x636E;&#x5E76;&#x5206;&#x6790;&#x5E94;&#x7528;&#x5C42;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x5E94;&#x7528;&#x5C42;&#x6570;&#x636E;&#x6CA1;&#x6709;&#x88AB;&#x52A0;&#x5BC6;&#x4F20;&#x8F93;&#xFF0C;&#x5219;&#x201C;&#x55C5;&#x63A2;&#x201D;&#x653B;&#x51FB;&#x53EF;&#x4EE5;&#x8F7B;&#x6613;&#x5F97;&#x624B;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x4E00;&#x4E9B;&#x91C7;&#x7528;HTTP&#x534F;&#x8BAE;&#x7684;Portal&#x8BA4;&#x8BC1;&#x65B9;&#x5F0F;&#x8FD8;&#x9762;&#x4E34;&#x201C;&#x91CD;&#x653E;&#x653B;&#x51FB;&#x201D;&#x548C;&#x201C;&#x4EFF;&#x5192;&#x8EAB;&#x4EFD;&#x201D;&#x5A01;&#x80C1;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x63D0;&#x53D6;&#x51FA;&#x5DF2;&#x901A;&#x8FC7;Portal&#x8BA4;&#x8BC1;&#x7684;&#x5BA2;&#x6237;&#x7AEF;HTTP&#x4F1A;&#x8BDD;&#x6570;&#x636E;&#x4E2D;&#x7684;cookie&#x4FE1;&#x606F;&#xFF0C;&#x8F7B;&#x6613;&#x201C;&#x514B;&#x9686;&#x201D;&#x51FA;&#x53E6;&#x4E00;&#x4E2A;&#x4E00;&#x6A21;&#x4E00;&#x6837;&#x7684;&#x5408;&#x6CD5;&#x3001;&#x5DF2;&#x8BA4;&#x8BC1;&#x5BA2;&#x6237;&#x7AEF;&#x4F1A;&#x8BDD;&#x3002;&#x5982;&#x679C;&#x662F;&#x57FA;&#x4E8E;MAC&#x5730;&#x5740;&#x8FC7;&#x6EE4;&#x65B9;&#x5F0F;&#x7684;AP&#xFF0C;&#x5219;&#x5DF2;&#x901A;&#x8FC7;&#x8BA4;&#x8BC1;&#x7684;&#x2F46;&#x7EBF;STA&#x7684;MAC&#x5730;&#x5740;&#x88AB;&#x514B;&#x9686;&#x540E;&#xFF0C;&#x514B;&#x9686;STA&#x5C31;&#x53EF;&#x4EE5;&#x8FDE;&#x5165;&#x5F53;&#x524D;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x3002;</p>
+<p><img src="media/cuc_hijack_demo.gif" alt=""></p>
+<p>&#x5982;&#x4E0A;&#x52A8;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x901A;&#x8FC7;&#x65E0;&#x7EBF;&#x6570;&#x636E;&#x55C5;&#x63A2;&#x7684;&#x65B9;&#x5F0F;&#x63D0;&#x53D6;&#x5230;&#x4E86;&#x4E00;&#x4E2A;&#x5DF2;&#x767B;&#x5F55;&#x7528;&#x6237;&#x7684;HTTP&#x4F1A;&#x8BDD;&#x4F7F;&#x7528;&#x7684;cookie&#x503C;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x7B80;&#x5355;&#x7684;&#x914D;&#x5408;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x63D2;&#x4EF6;&#xFF08;&#x4F8B;&#x5982;&#x4E0A;&#x56FE;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x662F;Chrome&#x6D4F;&#x89C8;&#x5668;&#x7684;<code>Modify Headers</code>&#x63D2;&#x4EF6;&#xFF09;&#x628A;&#x8BE5;cookie&#x503C;&#x201C;&#x514B;&#x9686;&#x201D;&#x5230;&#x5F53;&#x524D;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x4E00;&#x5237;&#x65B0;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x65E0;&#x9700;&#x77E5;&#x9053;&#x76EE;&#x6807;&#x7528;&#x6237;&#x767B;&#x5F55;&#x8D26;&#x53F7;&#x4FE1;&#x606F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x201C;&#x4EFF;&#x5192;&#x201D;&#x8EAB;&#x4EFD;&#x4F7F;&#x7528;&#x7F51;&#x7AD9;&#x7684;&#x6CE8;&#x518C;&#x7528;&#x6237;&#x670D;&#x52A1;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x4F7F;&#x7528;&#x5F00;&#x653E;&#x5F0F;&#x8BA4;&#x8BC1;&#x670D;&#x52A1;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x7528;&#x6237;&#x6765;&#x8BF4;&#xFF0C;&#x8981;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x660E;&#x6587;&#x901A;&#x4FE1;&#x534F;&#x8BAE;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x66F4;&#x4E0D;&#x8981;&#x5728;&#x8FD9;&#x6837;&#x7684;&#x7F51;&#x7EDC;&#x4E2D;&#x8F93;&#x5165;&#x9690;&#x79C1;&#x4FE1;&#x606F;&#x548C;&#x6570;&#x636E;&#x3002;&#x5BF9;&#x4E8E;&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x5458;&#x6765;&#x8BF4;&#xFF0C;&#x4F7F;&#x7528;HTTPS&#x65B9;&#x5F0F;&#x7684;Portal&#x8BA4;&#x8BC1;&#x4EE3;&#x66FF;&#x660E;&#x6587;&#x7684;Portal&#x8BA4;&#x8BC1;&#x3002;&#x5982;&#x679C;&#x6709;&#x6761;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x7528;&#x6237;&#x63D0;&#x4F9B;VPN&#x670D;&#x52A1;&#xFF0C;&#x51CF;&#x5C11;&#x660E;&#x6587;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x3002;</p>
+<h3 id="evil-twin"><a name="evil-twin" class="anchor-navigation-ex-anchor" href="#evil-twin"><i class="fa fa-link" aria-hidden="true"></i></a>Evil Twin</h3>
+<p>IEEE 802.11&#x534F;&#x8BAE;&#x4E2D;&#x5BF9;ESSID&#x7684;&#x4F7F;&#x7528;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5F3A;&#x5236;&#x8BA4;&#x8BC1;&#x673A;&#x5236;&#xFF0C;&#x4EFB;&#x4F55;&#x4EBA;&#x90FD;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x58F0;&#x660E;ESSID&#xFF0C;STA&#x65E0;&#x6CD5;&#x533A;&#x5206;&#x540C;&#x540D;ESSID&#x8C01;&#x662F;&#x5192;&#x724C;&#xFF0C;BSSID&#x4E5F;&#x53EF;&#x4EE5;&#x88AB;&#x4EFB;&#x610F;&#x4F2A;&#x9020;&#xFF0C;DS&#x673A;&#x5236;&#x5141;&#x8BB8;&#x5355;&#x4E2A;ESSID&#x5BF9;&#x5E94;&#x5173;&#x8054;&#x591A;&#x4E2A;BSSID&#x3002;&#x65E0;&#x7EBF;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x5217;&#x8868;&#x9009;&#x62E9;&#x754C;&#x9762;&#x662F;&#x6309;&#x7167;&#x72EC;&#x7ACB;ESSID&#x8FDB;&#x884C;&#x663E;&#x793A;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;AP&#x8BBE;&#x7F6E;&#x4E86;&#x76F8;&#x540C;&#x7684;ESSID&#x4E5F;&#x4EC5;&#x4EC5;&#x53EA;&#x4F1A;&#x663E;&#x793A;&#x6210;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x540D;&#x79F0;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x624B;&#x52A8;&#x9009;&#x62E9;&#x7F51;&#x7EDC;&#x65F6;&#x6216;&#x6839;&#x636E;&#x5386;&#x53F2;&#x8FDE;&#x63A5;&#x8BB0;&#x5F55;&#x81EA;&#x52A8;&#x52A0;&#x5165;&#x7F51;&#x7EDC;&#x65F6;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x4F1A;&#x5927;&#x6982;&#x7387;&#x8FDE;&#x5165;&#x4FE1;&#x53F7;&#x5F3A;&#x5EA6;&#x66F4;&#x9AD8;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#xFF0C;&#x4F2A;&#x9020;&#x540C;&#x540D;ESSID&#x7684;AP&#x5F80;&#x5F80;&#x4F1A;&#x5C06;&#x81EA;&#x5DF1;&#x7684;&#x4FE1;&#x53F7;&#x53D1;&#x5C04;&#x529F;&#x7387;&#x8C03;&#x7684;&#x8F83;&#x9AD8;&#xFF0C;&#x4EE5;&#x8BF1;&#x9A97;&#x66F4;&#x591A;&#x53D7;&#x5BB3;&#x8005;&#x8FDE;&#x63A5;&#x81EA;&#x5DF1;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5BA2;&#x6237;&#x7AEF;&#x6210;&#x529F;&#x52A0;&#x5165;&#x5230;Evil Twin&#x65B9;&#x5F0F;&#x642D;&#x5EFA;&#x7684;AP&#xFF0C;&#x5219;&#x8BE5;BS&#x7684;&#x670D;&#x52A1;&#x63D0;&#x4F9B;AP&#x5BF9;&#x5F53;&#x524D;BS&#x5185;&#x7684;STA&#x7684;&#x6240;&#x6709;&#x901A;&#x4FE1;&#x6D41;&#x91CF;&#x53EF;&#x89C1;&#x3001;&#x53EF;&#x63A7;&#xFF0C;&#x8BF8;&#x5982;DNS&#x52AB;&#x6301;&#x548C;&#x6295;&#x6BD2;&#x3001;DHCP&#x63A7;&#x5236;&#x548C;ARP&#x6295;&#x6BD2;&#x7B49;&#x624B;&#x6BB5;&#x90FD;&#x5C06;&#x8F7B;&#x800C;&#x6613;&#x4E3E;&#x3002;&#x540C;&#x65F6;&#x7531;&#x4E8E;AP&#x8D1F;&#x8D23;&#x63D0;&#x4F9B;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x4E0A;&#x7F51;&#x670D;&#x52A1;&#xFF0C;&#x56E0;&#x6B64;&#x6240;&#x6709;&#x4E0A;&#x7F51;&#x6D41;&#x91CF;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;AP&#x5F15;&#x5BFC;&#x5230;&#x81EA;&#x5DF1;&#x63A7;&#x5236;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x5E76;&#x8FDB;&#x884C;&#x9759;&#x9ED8;&#x8BB0;&#x5F55;&#xFF0C;&#x5B9E;&#x73B0;&#x6D41;&#x91CF;&#x76D1;&#x63A7;&#x3002;&#x66F4;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x900F;&#x660E;&#x4EE3;&#x7406;&#xFF0C;&#x5B9E;&#x73B0;&#x66F4;&#x5F3A;&#x5927;&#x7684;&#x4E2D;&#x95F4;&#x4EBA;&#x653B;&#x51FB;&#x6548;&#x679C;&#x3002;</p>
+<p>Evil Twin&#x5B9E;&#x9A8C;&#x7684;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#x548C;&#x6B65;&#x9AA4;&#x8BE6;&#x89C1;<a href="exp.html">&#x672C;&#x7AE0;&#x5B9E;&#x9A8C;</a></p>
+<h3 id="evil-essid"><a name="evil-essid" class="anchor-navigation-ex-anchor" href="#evil-essid"><i class="fa fa-link" aria-hidden="true"></i></a>Evil ESSID</h3>
+<p><img src="media/SSID_Element_format.png" alt=""></p>
+<p>&#x5982;&#x4E0A;&#x56FE;&#x6240;&#x793A;&#x662F;IEEE 802.11&#x534F;&#x8BAE;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x5BF9;SSID&#x5143;&#x7D20;&#x683C;&#x5F0F;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;SSID&#x5B57;&#x6BB5;&#x957F;&#x5EA6;&#x8303;&#x56F4;&#x9650;&#x5236;&#x4E3A;0~32&#x5B57;&#x8282;&#xFF0C;&#x4F46;&#x5728;&#x534F;&#x8BAE;&#x89C4;&#x8303;&#x4E2D;&#x5E76;&#x6CA1;&#x6709;&#x9650;&#x5236;&#x5B57;&#x6BB5;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x548C;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x6807;&#x51C6;&#x3002;</p>
+<p>&#x6B63;&#x662F;&#x7531;&#x4E8E;&#x534F;&#x8BAE;&#x89C4;&#x8303;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x4E0A;&#x8FF0;&#x201C;&#x5BBD;&#x6CDB;&#x201D;&#x5B9A;&#x4E49;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x771F;&#x5B9E;&#x4E16;&#x754C;&#x4E2D;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x51E0;&#x79CD;&#x5E38;&#x89C1;&#x7684;&#x5229;&#x7528;ESSID&#x5B57;&#x6BB5;&#x7684;&#x653B;&#x51FB;&#x5411;&#x91CF;&#x6216;&#x6EE5;&#x7528;&#x884C;&#x4E3A;&#x3002;</p>
+<blockquote>
+<p>&#x5E7F;&#x544A;&#xFF1A;&#x4F20;&#x64AD;&#x5783;&#x573E;&#x4FE1;&#x606F;</p>
+</blockquote>
+<p><img src="media/ssid-abuse-1.png" alt=""></p>
+<p>&#x4F7F;&#x7528;<code>airbase-ng</code>&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x65E0;&#x7EBF;&#x7F51;&#x5361;&#x5FEB;&#x901F;&#x521B;&#x5EFA;&#x591A;&#x4E2A;ESSID&#x201C;&#x5047;&#x7F51;&#x7EDC;&#x201D;&#xFF0C;&#x64CD;&#x4F5C;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># cat essids.txt</span>
+&#x4F60;&#x597D;
+&#x542C;&#x8BF4;
+&#x4F60;&#x5728;
+&#x6293;&#x5305;
+&#x770B;&#x770B;
+&#x4F60;&#x80FD;
+&#x6293;&#x5230;
+&#x6211;&#x5417;
+<span class="hljs-comment"># airbase-ng --essids essids.txt wlan0mon</span>
+</code></pre>
+<p>&#x5728;&#x624B;&#x673A;&#x4E0A;&#x770B;&#x5230;&#x7684;&#x6548;&#x679C;&#x5982;&#x4E0B;&#x622A;&#x56FE;&#xFF1A;</p>
+<p><img src="media/evil_ssid_list.png" alt=""></p>
+<p>&#x8DEF;&#x7531;&#x5668;&#x7684;&#x7BA1;&#x7406;&#x540E;&#x53F0;&#x901A;&#x5E38;&#x662F;&#x7F51;&#x9875;&#x65B9;&#x5F0F;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x7F51;&#x9875;&#x5728;&#x5C55;&#x793A;&#x626B;&#x63CF;&#x5230;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x540D;&#x79F0;&#x5217;&#x8868;&#x65F6;&#x6CA1;&#x6709;&#x5BF9;SSID&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x5FC5;&#x8981;&#x7684;&#x8FC7;&#x6EE4;&#x548C;&#x8F6C;&#x4E49;&#xFF0C;&#x5219;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x5229;&#x7528;SSID&#x5B57;&#x6BB5;&#x8FDB;&#x884C;XSS&#x653B;&#x51FB;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="media/DGN2200B-Stored-XSS-SSID.png" alt=""></p>
+<p>&#x5982;&#x679C;&#x7F51;&#x9875;&#x5728;&#x5C55;&#x793A;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x540D;&#x79F0;&#x65F6;&#x91C7;&#x53D6;&#x4E86;&#x9632;&#x6B62;XSS&#x7684;&#x8FC7;&#x6EE4;&#x548C;&#x8F6C;&#x4E49;&#x63AA;&#x65BD;&#xFF0C;&#x5219;&#x501F;&#x52A9;SSID&#x5B57;&#x6BB5;&#x5B9E;&#x65BD;XSS&#x653B;&#x51FB;&#x7684;&#x884C;&#x4E3A;&#x5C31;&#x4E0D;&#x4F1A;&#x5F97;&#x901E;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="media/evil-ssid-xss-1.png" alt=""></p>
+<p><img src="media/evil-ssid-xss-2.png" alt=""></p>
+<h3 id="tkip&#x7F3A;&#x9677;"><a name="tkip&#x7F3A;&#x9677;" class="anchor-navigation-ex-anchor" href="#tkip&#x7F3A;&#x9677;"><i class="fa fa-link" aria-hidden="true"></i></a>TKIP&#x7F3A;&#x9677;</h3>
+<p>2002&#x5E74;10&#x6708;31&#x65E5;&#xFF0C;Wi-Fi&#x8054;&#x76DF;&#x63D0;&#x51FA;<strong>&#x4E34;&#x65F6;&#x5BC6;&#x94A5;&#x5B8C;&#x6574;&#x6027;&#x534F;&#x8BAE;</strong>&#xFF08;Temporal Key Integrity Protocol, TKIP&#xFF09;&#xFF0C;&#x5F52;&#x7C7B;&#x4E8E;WPA&#x6807;&#x51C6;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;IEEE&#x968F;&#x540E;&#x5728;2004&#x5E74;7&#x6708;23&#x65E5;&#x7684;IEEE 802.11i-2004&#x62A5;&#x544A;&#x4E2D;&#x80CC;&#x4E66;&#x4E34;&#x65F6;&#x5BC6;&#x94A5;&#x5B8C;&#x6574;&#x6027;&#x534F;&#x8BAE;&#x5E76;&#x540C;&#x65F6;&#x63D0;&#x51FA;&#x57FA;&#x4E8E;<strong>&#x8BA1;&#x6570;&#x5668;&#x6A21;&#x5F0F;&#x5BC6;&#x7801;&#x5757;&#x94FE;&#x6D88;&#x606F;&#x5B8C;&#x6574;&#x7801;</strong>&#xFF08;Counter Cipher Mode with block chaining message authentication code Protocol, CCMP&#xFF09;&#x534F;&#x8BAE;&#x7684;802.1X&#x548C;AES&#x534F;&#x8BAE;&#x8FD9;&#x4E9B;&#x66F4;&#x575A;&#x56FA;&#x7684;&#x5B89;&#x5168;&#x534F;&#x8BAE;&#x3002;&#x4E4B;&#x540E;Wi-Fi&#x8054;&#x76DF;&#x63A5;&#x53D7;&#x4E86;IEEE&#x7684;&#x76F8;&#x5173;&#x62A5;&#x544A;&#x5E76;&#x51A0;&#x4EE5;&#x201C;WPA2&#x201D;&#x8FD9;&#x4E2A;&#x5546;&#x4E1A;&#x540D;&#x79F0;&#x53D1;&#x5E03;&#x3002;</p>
+<p>&#x4E34;&#x65F6;&#x5BC6;&#x94A5;&#x5B8C;&#x6574;&#x6027;&#x534F;&#x8BAE;&#x968F;&#x540E;&#x7531;&#x4E8E;&#x5B89;&#x5168;&#x6027;&#x539F;&#x56E0;&#x4E8E;2009&#x5E74;1&#x6708;&#x88AB;IEEE&#x5E9F;&#x5F03;&#x3002;ZDNet&#x4E8E;2010&#x5E74;7&#x6708;18&#x65E5;&#x7684;&#x62A5;&#x544A;&#x4E2D;&#x8868;&#x660E;Wi-Fi&#x8054;&#x76DF;&#x5E94;&#x5F53;&#x7981;&#x6B62;&#x6240;&#x6709;Wi-Fi&#x8BBE;&#x5907;&#x4F7F;&#x7528;WEP&#x548C;&#x4E34;&#x65F6;&#x5BC6;&#x94A5;&#x5B8C;&#x6574;&#x6027;&#x534F;&#x8BAE;&#x3002;&#x81EA;2012&#x5E74;&#x7684;802.11&#x6807;&#x51C6;&#x4E2D;&#xFF0C;TKIP&#x5DF2;&#x4E0D;&#x518D;&#x89C6;&#x4E3A;&#x5B89;&#x5168;&#xFF0C;&#x76EE;&#x524D;&#x5DF2;&#x7ECF;&#x5904;&#x4E8E;&#x5E9F;&#x5F03;&#x72B6;&#x6001;&#x3002;</p>
+<p>TKIP&#x672C;&#x8D28;&#x4E0A;&#x662F;&#x4E00;&#x4E2A;WEP&#x8865;&#x4E01;&#xFF0C;&#x89E3;&#x51B3;&#x4E86;&#x653B;&#x51FB;&#x8005;&#x901A;&#x8FC7;&#x83B7;&#x5F97;&#x5C11;&#x91CF;&#x7684;&#x8DEF;&#x7531;&#x5668;&#x6D41;&#x91CF;&#x89E3;&#x6790;&#x51FA;&#x8DEF;&#x7531;&#x5668;&#x5BC6;&#x94A5;&#x7684;&#x95EE;&#x9898;&#x3002;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;TKIP&#x6BCF;&#x9694;&#x51E0;&#x5206;&#x949F;&#x5C31;&#x7ED9;&#x51FA;&#x65B0;&#x7684;&#x5BC6;&#x94A5;&#x3002;&#x4E0D;&#x7ED9;&#x653B;&#x51FB;&#x8005;&#x63D0;&#x4F9B;&#x8DB3;&#x591F;&#x7684;&#x6570;&#x636E;&#x6765;&#x7834;&#x8BD1;&#x5BC6;&#x94A5;&#x6216;&#x7B97;&#x6CD5;&#x6240;&#x4F9D;&#x8D56;&#x7684;RC4&#x6D41;&#x52A0;&#x5BC6;&#x3002;</p>
+<p>&#x867D;&#x7136;&#x5F53;&#x65F6;TKIP&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x8F83;&#x4E3A;&#x5B8C;&#x5584;&#x7684;&#x5B89;&#x5168;&#x5347;&#x7EA7;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x4FDD;&#x62A4;&#x4F60;&#x7684;&#x7F51;&#x7EDC;&#x4E0D;&#x53D7;&#x9ED1;&#x5BA2;&#x653B;&#x51FB;&#x8FD9;&#x4EF6;&#x4E8B;&#x4E0A;&#xFF0C;&#x5B83;&#x8FD8;&#x662F;&#x4E0D;&#x591F;&#x5168;&#x9762;&#x7684;&#x3002;&#x5176;&#x4E2D;&#x6700;&#x5927;&#x7684;&#x6F0F;&#x6D1E;&#x88AB;&#x79F0;&#x4E3A;&#x201C;chop-chop attack&#x201D;&#xFF0C;&#x662F;&#x53D1;&#x751F;&#x5728;&#x52A0;&#x5BC6;&#x672C;&#x8EAB;&#x91CA;&#x653E;&#x4E4B;&#x524D;&#x7684;&#x653B;&#x51FB;&#x3002;</p>
+<p>&#x9ED1;&#x5BA2;&#x53EF;&#x4EE5;&#x5229;&#x7528;chop-chop attack&#x622A;&#x83B7;&#x5E76;&#x5206;&#x6790;&#x7F51;&#x7EDC;&#x4E2D;&#x4EA7;&#x751F;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x6700;&#x7EC8;&#x7834;&#x8BD1;&#x51FA;&#x5BC6;&#x94A5;&#x3001;&#x660E;&#x6587;&#x663E;&#x793A;&#x5176;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5148;&#x6765;&#x56DE;&#x987E;&#x4E00;&#x4E0B;TKIP&#x7F3A;&#x9677;&#x88AB;&#x53D1;&#x73B0;&#x548C;&#x6F0F;&#x6D1E;&#x5229;&#x7528;&#x7684;&#x5386;&#x53F2;&#xFF1A;</p>
+<p>2008&#x5E74;11&#x6708;8&#x65E5;&#xFF0C;&#x4E24;&#x540D;&#x5FB7;&#x56FD;&#x4EBA;Martin Beck, Erik Tews &#x53D1;&#x8868;&#x4E86;&#x8BBA;&#x6587;&#xFF1A;<a href="https://dl.aircrack-ng.org/breakingwepandwpa.pdf" target="_blank">Practical attacks against WEP and WPA</a>&#xFF0C;&#x5728;&#x90E8;&#x5206;&#x6761;&#x4EF6;&#x4E0B;&#x53EF;&#x5BFC;&#x81F4;&#x653B;&#x51FB;&#x8005;&#x5BF9;&#x6570;&#x636E;&#x5305;&#x8FDB;&#x884C;&#x89E3;&#x5BC6;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD9;&#x4E2A;&#x4E0D;&#x662F;&#x5BC6;&#x94A5;&#x6062;&#x590D;&#x653B;&#x51FB;&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x53EA;&#x80FD;&#x6062;&#x590D;&#x7528;&#x4E8E;&#x52A0;&#x5BC6;&#x9A8C;&#x8BC1;&#x62A5;&#x6587;&#x7684;&#x5BC6;&#x94A5;&#x800C;&#x4E0D;&#x662F;&#x7528;&#x4E8E;&#x52A0;&#x5BC6;&#x6570;&#x636E;&#x7684;&#x5BC6;&#x94A5;&#x3002;&#x4F7F;&#x7528;&#x6062;&#x590D;&#x7684;&#x5BC6;&#x94A5;&#xFF0C;&#x53EA;&#x6709;&#x6355;&#x83B7;&#x7684;&#x62A5;&#x6587;&#x4EC5;&#x5728;&#x6709;&#x9650;&#x7684;7&#x6B21;&#x5C1D;&#x8BD5;&#x4E0B;&#x7684;&#x7A97;&#x53E3;&#x673A;&#x4F1A;&#x4E2D;&#x8FDB;&#x884C;&#x4F2A;&#x9020;&#x3002;&#x653B;&#x51FB;&#x8005;&#x6BCF;&#x6B21;&#x53EA;&#x80FD;&#x89E3;&#x5BC6;&#x4E00;&#x4E2A;&#x62A5;&#x6587;&#xFF0C;&#x5F53;&#x524D;&#x7684;&#x901F;&#x7387;&#x662F;12-15&#x5206;&#x949F;&#x4E00;&#x4E2A;&#x62A5;&#x6587;&#xFF0C;&#x53E6;&#x5916;&#x53EA;&#x6709;&#x62A5;&#x6587;&#x4ECE;&#x65E0;&#x7EBF;AP&#x53D1;&#x9001;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x65F6;&#x624D;&#x80FD;&#x88AB;&#x52A0;&#x5BC6;&#x3002;&#x53EA;&#x6709;&#x914D;&#x7F6E;&#x4E86;TKIP&#x4F5C;&#x4E3A;&#x52A0;&#x5BC6;&#x673A;&#x5236;&#x7684;&#x8BBE;&#x5907;&#x53D7;&#x6B64;&#x6F0F;&#x6D1E;&#x653B;&#x51FB;&#xFF0C;&#x4F7F;&#x7528;AES-CCMP&#x5BC6;&#x6587;&#x5957;&#x4EF6;&#x7684;WPA2&#x4E0D;&#x53D7;&#x6B64;&#x6F0F;&#x6D1E;&#x5F71;&#x54CD;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x653B;&#x51FB;&#x65B9;&#x5F0F;&#x5B58;&#x5728;&#x9650;&#x5236;&#x6027;&#x6761;&#x4EF6;&#xFF1A;&#x76EE;&#x6807;WPA&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x5B9E;&#x73B0;&#x5E94;&#x652F;&#x6301;IEEE 802.11e QoS&#x7279;&#x6027;&#xFF08;&#x6709;&#x65F6;&#x88AB;&#x79F0;&#x4E3A;Wi-Fi Multi-media, WMM&#xFF09;&#x3002;&#x8FD9;&#x79CD;&#x653B;&#x51FB;&#x65B9;&#x5F0F;&#x88AB;&#x547D;&#x540D;&#x4E3A;&#xFF1A;&#x8D1D;&#x514B;-&#x7279;&#x592B;&#x65AF;&#x653B;&#x51FB;&#x6CD5;&#xFF08;<strong>Beck-Tews</strong> Attacks&#xFF09;&#x3002;</p>
+<p>Beck-Tews&#x653B;&#x51FB;&#x53EF;&#x4EE5;&#x770B;&#x505A;&#x662F;&#x9488;&#x5BF9;WEP&#x7684;&#x65AD;&#x7EED;&#x653B;&#x51FB;&#xFF08;Chop-Chop Attack&#xFF09;&#x7684;&#x5347;&#x7EA7;&#x6269;&#x5C55;&#x3002;&#x56E0;&#x4E3A;WEP&#x6240;&#x4F7F;&#x7528;&#x7684;&#x6821;&#x9A8C;&#x548C;&#x7B97;&#x6CD5;CRC32&#x5728;&#x5BC6;&#x7801;&#x5B66;&#x4E0A;&#x5E76;&#x4E0D;&#x5B89;&#x5168;&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x731C;&#x6D4B;&#x5230;&#x6570;&#x636E;&#x5305;&#x4E2D;&#x7684;&#x5355;&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x800C;&#x540E;AP&#x4F1A;&#x5BF9;&#x731C;&#x6D4B;&#x6B63;&#x786E;&#x4E0E;&#x5426;&#x4F5C;&#x51FA;&#x786E;&#x8BA4;&#x6216;&#x62D2;&#x7EDD;&#x4F20;&#x8F93;&#x3002;&#x5982;&#x679C;&#x731C;&#x6D4B;&#x6B63;&#x786E;&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x731C;&#x6D4B;&#x6B63;&#x786E;&#x5E76;&#x7EE7;&#x7EED;&#x731C;&#x6D4B;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x3002;&#x4E0D;&#x8FC7;&#x76F8;&#x8F83;&#x4E8E;&#x9488;&#x5BF9;WEP&#x7684;&#x65AD;&#x7EED;&#x653B;&#x51FB;&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x5982;&#x679C;&#x731C;&#x9519;&#x5FC5;&#x987B;&#x989D;&#x5916;&#x7B49;&#x5F85;60&#x79D2;&#x624D;&#x80FD;&#x7EE7;&#x7EED;&#x731C;&#x6D4B;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x5C3D;&#x7BA1;TKIP&#x4ECD;&#x7136;&#x4F7F;&#x7528;CRC32&#x6821;&#x9A8C;&#x548C;&#x7B97;&#x6CD5;&#xFF0C;&#x4F46;&#x7531;&#x4E8E;&#x4F7F;&#x7528;&#x4E86;<strong>&#x5E8F;&#x5217;&#x8BA1;&#x6570;&#x5668;</strong>&#xFF08;&#x79F0;&#x4E3A;Michael&#xFF09;&#x800C;&#x53EF;&#x4EE5;&#x7F13;&#x89E3;&#x653B;&#x51FB;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;AP&#x5728;60&#x79D2;&#x5185;&#x6536;&#x5230;&#x4E86;2&#x4E2A;Michael&#x5E8F;&#x5217;&#x8BA1;&#x6570;&#x5668;&#x9519;&#x8BEF;&#xFF0C;AP&#x968F;&#x540E;&#x5C06;&#x542F;&#x52A8;&#x53CD;&#x5236;&#x63AA;&#x65BD;&#xFF0C;&#x91CD;&#x7EC4;TKIP&#x7684;&#x4F1A;&#x8BDD;&#x5BC6;&#x94A5;&#xFF08;Session Key&#xFF09;&#xFF0C;&#x4ECE;&#x800C;&#x6539;&#x53D8;&#x968F;&#x540E;&#x7684;&#x5BC6;&#x94A5;&#x6D41;&#x3002;&#x7531;&#x6B64;&#xFF0C;Beck-Tews&#x653B;&#x51FB;&#x5219;&#x7B49;&#x5F85;&#x4E00;&#x4E2A;&#x9002;&#x5F53;&#x7684;&#x65F6;&#x95F4;&#x4ECE;&#x800C;&#x907F;&#x514D;&#x8BE5;&#x53CD;&#x5236;&#x63AA;&#x65BD;&#x3002;&#x7531;&#x4E8E;ARP&#x5305;&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x901A;&#x8FC7;&#x5305;&#x5927;&#x5C0F;&#x9274;&#x522B;&#xFF0C;&#x5E76;&#x4E14;&#x5305;&#x4E2D;&#x5185;&#x5BB9;&#x901A;&#x5E38;&#x5F88;&#x5BB9;&#x6613;&#x731C;&#x5230;&#xFF08;&#x5927;&#x591A;ARP&#x5305;&#x5185;&#x5BB9;&#x76F8;&#x4F3C;&#xFF09;&#xFF0C;&#x4ECE;&#x800C;&#x7559;&#x7ED9;&#x653B;&#x51FB;&#x8005;&#x9700;&#x8981;&#x731C;&#x6D4B;&#x7684;&#x5305;&#x5927;&#x5C0F;&#x5219;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x6709;&#x9650;&#xFF08;&#x5927;&#x7EA6;&#x4E3A;14&#x5B57;&#x8282;&#xFF09;&#x3002;&#x901A;&#x5E38;&#x6765;&#x8BF4;&#x5728;&#x5BFB;&#x5E38;&#x7684;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x4E0B;&#x53EA;&#x9700;&#x8981;12&#x5206;&#x949F;&#x5373;&#x53EF;&#x7834;&#x89E3;12&#x52A0;&#x5BC6;&#x5B57;&#x8282;&#x3002;</p>
+<p>&#x5F53;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x63A5;&#x89E6;&#x5230;&#x5168;&#x90E8;&#x7684;&#x52A0;&#x5BC6;&#x5305;&#x5185;&#x5BB9;&#x540E;&#xFF0C;&#x5BF9;&#x4E8E;&#x4F59;&#x4E0B;&#x5728;&#x6BCF;&#x4E2A;&#x5305;&#x5185;&#x7684;&#x660E;&#x7801;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x53BB;&#x9664;&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x5373;&#x53EF;&#x8F7B;&#x6613;&#x83B7;&#x5F97;&#x5305;&#x5185;&#x7684;&#x5BC6;&#x94A5;&#x6D41;&#xFF0C;&#x540C;&#x65F6;&#x8FD8;&#x53EF;&#x83B7;&#x5F97;&#x5BF9;&#x8BDD;&#x7684;MIC&#x7801;&#x3002;&#x5E94;&#x7528;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x91CD;&#x5EFA;&#x65B0;&#x7684;&#x6570;&#x636E;&#x5305;&#x5E76;&#x5728;&#x7F51;&#x7EDC;&#x4E0A;&#x4F20;&#x9001;&#x3002;Beck-Tews&#x653B;&#x51FB;&#x4F7F;&#x7528;QoS&#x901A;&#x9053;&#x4F20;&#x9001;&#x65B0;&#x7EC4;&#x5EFA;&#x7684;&#x6570;&#x636E;&#x5305;&#x4ECE;&#x800C;&#x7ED5;&#x5F00;WPA&#x5E94;&#x7528;&#x7684;&#x91CD;&#x653E;&#x653B;&#x51FB;&#x9632;&#x62A4;&#x3002;&#x7531;&#x6B64;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x4F20;&#x9001;&#x6570;&#x636E;&#x5305;&#x5DF2;&#x8FBE;&#x5230;&#x5176;&#x4ED6;&#x653B;&#x51FB;&#x65B9;&#x5F0F;&#xFF0C;&#x6BD4;&#x5982;ARP&#x6B3A;&#x9A97;&#x653B;&#x51FB;&#xFF0C;&#x62D2;&#x7EDD;&#x670D;&#x52A1;&#x5F0F;&#x653B;&#x51FB;&#x6216;&#x5176;&#x4ED6;&#x7C7B;&#x4F3C;&#x653B;&#x51FB;&#x3002;</p>
+<p>Beck-Tews&#x653B;&#x51FB;&#x7684;&#x6982;&#x5FF5;&#x9A8C;&#x8BC1;&#x4EE3;&#x7801;&#x4EE5;<a href="https://www.aircrack-ng.org/doku.php?id=tkiptun-ng" target="_blank">Tkiptun-ng</a>&#x5DE5;&#x5177;&#x7684;&#x5F62;&#x5F0F;&#x516C;&#x5F00;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x540C;&#x5B66;&#x53EF;&#x4EE5;&#x7814;&#x7A76;&#x4E00;&#x4E0B;&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x3002;</p>
+<p>2009&#x5E74;10&#x6708;&#xFF0C;&#x632A;&#x5A01;&#x79D1;&#x6280;&#x5927;&#x5B66;&#x7684;&#x8D39;&#x6069;&#xB7;&#x970D;&#x5C14;&#x6C83;&#x68EE;&#xFF08;Finn M Helvorsen&#xFF09;&#x5728;&#x4ED6;&#x7684;&#x7855;&#x58EB;&#x8BBA;&#x6587; <a href="http://wiki-files.aircrack-ng.org/doc/tkip_master.pdf" target="_blank">Cryptanalysis of IEEE 802.11i TKIP</a>  &#x4E2D;&#x8FDB;&#x4E00;&#x6B65;&#x6539;&#x8FDB;&#x4E86;Beck-Tews&#x653B;&#x51FB;&#xFF08;&#x5E76;&#x63D0;&#x4F9B;&#x4E86;<code>tkiptun-ng</code>&#x4EE3;&#x7801;&#x7684;&#x8865;&#x4E01;&#xFF09;&#xFF0C;&#x4F7F;&#x5F97;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x5728;18&#x5206;25&#x79D2;&#x5185;&#x6CE8;&#x5165;&#x4E00;&#x4E2A;&#x6BD4;&#x666E;&#x901A;ARP&#x5305;&#x5927;&#x7684;&#x591A;&#x7684;&#x6570;&#x636E;&#x5305;&#xFF08;596&#x5B57;&#x8282;&#xFF09;&#x3002;</p>
+<p>2009&#x5E74;&#x4E24;&#x540D;&#x65E5;&#x672C;&#x4EBA;Toshihiro Ohigashi , Masakatu Morii&#x4EE5;Beck-Tews&#x653B;&#x51FB;&#x6CD5;&#x4E3A;&#x57FA;&#x7840;&#xFF0C;&#x8FDB;&#x4E00;&#x6B65;&#x4F18;&#x5316;&#x653B;&#x51FB;&#x3002;&#x5728;&#x8BBA;&#x6587; <a href="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=C1900E687D98D6663EE32451728A4A35?doi=10.1.1.158.1372&amp;rep=rep1&amp;type=pdf" target="_blank">A Practical Message Falsification Attack on WPA</a> &#x4E2D;&#x53D1;&#x5E03;&#x4E86;&#x4E00;&#x79CD;&#x66F4;&#x7B80;&#x5355;&#x4E14;&#x66F4;&#x5FEB;&#x901F;&#x7684;&#x7C7B;&#x4F3C;&#x653B;&#x51FB;&#x65B9;&#x5F0F;&#x2014;&#x2014;&#x201C;&#x5927;&#x4E1C;-&#x68EE;&#x4E95;&#x653B;&#x51FB;&#x201D;&#xFF08;Ohigashi-Morii Attack&#xFF09;&#x3002;&#x8BE5;&#x79CD;&#x653B;&#x51FB;&#x5728;&#x4F7F;&#x7528;Beck-Tews&#x653B;&#x51FB;&#x7684;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E2D;&#x95F4;&#x4EBA;&#x653B;&#x51FB;&#xFF0C;&#x540C;&#x65F6;&#x4E0D;&#x9700;&#x8981;AP&#x5FC5;&#x987B;&#x4F7F;&#x7528;QoS&#x3002;&#x5728;&#x7406;&#x60F3;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;1&#x5206;&#x949F;&#x5373;&#x53EF;&#x5B8C;&#x6210;&#x4E00;&#x6B21;Beck-Tews&#x653B;&#x51FB;&#x3002;</p>
+<p>2015&#x5E74;7&#x6708;&#xFF0C;&#x4E24;&#x540D;&#x6BD4;&#x5229;&#x65F6;&#x7814;&#x7A76;&#x4EBA;&#x5458;Mathy Vanhoef&#x548C;Frank Piessens&#xFF0C;&#x5C55;&#x793A;&#x4E86;&#x5728;52&#x5C0F;&#x65F6;&#x5185;&#x89E3;&#x5BC6;&#x4E86;&#x53D7;TLS&#x4FDD;&#x62A4;&#x4E14;&#x4F7F;&#x7528;RC4&#x52A0;&#x5BC6;&#x7684;HTTPS&#x4F1A;&#x8BDD;&#x4E2D;&#x4F7F;&#x7528;&#x7684;Web cookie&#xFF0C;&#x800C;&#x6B64;&#x524D;&#x5229;&#x7528;RC4&#x6F0F;&#x6D1E;&#x7684;&#x653B;&#x51FB;&#x9700;&#x8981;&#x82B1;&#x8D39;2000&#x5C0F;&#x65F6;&#x3002;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x56FA;&#x5B9A;&#x7EAF;&#x6587;&#x672C;&#x6062;&#x590D;&#x6280;&#x672F;&#x2014;&#x2014;&#x88AB;&#x79F0;&#x4E3A;RC4 NOMORE(Numerous Occurrence Monitoring &amp; Recovery Exploit)&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x8BF1;&#x9A97;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x4EE3;&#x7801;&#x6765;&#x4EA7;&#x751F;&#x8DB3;&#x591F;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6210;&#x529F;&#x5730;&#x89E3;&#x5BC6;&#x51FA;&#x7528;&#x6237;&#x7684;&#x52A0;&#x5BC6;cookie&#x503C;&#x3002;</p>
+<p>&#x8FD9;&#x79CD;&#x653B;&#x51FB;&#x5E76;&#x4E0D;&#x5C40;&#x9650;&#x4E8E;&#x89E3;&#x5BC6;cookie&#xFF0C;&#x4EFB;&#x4F55;&#x88AB;&#x91CD;&#x590D;&#x52A0;&#x5BC6;&#x7684;&#x6570;&#x636E;&#x6216;&#x4FE1;&#x606F;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x89E3;&#x5BC6;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5BF9;&#x4E8E;&#x4F7F;&#x7528;TKIP&#x52A0;&#x5BC6;&#x6280;&#x672F;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x79CD;&#x653B;&#x51FB;&#x53EA;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x5C0F;&#x65F6;&#x6765;&#x6267;&#x884C;&#x3002;&#x4F5C;&#x8005;&#x5DF2;&#x7ECF;&#x628A;&#x76F8;&#x5173;&#x5DE5;&#x4F5C;&#x901A;&#x8FC7;&#x8BBA;&#x6587;&#x7684;&#x5F62;&#x5F0F;&#x53D1;&#x8868;&#x5728;USENIX 15 <a href="http://www.rc4nomore.com/vanhoef-usenix2015.pdf" target="_blank">All Your Biases Belong To Us: Breaking RC4 in WPA-TKIP and TLS</a>&#xFF0C;&#x8FD9;&#x79CD;&#x653B;&#x51FB;&#x65B9;&#x6CD5;&#x7684;&#x8BE6;&#x7EC6;&#x539F;&#x7406;&#x5DF2;&#x7ECF;&#x88AB;&#x6574;&#x7406;&#x5230;&#x4E00;&#x4E2A;&#x4E13;&#x95E8;&#x7684;&#x7F51;&#x7AD9;&#xFF1A;<a href="https://www.rc4nomore.com/" target="_blank">RC4 NOMORE</a> &#x3002;</p>
+<h3 id="wpawpa2-psk&#x7834;&#x89E3;"><a name="wpawpa2-psk&#x7834;&#x89E3;" class="anchor-navigation-ex-anchor" href="#wpawpa2-psk&#x7834;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>WPA/WPA2 PSK&#x7834;&#x89E3;</h3>
+<p>&#x56DE;&#x987E;<a href="../chap0x02/main.html">&#x7B2C;&#x4E8C;&#x7AE0; &#x65E0;&#x7EBF;&#x63A5;&#x5165;&#x7F51;&#x76D1;&#x542C;</a>&#x4E2D;&#x6211;&#x4EEC;&#x5BF9;WPA/WPA2 PSK&#x7684;<code>&#x56DB;&#x6B21;&#x63E1;&#x624B;&#x8BA4;&#x8BC1;</code>&#x539F;&#x7406;&#x8BB2;&#x89E3;&#xFF0C;&#x6211;&#x4EEC;&#x4E86;&#x89E3;&#x5230;&#xFF1A;</p>
+<pre><code>PTK = Hash(PMK||A-nonce||S-nonce|| AP Mac || STA Mac)
+    = Hash(PBKDF(Passphrase, SSID, ssidLength, 4096, 256)||A-nonce||S-nonce||AP Mac ||STA Mac)
+</code></pre><p>&#x4E0A;&#x8FF0;&#x516C;&#x5F0F;&#x4E2D;&#xFF0C;&#x89E3;&#x5BC6;&#x51FA;<code>Passphrase</code>&#x662F;&#x6211;&#x4EEC;&#x7684;&#x7834;&#x89E3;&#x76EE;&#x6807;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x53D8;&#x91CF;&#x5747;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x65E0;&#x7EBF;&#x55C5;&#x63A2;&#x7684;&#x65B9;&#x5F0F;&#x83B7;&#x53D6;&#x5230;&#x3002;&#x5176;&#x4E2D;&#xFF1A;</p>
+<ul>
+<li><code>A-nonce</code>&#x5728;4&#x6B21;&#x63E1;&#x624B;&#x6D88;&#x606F;&#x4E2D;&#x7684;&#x7B2C;1&#x4E2A;EAP&#x5305;&#xFF1B;</li>
+<li><code>S-nonce</code>&#x5728;4&#x6B21;&#x63E1;&#x624B;&#x6D88;&#x606F;&#x4E2D;&#x7684;&#x7B2C;2&#x4E2A;EAP&#x5305;&#xFF1B;</li>
+<li>&#x5269;&#x4E0B;&#x7684;&#x53D8;&#x91CF;&#x5728;AP&#x7684;<code>beacon frame</code>&#x5E7F;&#x64AD;&#x5305;&#x3001;STA&#x548C;AP&#x4E4B;&#x95F4;&#x7684;<code>probe request</code>&#x3001;<code>probe response</code>&#x3001;<code>association request</code>&#x548C;<code>association response</code>&#x4E2D;&#x90FD;&#x53EF;&#x4EE5;&#x63D0;&#x53D6;&#x5230;&#xFF1B;</li>
+</ul>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x55C5;&#x63A2;&#x83B7;&#x5F97;&#x7684;&#x6570;&#x636E;&#x5305;&#x4E2D;&#x5E76;&#x4E0D;&#x80FD;&#x5F97;&#x5230;PTK&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x63D0;&#x53D6;&#x5230;&#x7684;&#x662F;PTK&#x7684;&#x7EC4;&#x6210;&#x90E8;&#x5206;&#x4E4B;&#x4E00;&#xFF1A;&#x6821;&#x9A8C;&#x548C;&#x5B57;&#x6BB5;MIC&#x503C;&#x3002;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x5C55;&#x793A;&#x4E86;&#x8FD9;&#x4E9B;&#x53D8;&#x91CF;&#xFF08;<code>Passphrase</code>&#x3001;<code>PTK</code>&#x548C;<code>MIC</code>&#xFF09;&#x4E4B;&#x95F4;&#x7684;&#x201C;&#x63A8;&#x5BFC;&#x201D;&#x5173;&#x7CFB;&#xFF1A;</p>
+<p><img src="media/passphrase-psk-mic.png" alt=""></p>
+<p>&#x5BF9;&#x4E8E;WPA-&#x4E2A;&#x4EBA;&#x6A21;&#x5F0F;&#xFF08;WPA&#x548C;WPA2&#x5747;&#x662F;&#x5982;&#x6B64;&#xFF09;&#x6765;&#x8BF4;&#xFF0C; <code>PSK</code> &#x5C31;&#x662F; <code>PMK</code>&#xFF0C;&#x800C; <code>PMK</code> &#x548C; <code>Passphrase</code>&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x5C31;&#x662F;&#x5982;&#x4E0B;&#x516C;&#x5F0F;&#xFF1A;</p>
+<pre><code>PSK = PMK = PBKDF(Passphrase, SSID, ssidLength, 4096, 256)
+</code></pre><p>&#x7531;&#x4E8E;&#x7F51;&#x7EDC;&#x8EAB;&#x4EFD;&#x8BA4;&#x8BC1;&#x901A;&#x4FE1;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F20;&#x8F93;&#x7684;&#x662F;&#x7ECF;&#x7531; <code>Passphrase</code> &#x901A;&#x8FC7;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x968F;&#x673A;&#x503C;&#x586B;&#x5145;&#x4E4B;&#x540E;&#x7684;<strong>&#x5355;&#x5411;&#x6563;&#x5217;</strong>&#x7B97;&#x6CD5;&#x751F;&#x6210;<strong>&#x968F;&#x673A;</strong>&#x7684;&#x6311;&#x6218;-&#x5E94;&#x7B54;&#x6D88;&#x606F;&#xFF0C;&#x6240;&#x4EE5;&#x9996;&#x5148;&#x6392;&#x9664;&#x4E86;&#x76F4;&#x63A5;&#x9006;&#x5411;&#x8FD0;&#x7B97;&#x89E3;&#x5BC6;&#x51FA; <code>Passphrase</code> &#x7684;&#x53EF;&#x80FD;&#x6027;&#x3002;&#x5176;&#x6B21;&#xFF0C;&#x91C7;&#x7528;&#x7A77;&#x4E3E;&#x7684;&#x65B9;&#x5F0F;&#x5728;&#x7EBF;&#x7834;&#x89E3;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x7684;&#x9884;&#x5171;&#x4EAB;&#x5BC6;&#x94A5;&#x867D;&#x7136;&#x5B58;&#x5728;&#x7406;&#x8BBA;&#x4E0A;&#x7684;&#x53EF;&#x4FE1;&#x6027;&#xFF0C;&#x4F46;&#x5B9E;&#x8DF5;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x91C7;&#x53D6;&#x4E00;&#x79CD;&#x76F8;&#x5BF9;&#x66F4;&#x201C;&#x4F18;&#x96C5;&#x201D;&#x7684;&#x79BB;&#x7EBF;&#x7834;&#x89E3;&#x65B9;&#x6848;&#xFF0C;&#x964D;&#x4F4E;&#x88AB;AP&#x68C0;&#x6D4B;&#x5230;&#x7834;&#x89E3;&#x653B;&#x51FB;&#x7684;&#x98CE;&#x9669;&#x3002;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#x8FD9;&#x4E2A;&#x7834;&#x89E3;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#x63CF;&#x8FF0;&#xFF1A;</p>
+<ul>
+<li>&#x4F7F;&#x7528;&#x55C5;&#x63A2;&#x6A21;&#x5F0F;&#xFF08;&#x907F;&#x514D;channel hopping&#xFF0C;&#x91C7;&#x7528;&#x56FA;&#x5B9A;&#x4FE1;&#x9053;&#x65B9;&#x5F0F;&#xFF09;&#x76D1;&#x542C;&#x76EE;&#x6807;AP&#x7684;&#x901A;&#x4FE1;&#x6570;&#x636E;&#xFF1B;</li>
+<li>&#x5982;&#x679C;&#x76EE;&#x6807;AP&#x5F53;&#x524D;&#x6CA1;&#x6709;&#x5DF2;&#x8FDE;&#x63A5;&#x7684;&#x65E0;&#x7EBF;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x9759;&#x5019;&#x6709;&#x65E0;&#x7EBF;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;AP&#x65F6;&#x53D1;&#x9001;4&#x6B21;&#x63E1;&#x624B;&#x8BA4;&#x8BC1;&#x5305;&#xFF1B;</li>
+<li>&#x5982;&#x679C;&#x76EE;&#x6807;AP&#x5F53;&#x524D;&#x6709;&#x5DF2;&#x8FDE;&#x63A5;&#x7684;&#x65E0;&#x7EBF;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x901A;&#x8FC7;&#x4F2A;&#x9020;<code>de-authenticate</code>&#x6570;&#x636E;&#x5E27;&#x7684;&#x65B9;&#x5F0F;&#x5F3A;&#x5236;&#x5BA2;&#x6237;&#x7AEF;&#x4E0B;&#x7EBF;&#xFF0C;&#x9759;&#x5019;&#x5BA2;&#x6237;&#x7AEF;&#x91CD;&#x8FDE;&#x76EE;&#x6807;AP&#x65F6;&#x4EA7;&#x751F;&#x7684;4&#x6B21;&#x63E1;&#x624B;&#x8BA4;&#x8BC1;&#x5305;&#xFF1B;</li>
+<li>&#x53EA;&#x8981;&#x83B7;&#x53D6;&#x5230;4&#x6B21;&#x63E1;&#x624B;&#x8BA4;&#x8BC1;&#x5305;&#x7684;&#x524D;2&#x4E2A;&#xFF0C;&#x5373;&#x53EF;&#x5F00;&#x59CB;&#x79BB;&#x7EBF;&#x7834;&#x89E3;&#x3002;</li>
+</ul>
+<p>&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x662F;PMK&#x4E0E;MIC&#x4E4B;&#x95F4;&#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#x3002;</p>
+<p><img src="media/pmk.png" alt=""></p>
+<p>&#x5728;WPA&#x4E2D;&#xFF0C;MIC&#x662F;&#x901A;&#x8FC7;&#x201C;Michael&#x5B8C;&#x6574;&#x6027;&#x6821;&#x9A8C;&#x7B97;&#x6CD5;&#x201D;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x3002;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="media/tkip.png" alt=""></p>
+<p>&#x5728;WPA2&#x7684;&#x9ED8;&#x8BA4;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;CCMP&#x4F7F;&#x7528;&#x4E86;&#x66F4;&#x5B89;&#x5168;&#x7684; <code>CBC-MAC</code> &#x6A21;&#x5F0F;AES&#x7B97;&#x6CD5;&#x4ECE;&#x660E;&#x6587;MPDU (MAC Protocol Data Unit) &#x8BA1;&#x7B97;&#x51FA;MIC&#xFF0C;CCMP&#x52A0;&#x5BC6;&#x6570;&#x636E;&#x5C01;&#x88C5;&#xFF08;&#x8BA1;&#x7B97;&#x51FA;&#x7684;MIC&#x8FFD;&#x52A0;&#x5728;&#x52A0;&#x5BC6;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x7684;&#x5C3E;&#x90E8;&#xFF09;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="media/ccmp-encap.png" alt=""></p>
+<p>&#x52A0;&#x5BC6;&#x5C01;&#x88C5;&#x6269;&#x5C55;&#x540E;&#x7684;CCMP MPDU&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="media/ccmp-mpdu.png" alt=""></p>
+<p>CCMP&#x4E2D;&#x4F7F;&#x7528;&#x7684;MIC&#x8BA1;&#x7B97;&#x65B9;&#x6CD5;&#x6539;&#x8FDB;&#x4E86;&#x201C;Michael&#x5B8C;&#x6574;&#x6027;&#x6821;&#x9A8C;&#x7B97;&#x6CD5;&#x201D;&#x7684;2&#x4E2A;&#x5DF2;&#x77E5;&#x7F3A;&#x9677;&#xFF1A;&#x53EF;&#x9006;&#x6062;&#x590D;MIC&#x5BC6;&#x94A5;&#xFF08;&#x6839;&#x636E;&#x4EFB;&#x4E00;&#x5DF2;&#x77E5;&#x6D88;&#x606F;&#x548C;MIC&#x503C;&#xFF0C;&#x80FD;&#x591F;&#x5F97;&#x5230;MIC&#x7684;&#x5BC6;&#x94A5;&#xFF09;&#x548C;&#x76F8;&#x5173;&#x6D88;&#x606F;&#x653B;&#x51FB;&#x5BFC;&#x81F4;MIC&#x5BC6;&#x94A5;&#x5728;&#x7EBF;&#x6027;&#x65F6;&#x95F4;&#x5185;&#x53EF;&#x4EE5;&#x6062;&#x590D;&#x51FA;&#x6765;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x5BF9;&#x4E8E;WPA/WPA2 PSK&#x7684;&#x79BB;&#x7EBF;&#x66B4;&#x529B;&#x7834;&#x89E3;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x7528;&#x5230;&#x4E86;&#x9488;&#x5BF9;&#x5355;&#x5411;&#x6563;&#x5217;&#x7B97;&#x6CD5;&#x7684;&#x901A;&#x7528;&#x7834;&#x89E3;&#x601D;&#x8DEF;&#xFF1A;&#x6563;&#x5217;&#x503C;&#x7A77;&#x4E3E;&#x5339;&#x914D;&#x3002;</p>
+<blockquote>
+<p>&#x56FA;&#x5B9A;&#x6563;&#x5217;&#x503C;&#x7B97;&#x6CD5;&#x4E2D;&#x9664;&#x201C;&#x76EE;&#x6807;&#x8F93;&#x5165;&#x53D8;&#x91CF;&#x503C;&#x201D;&#x4E4B;&#x5916;&#x7684;&#x6240;&#x6709;&#x53D8;&#x91CF;&#x503C;&#xFF0C;&#x7A77;&#x4E3E;&#x201C;&#x76EE;&#x6807;&#x8F93;&#x5165;&#x53D8;&#x91CF;&#x503C;&#x201D;&#x7684;&#x6563;&#x5217;&#x503C;&#x548C;&#x201C;&#x5DF2;&#x77E5;&#x6563;&#x5217;&#x503C;&#x201D;&#x8FDB;&#x884C;&#x5339;&#x914D;&#x3002;&#x5982;&#x679C;&#x627E;&#x5230;&#x5339;&#x914D;&#xFF0C;&#x5219;&#x8BF4;&#x660E;&#x627E;&#x5230;&#x4E86;&#x201C;&#x76EE;&#x6807;&#x8F93;&#x5165;&#x53D8;&#x91CF;&#x503C;&#x201D;&#x3002;</p>
+</blockquote>
+<p>&#x4E0B;&#x56FE;&#x662F;&#x4E00;&#x4E2A;&#x4EC5;&#x652F;&#x6301;WPA2 CCMP&#x7684;<code>probe response</code>&#x8BF7;&#x6C42;&#x7684;&#x6293;&#x5305;&#x7ED3;&#x679C;&#x622A;&#x56FE;&#xFF1A;</p>
+<p><img src="media/proberesp.png" alt=""></p>
+<p>&#x4E0B;&#x56FE;&#x662F;&#x4E00;&#x4E2A;&#x540C;&#x65F6;&#x652F;&#x6301;TKIP&#x548C;CCMP&#x7684;<code>beacon frame</code>&#x5E7F;&#x64AD;&#x7684;&#x6293;&#x5305;&#x7ED3;&#x679C;&#x622A;&#x56FE;&#xFF1A;</p>
+<p><img src="media/tkip.png" alt=""></p>
+<p>4&#x6B21;&#x63E1;&#x624B;&#x8BA4;&#x8BC1;&#x5305;&#x7684;&#x7B2C;1&#x4E2A;&#x5305;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="media/eapol-1.png" alt=""></p>
+<p>4&#x6B21;&#x63E1;&#x624B;&#x8BA4;&#x8BC1;&#x5305;&#x7684;&#x7B2C;2&#x4E2A;&#x5305;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="media/eapol-2.png" alt=""></p>
+<p>&#x4E0A;&#x8FF0;2&#x5F20;&#x622A;&#x56FE;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x786E;&#x5B9E;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF1A;<code>A-nonce</code>&#x3001;<code>S-nonce</code>&#x548C;<code>MIC</code>&#x3002;</p>
+<p>&#x9664;&#x4E86;&#x76F4;&#x63A5;&#x55C5;&#x63A2;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x76EE;&#x6807;AP&#x7684;&#x63E1;&#x624B;&#x8BA4;&#x8BC1;&#x8FC7;&#x7A0B;&#x6765;&#x7834;&#x89E3;&#x9884;&#x5171;&#x4EAB;&#x5BC6;&#x94A5;&#x4E4B;&#x5916;&#xFF0C;&#x7531;&#x4E8E;&#x65E0;&#x7EBF;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x201C;&#x81EA;&#x52A8;&#x53D1;&#x73B0;&#x548C;&#x81EA;&#x52A8;&#x91CD;&#x8FDE;&#x201D;&#x7F51;&#x7EDC;&#x7279;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>Evil Twin</code>&#x653B;&#x51FB;&#x65B9;&#x5F0F;&#xFF0C;&#x8BA9;&#x4E00;&#x4E2A;&#x201C;&#x79BB;&#x7EBF;&#x201D;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x81EA;&#x52A8;&#x8FDE;&#x5165;&#x6211;&#x4EEC;&#x4F2A;&#x9020;&#x7684;AP&#x3002;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x77E5;&#x9053;&#x8BE5;AP&#x4F7F;&#x7528;&#x7684;&#x9884;&#x5171;&#x4EAB;&#x5BC6;&#x94A5;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x8BF1;&#x9A97;&#x5BA2;&#x6237;&#x7AEF;&#x4E3B;&#x52A8;&#x548C;&#x6211;&#x4EEC;&#x4F2A;&#x9020;&#x7684;AP&#x5B8C;&#x6210;4&#x6B21;&#x63E1;&#x624B;&#x8BA4;&#x8BC1;&#x4E2D;&#x7684;&#x524D;2&#x4E2A;&#x6570;&#x636E;&#x5305;&#x4EA4;&#x6362;&#x8FC7;&#x7A0B;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684;&#x201C;&#x79BB;&#x7EBF;&#x201D;&#x5BA2;&#x6237;&#x7AEF;&#xFF08;<code>not associated</code>&#xFF09;&#x7684;&#x5E38;&#x89C4;&#x7F51;&#x7EDC;&#x63A2;&#x6D4B;&#x884C;&#x4E3A;&#x88AB;&#x6211;&#x4EEC;&#x55C5;&#x63A2;&#x5230;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x201C;&#x79BB;&#x7EBF;&#x201D;&#x5BA2;&#x6237;&#x7AEF;&#x5B9A;&#x65F6;&#x53D1;&#x9001;&#x7684;<code>probe request</code>&#x53EF;&#x4EE5;&#x4E86;&#x89E3;&#x5230;&#x8BE5;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x8FC7;&#x54EA;&#x4E9B;&#x7F51;&#x7EDC;&#xFF08;&#x56FE;&#x4E2D;&#x663E;&#x793A;&#x51FA;&#x8BE5;&#x5BA2;&#x6237;&#x7AEF;&#x4E00;&#x5B9A;&#x8FDE;&#x63A5;&#x8FC7;2&#x4E2A;&#x540D;&#x79F0;&#x5206;&#x522B;&#x4E3A;<code>a101e-lab</code>&#x548C;<code>cuc</code>&#x7684;&#x7F51;&#x7EDC;&#xFF09;&#x3002;&#x8FD9;&#x6837;&#xFF0C;Evil Twin&#x653B;&#x51FB;&#x5C31;&#x53EF;&#x4EE5;&#x6709;&#x9488;&#x5BF9;&#x6027;&#x7684;&#x53BB;&#x8BBE;&#x7F6E;ESSID&#x3002;&#x5F53;Evil Twin AP&#x8FD0;&#x884C;&#x8D77;&#x6765;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x4F1A;&#x4E3B;&#x52A8;&#x54CD;&#x5E94;&#x201C;&#x79BB;&#x7EBF;&#x201D;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x63A2;&#x6D4B;&#x8BF7;&#x6C42;&#x5E76;&#x81EA;&#x52A8;&#x7EE7;&#x7EED;&#x5B8C;&#x6210;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x548C;&#x8EAB;&#x4EFD;&#x8BA4;&#x8BC1;&#x4EA4;&#x4E92;&#x8FC7;&#x7A0B;&#x4E86;&#x3002;</p>
+<p><img src="media/offline-client-probe.png" alt=""></p>
+<p>&#x4E00;&#x65E6;&#x62FF;&#x5230;&#x5305;&#x542B;4&#x6B21;&#x63E1;&#x624B;&#x8BA4;&#x8BC1;&#x5305;&#x7684;&#x524D;2&#x4E2A;&#x5305;&#x7684;&#x6293;&#x5305;&#x6587;&#x4EF6;&#x4E4B;&#x540E;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x7834;&#x89E3;&#x5DE5;&#x4F5C;&#x5C31;&#x53EF;&#x4EE5;&#x4EA4;&#x7ED9;<code>aircrack-ng</code>&#x6765;&#x81EA;&#x52A8;&#x5316;&#x5B8C;&#x6210;&#x4E86;&#x3002;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x662F;&#x4E00;&#x6B21;&#x6210;&#x529F;&#x7684;&#x53E3;&#x4EE4;&#x7834;&#x89E3;&#x7ED3;&#x679C;&#x622A;&#x56FE;&#xFF1A;</p>
+<p><img src="media/aircrack-ng.png" alt=""></p>
+<p>&#x8BE6;&#x7EC6;&#x7684;&#x5B9E;&#x9A8C;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#x53C2;&#x89C1;<a href="exp.html">&#x5B9E;&#x9A8C;</a>&#x3002;</p>
+<h4 id="&#x7834;&#x89E3;&#x52A0;&#x901F;"><a name="&#x7834;&#x89E3;&#x52A0;&#x901F;" class="anchor-navigation-ex-anchor" href="#&#x7834;&#x89E3;&#x52A0;&#x901F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7834;&#x89E3;&#x52A0;&#x901F;</h4>
+<blockquote>
+<p>&#x57FA;&#x672C;&#x601D;&#x60F3;1&#xFF1A;&#x7A7A;&#x95F4;&#x6362;&#x65F6;&#x95F4;&#xFF0C;&#x9488;&#x5BF9;&#x5E38;&#x89C1;SSID&#x9884;&#x5148;&#x8BA1;&#x7B97;&#x597D;PMK</p>
+</blockquote>
+<p>&#x53EF;&#x4EE5;&#x7528;&#x5230;&#x7684;&#x5DE5;&#x5177;&#xFF1A;</p>
+<ul>
+<li>genpmk - WPA-PSK precomputation attack </li>
+</ul>
+<p><img src="media/genpmk.png" alt=""></p>
+<blockquote>
+<p>&#x57FA;&#x672C;&#x601D;&#x60F3;2&#xFF1A;&#x4F7F;&#x7528;GPU&#x4EE3;&#x66FF;CPU&#x8BA1;&#x7B97;</p>
+</blockquote>
+<p>&#x53EF;&#x4EE5;&#x7528;&#x5230;&#x7684;&#x5DE5;&#x5177;&#xFF1A;</p>
+<ul>
+<li><a href="https://github.com/JPaulMora/Pyrit" target="_blank">pyrit</a> - A GPGPU-driven WPA/WPA2-PSK key cracker</li>
+<li><a href="https://github.com/hashcat/hashcat" target="_blank">hashcat</a> - World&apos;s fastest password cracker</li>
+</ul>
+<blockquote>
+<p>&#x57FA;&#x672C;&#x601D;&#x60F3;3: &#x5E76;&#x884C;/&#x5206;&#x5E03;&#x5F0F;&#x8BA1;&#x7B97;</p>
+</blockquote>
+<p><img src="media/psk-crack-parellel.png" alt=""></p>
+<blockquote>
+<p>&#x57FA;&#x672C;&#x601D;&#x60F3;4: &#x4F17;&#x5305;&#x548C;&#x4E91;&#x8BA1;&#x7B97;</p>
+</blockquote>
+<ul>
+<li><a href="https://gpuhash.me/" target="_blank">GPUHASH.me - online cracking service</a></li>
+<li><a href="https://hashcrack.org/" target="_blank">Crackq - an online distributed GPU-accelerated password cracker</a></li>
+</ul>
+<h3 id="wps&#x5DF2;&#x77E5;&#x8106;&#x5F31;&#x6027;&#x548C;&#x6F0F;&#x6D1E;&#x5229;&#x7528;&#x2F45;&#x6CD5;"><a name="wps&#x5DF2;&#x77E5;&#x8106;&#x5F31;&#x6027;&#x548C;&#x6F0F;&#x6D1E;&#x5229;&#x7528;&#x2F45;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#wps&#x5DF2;&#x77E5;&#x8106;&#x5F31;&#x6027;&#x548C;&#x6F0F;&#x6D1E;&#x5229;&#x7528;&#x2F45;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>WPS&#x5DF2;&#x77E5;&#x8106;&#x5F31;&#x6027;&#x548C;&#x6F0F;&#x6D1E;&#x5229;&#x7528;&#x2F45;&#x6CD5;</h3>
+<h4 id="&#x9759;&#x6001;pin&#x7801;&#x79BB;&#x7EBF;&#x9884;&#x6D4B;&#x653B;&#x51FB;"><a name="&#x9759;&#x6001;pin&#x7801;&#x79BB;&#x7EBF;&#x9884;&#x6D4B;&#x653B;&#x51FB;" class="anchor-navigation-ex-anchor" href="#&#x9759;&#x6001;pin&#x7801;&#x79BB;&#x7EBF;&#x9884;&#x6D4B;&#x653B;&#x51FB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9759;&#x6001;PIN&#x7801;&#x79BB;&#x7EBF;&#x9884;&#x6D4B;&#x653B;&#x51FB;</h4>
+<p>&#x9488;&#x5BF9;Headless&#x8BBE;&#x5907;&#x9759;&#x6001;&#x9884;&#x5206;&#x914D;PIN&#x7801;&#x7684;&#x5F31;&#x968F;&#x673A;&#x4EA7;&#x2F63;&#x7B97;&#x6CD5;&#x6216;&#x9759;&#x6001;&#x786E;&#x5B9A;&#x6027;&#x4EA7;&#x2F63;&#x7B97;&#x6CD5;&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6839;&#x636E;&#x76EE;&#x6807;AP&#x7684;MAC&#x5730;&#x5740;&#x8BA1;&#x7B97;&#x51FA;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x52A0;&#x5165;&#x76EE;&#x6807;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x7684;WPS PIN&#x7801;&#x3002;</p>
+<p><img src="media/wps-pin-static-1.png" alt=""></p>
+<p><img src="media/wps-pin-static-2.png" alt=""></p>
+<p><img src="media/wps-pin-static-3.png" alt=""></p>
+<p>&#x76F8;&#x5173;&#x5386;&#x53F2;&#x5B89;&#x5168;&#x4E8B;&#x4EF6;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li><a href="http://wifibeta.com/2012-04/thread-712-1-1.html" target="_blank">2012&#x5E74;&#x7206;&#x51FA;&#x6240;&#x6709;MAC&#x5730;&#x5740;&#x524D;6&#x4F4D;&#x662F;C83A35&#x548C;00B00C&#x7684;&#x817E;&#x8FBE;&#x548C;&#x78CA;&#x79D1;&#x5168;&#x7CFB;&#x8DEF;&#x7531;&#x5668;&#x91C7;&#x7528;&#x4E86;&#x786E;&#x5B9A;&#x6027;PIN&#x7801;&#x7B97;&#x6CD5;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x55C5;&#x63A2;&#x65E0;&#x7EBF;&#x8DEF;&#x7531;&#x5668;MAC&#x5730;&#x5740;&#x540E;&#x79D2;&#x7B97;PIN&#x7801;</a><ul>
+<li>&#x8FD9;&#x4E9B;WPS PIN&#x662F;&#x901A;&#x8FC7;mac&#x7684;&#x540E;6&#x4F4D; DEC2HEX &#x53D6;&#x820D;&#x800C;&#x5F97;</li>
+</ul>
+</li>
+<li><a href="http://www.devttys0.com/2014/02/reversing-the-wrt120n-firmware-obfuscation/" target="_blank">2014&#x5E74;D-Link&#x90E8;&#x5206;&#x8DEF;&#x7531;&#x5668;&#x7684;WPS PIN&#x7B97;&#x6CD5;&#x88AB;&#x9006;&#x5411;&#x5E76;&#x53EF;&#x4EE5;&#x4ECE;BSSID&#x79D2;&#x7B97;</a></li>
+<li><a href="http://www.freebuf.com/articles/wireless/63627.html" target="_blank">2015&#x5E74;&#x8D1D;&#x5C14;&#x91D1;&#x90E8;&#x5206;&#x8DEF;&#x7531;&#x5668;&#x7684;WPS PIN&#x7B97;&#x6CD5;&#x88AB;&#x9006;&#x5411;&#x5E76;&#x53EF;&#x4EE5;&#x4ECE;&#x8DEF;&#x7531;&#x5668;MAC&#x5730;&#x5740;&#x79D2;&#x7B97;</a></li>
+</ul>
+<p>&#x6839;&#x636E;<a href="attach/chap0x02/media/Wi-Fi_Simple_Configuration_Technical_Specification_v2.0.5.pdf">&#x300A;Wi-Fi Simple Configuration Technical Specification&#x300B;</a> &#x7684; <code>4.3.2 Guidelines and Requirements for PIN values</code> &#xFF0C;&#x4E0A;&#x8FF0; <strong>&#x9759;&#x6001;PIN&#x7801;&#x79BB;&#x7EBF;&#x9884;&#x6D4B;&#x653B;&#x51FB;</strong> &#x662F;&#x4E00;&#x4F8B;&#x5178;&#x578B;&#x7684; <code>&#x8BBE;&#x8BA1;&#x2F46;&#x7F3A;&#x9677;&#xFF0C;&#x5B9E;&#x73B0;&#x5077;&#x2F2F;&#x51CF;&#x6599;&#x5BFC;&#x81F4;&#x7684;&#x5B89;&#x5168;&#x6F0F;&#x6D1E;</code>&#x3002;</p>
+<pre><code>The recommended length for a manually entered device password is an 8-digit numeric PIN.  This length does not provide a large amount of entropy for strong mutual authentication, but the design of the Registration Protocol protects against dictionary attacks on PINs if a fresh PIN or a rekeying key is used each time the Registration Protocol is run.
+
+***PIN values should be randomly generated, and they SHALL NOT be derivable from any information that can be obtained by an eavesdropper or active attacker***. The device&#x2019;s serial number and MAC address, for example, are easily eavesdropped by an attacker on the in-band channel.  Furthermore, if a device includes multiple PIN values, these values SHALL be cryptographically separate from each other.  If, for example, a device includes both a label-based PIN and a Device Password on an integrated NFC Tag, the two Device Passwords SHALL be different and uncorrelated.
+</code></pre><h4 id="&#x52A8;&#x6001;pin&#x7801;&#x66B4;&#x2F12;&#x679A;&#x4E3E;&#x653B;&#x51FB;"><a name="&#x52A8;&#x6001;pin&#x7801;&#x66B4;&#x2F12;&#x679A;&#x4E3E;&#x653B;&#x51FB;" class="anchor-navigation-ex-anchor" href="#&#x52A8;&#x6001;pin&#x7801;&#x66B4;&#x2F12;&#x679A;&#x4E3E;&#x653B;&#x51FB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x52A8;&#x6001;PIN&#x7801;&#x66B4;&#x2F12;&#x679A;&#x4E3E;&#x653B;&#x51FB;</h4>
+<p>&#x52A8;&#x6001;PIN&#x7801;&#x5728;&#x7EBF;&#x66B4;&#x529B;&#x679A;&#x4E3E;&#x653B;&#x51FB;&#x7684;&#x57FA;&#x672C;&#x539F;&#x7406;&#x662F;&#xFF1A;&#x5229;&#x7528;&#x5185;&#x90E8;&#x6CE8;&#x518C;&#x534F;&#x8BAE;&#x5206;&#x6BB5;&#x79BB;&#x7EBF;&#x66B4;&#x2F12;&#x679A;&#x4E3E;&#x7834;&#x89E3;</p>
+<ul>
+<li>&#x7B2C;&#x2F00;&#x8F6E;M1~M4: &#x5728;&#x7EBF;&#x66B4;&#x2F12;&#x7834;&#x89E3;&#x679A;&#x4E3E;PSK-1</li>
+<li>&#x7B2C;&#x2F06;&#x8F6E;M5~M7: &#x7528;&#x6B63;&#x786E;&#x7684;PSK-1&#xFF0C;&#x5728;&#x7EBF;&#x66B4;&#x2F12;&#x679A;&#x4E3E;PSK-2</li>
+<li>&#x5F97;&#x5230;&#x5B8C;&#x6574;PSK&#xFF0C;&#x8FDB;&#x2F8F;&#x2F00;&#x6B21;&#x5B8C;&#x6574;WPS&#x5185;&#x90E8;&#x6CE8;&#x518C;&#x8FC7;&#x7A0B;</li>
+</ul>
+<p>&#x65E0;&#x7EBF;&#x8BBE;&#x5907;&#x5728;&#x4E0E;&#x65E0;&#x7EBF;&#x8DEF;&#x7531;&#x5668;&#x8FDE;&#x63A5;&#x65F6;&#xFF0C;&#x7CFB;&#x7EDF;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x7684;8&#x4F4D;&#x4E2A;&#x4EBA;&#x8BC6;&#x522B;&#x53F7;&#x7801;&#xFF08;PIN&#x7801;&#xFF09;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x8FD9;&#x4E2A;8&#x4F4D;PIN&#x7801;&#x8FDB;&#x884C;&#x5B89;&#x5168;&#x7684;WPA&#x94FE;&#x63A5;&#xFF0C;&#x800C;&#x7ED5;&#x8FC7;&#x4E86;WPA&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;&#x73AF;&#x8282;&#x3002;&#x5982;&#x679C;&#x9ED1;&#x5BA2;&#x60F3;&#x901A;&#x8FC7;&#x7A77;&#x4E3E;&#x6CD5;&#xFF0C;&#x7834;&#x89E3;&#x8FD9;&#x4E2A;8&#x4F4D;PIN&#x7801;&#x4E0E;&#x65E0;&#x7EBF;&#x8DEF;&#x7531;&#x5668;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#xFF0C;&#x7406;&#x8BBA;&#x4E0A;&#x9700;&#x8981;&#x8BD5;&#x7B97;10^8&#x6B21;&#x5373;1&#x4EBF;&#x6B21;&#xFF0C;&#x6309;&#x7167;&#x6BCF;&#x79D2;1&#x6B21;&#x7684;&#x901F;&#x5EA6;&#xFF0C;&#x9700;&#x8981;1157&#x5929;&#x3002;&#x4F46;&#x8FD9;&#x4E2A;8&#x4F4D;PIN&#x662F;&#x6709;&#x89C4;&#x5F8B;&#x7684;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4E00;&#x7EC4;4&#x4F4D;PIN+&#x53E6;&#x4E00;&#x7EC4;3&#x4F4D;PIN+&#x6700;&#x540E;&#x7684;1&#x4F4D;&#x6821;&#x9A8C;&#x4F4D;&#x7EC4;&#x6210;&#x3002;&#x6821;&#x9A8C;&#x4F4D;&#x6709;&#x56FA;&#x5B9A;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x8FD9;&#x6837;&#x53EA;&#x9700;&#x8981;&#x8BD5;&#x7B97;10^4+10^3&#x603B;&#x5171;11000&#x6B21;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;&#x7A77;&#x4E3E;&#x6CD5;&#x8BD5;&#x7B97;11000&#x6B21;&#xFF0C;&#x51E0;&#x4E2A;&#x5C0F;&#x65F6;&#x5C31;&#x53EF;&#x4EE5;&#x51FA;&#x6765;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x653B;&#x51FB;&#x8005;&#x5728;&#x53D1;&#x9001;&#x5B8C;M4&#x6D88;&#x606F;&#x540E;&#x63A5;&#x6536;&#x5230;&#x4E00;&#x4E2A;EAP-NACK&#x6D88;&#x606F;&#xFF0C;&#x5219;&#x8BF4;&#x660E;PIN&#x7801;&#x7684;&#x524D;&#x534A;&#x90E8;&#x5206;&#x662F;&#x9519;&#x8BEF;&#x7684;&#xFF0C;&#x7EE7;&#x7EED;&#x679A;&#x4E3E;&#x6D4B;&#x8BD5;&#x76F4;&#x5230;&#x5B8C;&#x6210;10000&#x6B21;&#x5C1D;&#x8BD5;&#x3002;&#x5728;&#x51E0;&#x5206;&#x949F;&#x5185;&#x5C1D;&#x8BD5;50&#x6B21;&#x653B;&#x51FB;&#x65F6;&#xFF0C;&#x6709;&#x4E9B;&#x8DEF;&#x7531;&#x5668;&#x53EF;&#x80FD;&#x4F1A;&#x628A;&#x653B;&#x51FB;&#x7684;&#x7F51;&#x5361;&#x52A0;&#x5165;&#x9ED1;&#x540D;&#x5355;&#x3002;&#x4F46;&#x5927;&#x591A;&#x6570;&#x8DEF;&#x7531;&#x5668;&#x90FD;&#x4E0D;&#x4F1A;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x5373;&#x4F7F;&#x52A0;&#x5165;&#x9ED1;&#x540D;&#x5355;&#x4E86;&#x8FD8;&#x53EF;&#x4EE5;&#x7A0D;&#x540E;&#x518D;&#x505A;&#x653B;&#x51FB;&#x3002;&#x653B;&#x51FB;&#x8005;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0D;&#x65AD;&#x53D8;&#x6362;&#x81EA;&#x5DF1;&#x7684;MAC&#x5730;&#x5740;&#xFF0C;&#x5BF9;&#x6297;MAC&#x5730;&#x5740;&#x9ED1;&#x540D;&#x5355;&#x673A;&#x5236;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x653B;&#x51FB;&#x8005;&#x5728;&#x53D1;&#x9001;&#x5B8C;M6&#x6D88;&#x606F;&#x540E;&#x63A5;&#x6536;&#x5230;EAP-NACK&#x6D88;&#x606F;&#xFF0C;&#x5C31;&#x8BF4;&#x660E;&#x679A;&#x4E3E;PIN&#x7801;&#x7684;&#x7B2C;&#x4E8C;&#x90E8;&#x5206;&#x662F;&#x9519;&#x8BEF;&#x7684;&#xFF0C;&#x7EE7;&#x7EED;&#x66B4;&#x529B;&#x5C1D;&#x8BD5;&#x4E0B;&#x4E00;&#x4E2A;PIN&#x7801;&#x3002;&#x4F7F;&#x7528;&#x5DE5;&#x5177; <a href="https://github.com/t6x/reaver-wps-fork-t6x" target="_blank">reaver</a> &#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5728;&#x7EBF;&#x66B4;&#x529B;&#x7834;&#x89E3;&#x52A8;&#x6001;PIN&#x7801;&#x4EE5;&#x53CA;&#x6062;&#x590D;&#x76EE;&#x6807;&#x7F51;&#x7EDC;&#x7684;WPA-PSK&#x5BC6;&#x94A5;&#xFF0C;&#x5982;&#x4E0B;2&#x5F20;&#x622A;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
+<p><img src="media/reaver_attack.png" alt=""></p>
+<p><img src="media/reaver_attack_success.png" alt=""></p>
+<p>&#x4E0A;&#x8FF0;&#x5728;&#x7EBF;&#x66B4;&#x529B;&#x679A;&#x4E3E;&#x653B;&#x51FB;&#x7684;&#x4E00;&#x79CD;&#x6539;&#x8FDB;&#x7B97;&#x6CD5;&#x88AB;&#x547D;&#x540D;&#x4E3A; <a href="https://forums.kali.org/showthread.php?24286-WPS-Pixie-Dust-Attack-\(Offline-WPS-Attack\" target="_blank"><code>Pixie Dust Attack</code></a>) &#xFF0C;&#x5176;&#x7B97;&#x6CD5;&#x6539;&#x8FDB;&#x7684;&#x57FA;&#x7840;&#x662F;&#xFF1A;E-Hash1&#x3001;E-Hash2&#x3001;PKE&#x3001;PKR &#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x6293;&#x5305;&#x83B7;&#x5F97;&#x7684;&#xFF0C;&#x5269;&#x4E0B;&#x7684;PSK1&#x548C;PSK2&#x5206;&#x522B;&#x5BF9;&#x5E94;PIN&#x7801;&#x524D;&#x540E;&#x4E24;&#x534A;&#xFF0C;&#x53EF;&#x88AB;&#x679A;&#x4E3E;&#x3002;E-S1&#x548C;E-S2&#x662F;&#x6574;&#x4E2A;&#x79BB;&#x7EBF;&#x7834;&#x89E3;&#x7684;&#x5173;&#x952E;&#xFF0C;&#x2F00;&#x65E6;&#x8FD9;2&#x4E2A;&#x53C2;&#x6570;&#x88AB;&#x8BA1;&#x7B97;&#x51FA;&#x6765;&#xFF0C;&#x5219;&#x5BF9;&#x7167;&#x516C;&#x5F0F;&#x53EF;&#x4EE5;&#x79BB;&#x7EBF;&#x904D;&#x5386;PSK-1&#x548C;PSK-2&#x7684;&#x53EF;&#x80FD;&#x6027;&#x9A8C;&#x8BC1;&#x8BA1;&#x7B97;&#x51FA;&#x7684;E-Hash1&#x662F;&#x5426;&#x4E0E;&#x6293;&#x5305;&#x5F97;&#x5230;&#x7684;E-Hash1&#x76F8;&#x540C;&#x3002;</p>
+<p>E-S1&#x548C;E-S2&#x5728;&#x5B9E;&#x9645;&#x8BBE;&#x5907;&#x4E2D;&#x7684;&#x5B9E;&#x73B0;&#x7B97;&#x6CD5;&#x4F7F;&#x7528;&#x7684;&#x662F; <code>&#x4F2A;&#x968F;&#x673A;&#x6570;&#x53D1;&#x2F63;&#x5668;</code> &#xFF0C;&#x5B58;&#x5728;&#x4EE5;&#x4E0B;3&#x4E2A;&#x4E3B;&#x8981;&#x7F3A;&#x9677;&#xFF1A;</p>
+<ul>
+<li>&#x5D4C;&#x2F0A;&#x5F0F;&#x8BBE;&#x5907;&#x2F24;&#x591A;&#x91C7;&#x7528;32&#x4F4D;CPU&#xFF0C;&#x72B6;&#x6001;&#x7A7A;&#x95F4;&#x4E0D;&#x2F9C;&#xFF0C;&#x5BFC;&#x81F4;&#x4EA7;&#x751F;&#x7684;&#x968F;&#x673A;&#x6570;&#x53D6;&#x503C;&#x7A7A;&#x95F4;&#x8F83;&#x5C0F;</li>
+<li>&#x4F2A;&#x968F;&#x673A;&#x7B97;&#x6CD5;&#x53EF;&#x80FD;&#x88AB;&#x9006;&#x5411;</li>
+<li>&#x4F2A;&#x968F;&#x673A;&#x6570;&#x79CD;&#x2F26;&#x72B6;&#x6001;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x9884;&#x6D4B;&#x548C;&#x6062;&#x590D;</li>
+</ul>
+<p>&#x9664;&#x4E86;&#x968F;&#x673A;&#x6570;&#x751F;&#x6210;&#x7B97;&#x6CD5;&#x7684;&#x7F3A;&#x9677;&#x4E4B;&#x5916;&#xFF0C;&#x90E8;&#x5206;&#x8BBE;&#x5907;&#x5382;&#x5546;&#x5728;&#x751F;&#x4EA7;&#x8BBE;&#x5907;&#x65F6;&#x751A;&#x81F3;&#x5BF9; <code>&#x4F2A;&#x968F;&#x673A;&#x6570;&#x53D1;&#x751F;&#x5668;</code> &#x8FDB;&#x4E00;&#x6B65;&#x5077;&#x5DE5;&#x51CF;&#x6599;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<ul>
+<li>Broadcom/eCos&#xFF0C;E-S1 + E-S2 &#x4F7F;&#x7528;&#x4E0E;N1&#x76F8;&#x540C;&#x7684;&#x968F;&#x673A;&#x6570;&#x53D1;&#x2F63;&#x5668;</li>
+<li>Realtek&#xFF0C;E-S1 = E-S2 = N1 &#x6216; &#x4F7F;&#x7528;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;&#x7684;UNIX&#x65F6;&#x95F4;&#x6233;&#x683C;&#x5F0F;&#x6574;&#x6570;&#x4F5C;&#x4E3A;&#x968F;&#x673A;&#x6570;&#x53D1;&#x2F63;&#x5668;&#x79CD;&#x2F26;</li>
+<li>Ralink / MediaTek / Celeno&#xFF0C; E-S1 = E-S2 = 0</li>
+</ul>
+<p>&#x6539;&#x8FDB;&#x540E;&#x7684; <code>Pixie Dust Attack</code> &#x5B9E;&#x73B0;&#x4E86; <strong>&#x79BB;&#x7EBF;</strong> &#x66B4;&#x529B;&#x7834;&#x89E3;WPS&#x52A8;&#x6001;PIN&#x7801;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x653B;&#x51FB;&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#x5DE5;&#x5177; <a href="https://github.com/wiire-a/pixiewps" target="_blank">Pixiewps</a> &#x53EF;&#x4EE5;&#x9488;&#x5BF9;&#x7279;&#x5B9A;&#x5B58;&#x5728;&#x4E0A;&#x8FF0; <code>&#x4F2A;&#x968F;&#x673A;&#x6570;&#x7B97;&#x6CD5;</code> &#x7F3A;&#x9677;&#x7684;&#x65E0;&#x7EBF;&#x8DEF;&#x7531;&#x5668;&#x5B9E;&#x73B0;&#x676A;&#x7EA7;&#x81F3;&#x5206;&#x949F;&#x7EA7;&#x522B;&#x7684;PIN&#x7801;&#x8BA1;&#x7B97;&#x3002;&#x751A;&#x81F3;&#x5BF9;&#x7279;&#x5B9A;&#x65E0;&#x7EBF;&#x8DEF;&#x7531;&#x5668;&#x5B9E;&#x73B0;&#x6062;&#x590D;&#x51FA; WPA-PSK &#x660E;&#x6587;&#x5BC6;&#x94A5;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;2&#x5F20;&#x56FE;&#x662F;&#x4F7F;&#x7528; <a href="https://github.com/wiire-a/pixiewps" target="_blank">Pixiewps</a> &#x8FDB;&#x884C;&#x79BB;&#x7EBF;&#x52A8;&#x6001;PIN&#x7801;&#x7834;&#x89E3;&#x6210;&#x529F;&#x7684;&#x622A;&#x56FE;&#x3002;</p>
+<p><img src="media/pixie-dust-attack-1.png" alt=""></p>
+<p><img src="media/pixie-dust-attack-2.png" alt=""></p>
+<h3 id="&#x653B;&#x51FB;-wpawpa2-&#x4F01;&#x4E1A;&#x7EA7;&#x8BA4;&#x8BC1;&#x2F46;&#x7EBF;&#x2F79;&#x7EDC;"><a name="&#x653B;&#x51FB;-wpawpa2-&#x4F01;&#x4E1A;&#x7EA7;&#x8BA4;&#x8BC1;&#x2F46;&#x7EBF;&#x2F79;&#x7EDC;" class="anchor-navigation-ex-anchor" href="#&#x653B;&#x51FB;-wpawpa2-&#x4F01;&#x4E1A;&#x7EA7;&#x8BA4;&#x8BC1;&#x2F46;&#x7EBF;&#x2F79;&#x7EDC;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x653B;&#x51FB; WPA/WPA2 &#x4F01;&#x4E1A;&#x7EA7;&#x8BA4;&#x8BC1;&#x2F46;&#x7EBF;&#x2F79;&#x7EDC;</h3>
+<p>&#x903B;&#x8F91;&#x4E0A;&#x6765;&#x8BF4;&#xFF0C;EAP&#x8BA4;&#x8BC1;&#x8FC7;&#x7A0B;&#x53D1;&#x751F;&#x5728;&#x8BF7;&#x6C42;&#x8005;&#xFF08;supplicant&#xFF09;&#x548C;&#x8BA4;&#x8BC1;&#x670D;&#x52A1;&#x5668;&#xFF08;authentication server&#xFF09;&#x4E4B;&#x95F4;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="media/wpa-enterprise-1.png" alt=""></p>
+<p>&#x7269;&#x7406;&#x4E0A;&#x6765;&#x8BF4;&#xFF0C;AP&#x626E;&#x6F14;&#x4E86;&#x8BA4;&#x8BC1;&#x8FC7;&#x7A0B;&#x7684;&#x4E2D;&#x95F4;&#x4EBA;&#xFF1A;&#x8BA4;&#x8BC1;&#x8FC7;&#x7A0B;&#x5EFA;&#x7ACB;&#x5728;&#x5B89;&#x5168;&#x96A7;&#x9053;&#x4E4B;&#x4E0A;&#xFF0C;&#x4F46;&#x52A0;&#x5BC6;&#x7684;SSL/TLS&#x6570;&#x636E;&#x662F;&#x5728;&#x5F00;&#x653E;&#x7684;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x4E0A;&#x4F20;&#x8F93;&#x7684;&#x3002;</p>
+<p><img src="media/wpa-enterprise-2.png" alt=""></p>
+<p>&#x5728;&#x5B89;&#x5168;&#x96A7;&#x9053;&#x5EFA;&#x7ACB;&#x4E4B;&#x524D;&#xFF0C;AP&#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x653E;&#x8BBF;&#x95EE;&#x7684;&#x63A5;&#x5165;&#x70B9;&#xFF0C;&#x5F00;&#x653E;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x6613;&#x906D;&#x53D7;Evil Twin&#x653B;&#x51FB;&#xFF0C;&#x56E0;&#x4E3A;&#xFF08;&#x5BA2;&#x6237;&#x7AEF;&#xFF09;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x9A8C;&#x8BC1;AP&#x7684;&#x8EAB;&#x4EFD;&#x3002;</p>
+<p><img src="media/wpa-enterprise-3.png" alt=""></p>
+<p>&#x5F53;&#x7528;&#x6237;&#x8FDE;&#x63A5;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x624B;&#x673A;&#x4E0A;&#x770B;&#x5230;&#x4E86;&#x5982;&#x4E0B;&#x7684; <strong>&#x4FE1;&#x4EFB;&#x8B66;&#x544A;</strong> &#xFF0C;&#x5927;&#x591A;&#x6570;&#x7528;&#x6237;&#x5E94;&#x8BE5;&#x4E0D;&#x4F1A;&#x67E5;&#x770B; <strong>&#x66F4;&#x591A;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</strong> &#xFF0C;&#x5373;&#x4F7F;&#x67E5;&#x770B;&#x4E86;&#xFF0C;&#x5728;&#x4E0D;&#x501F;&#x52A9;&#x5DE5;&#x5177;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8089;&#x773C;&#x4E5F;&#x65E0;&#x6CD5;&#x9274;&#x522B;&#x8BE5;&#x8BC1;&#x4E66;&#x7684;&#x5408;&#x6CD5;&#x6027;&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x7EC8;&#x7684;&#x7ED3;&#x679C;&#x90FD;&#x662F;&#x7528;&#x6237;&#x9009;&#x62E9;&#x4E86; <strong>&#x4FE1;&#x4EFB;</strong> &#x8FD9;&#x4E2A; <code>&#x81EA;&#x7B7E;&#x53D1;</code> &#x7684;&#x8BC1;&#x4E66;&#xFF0C;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x8FC7;&#x7A0B;&#x5F97;&#x4EE5;&#x7EE7;&#x7EED;&#x8FDB;&#x884C;&#x4E0B;&#x53BB;&#x3002;</p>
+<p><img src="media/wpa-enterprise-4.png" alt=""></p>
+<p>&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x6B64;&#x65F6;&#x6B64;&#x523B;&#x901A;&#x8FC7; <strong>Evil Twin</strong> &#x6784;&#x5EFA;&#x7684; <code>&#x5047;AP</code> &#xFF08;&#x5305;&#x62EC;&#x81EA;&#x5EFA;&#x7684; <code>&#x5047;&#x8BA4;&#x8BC1;&#x670D;&#x52A1;&#x5668;</code>&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x67E5;&#x770B;&#x5230;&#x65E0;&#x7EBF;&#x5BA2;&#x6237;&#x7AEF;&#x63D0;&#x4EA4;&#x7684;&#x8BA4;&#x8BC1;&#x51ED;&#x636E;&#x3002;&#x8BA4;&#x8BC1;&#x51ED;&#x636E;&#x867D;&#x7136;&#x4E0D;&#x662F;&#x660E;&#x6587;&#x53E3;&#x4EE4;&#x4F20;&#x8F93;&#xFF0C;&#x4F46;&#x5BF9;&#x4E8E;&#x5355;&#x5411;&#x6563;&#x5217;&#x503C;&#x6765;&#x8BF4;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>&#x5F69;&#x8679;&#x8868;</code> &#x67E5;&#x627E;&#x6280;&#x672F;&#x76F4;&#x63A5;&#x67E5;&#x51FA;&#x6563;&#x5217;&#x503C;&#x5BF9;&#x5E94;&#x7684;&#x660E;&#x6587;&#x53E3;&#x4EE4;&#x3002;</p>
+<p><img src="media/wpa-enterprise-5.png" alt=""></p>
+<p>&#x653B;&#x51FB;&#x8005;&#x5728; <code>&#x5047;AP</code> &#x4E0A;&#x770B;&#x5230;&#x7684;&#x57FA;&#x4E8E;&#x660E;&#x6587;&#x53E3;&#x4EE4;&#x751F;&#x6210;&#x7684;<code>&#x6311;&#x6218;-&#x54CD;&#x5E94;&#x5E94;&#x7B54;&#x6D88;&#x606F;</code>&#xFF08;<strong>&#x5355;&#x5411;&#x6563;&#x5217;&#x8FD0;&#x7B97;&#x503C;</strong>&#xFF09;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1B;</p>
+<p><img src="media/asleep-1.png" alt=""></p>
+<p>&#x628A; <strong>&#x5355;&#x5411;&#x6563;&#x5217;&#x8FD0;&#x7B97;&#x503C;</strong> &#x5BFC;&#x5165;&#x5230; <a href="https://tools.kali.org/wireless-attacks/asleap" target="_blank">asleep</a> &#x4E2D;&#x5C31;&#x53EF;&#x4EE5;&#x5F88;&#x5FEB;&#x6062;&#x590D;&#x51FA;&#x660E;&#x6587;&#x53E3;&#x4EE4;&#x3002;</p>
+<p><img src="media/asleep-2.png" alt=""></p>
+<p>&#x9488;&#x5BF9;&#x4E0A;&#x8FF0;&#x4F01;&#x4E1A;&#x7EA7;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x8BA4;&#x8BC1;&#x65B9;&#x5F0F;&#x7684;&#x4E2D;&#x95F4;&#x4EBA;&#x653B;&#x51FB;&#x65B9;&#x6CD5;&#xFF0C;&#x4F01;&#x4E1A;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x7684;&#x7BA1;&#x7406;&#x5458;&#x5E94;&#xFF1A;</p>
+<ul>
+<li>&#x7981;&#x7528;&#x4E0D;&#x5B89;&#x5168;&#x7684; <code>EAP</code> &#x5B9E;&#x73B0;&#x65B9;&#x6CD5;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;EAP-MD5, EAP-OTP, <a href="https://www.defcon.org/images/defcon-21/dc-21-presentations/djwishbone-PuNk1nPo0p/DEFCON-21-djwishbone-PuNk1nPo0p-BYO-Disaster-Updated.pdf" target="_blank">EAP-GTC</a> , LEAP</li>
+<li>&#x542F;&#x7528;&#x5E76; <strong>&#x6B63;&#x786E;&#x914D;&#x7F6E;</strong> &#x5B89;&#x5168;&#x7684; <code>EAP</code> &#x5B9E;&#x73B0;&#x65B9;&#x6CD5;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;PEAP, TTLS, EAP/TLS</li>
+<li>&#x5728;&#x65E0;&#x7EBF;&#x5BA2;&#x6237;&#x7AEF;&#x4E0A;&#x9884;&#x7F6E;&#x81EA;&#x7B7E;&#x53D1;&#x7684; <code>EAP</code> &#x8BA4;&#x8BC1;&#x8BC1;&#x4E66;&#x4FE1;&#x4EFB;&#x94FE;&#x6216;&#x8D2D;&#x4E70;&#x6743;&#x5A01;CA&#x7B7E;&#x53D1;&#x7684;&#x7528;&#x4E8E;&#x8EAB;&#x4EFD;&#x8BA4;&#x8BC1;&#x7684;&#x8BC1;&#x4E66;</li>
+<li>&#x65E0;&#x7EBF;&#x5BA2;&#x6237;&#x7AEF;&#x542F;&#x7528;&#x6C38;&#x8FDC;&#x9A8C;&#x8BC1;&#x670D;&#x52A1;&#x5668;&#x8BC1;&#x4E66;&#x6709;&#x6548;&#x6027;</li>
+<li>&#x6559;&#x80B2;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x7528;&#x6237;&#x4E0D;&#x8981;&#x4FE1;&#x4EFB;&#x4EFB;&#x4F55;&#x88AB;&#x8B66;&#x544A;&#x7684;&#x8BC1;&#x4E66;<ul>
+<li>&#x5B66;&#x4F1A;&#x624B;&#x5DE5;&#x9A8C;&#x8BC1;&#x8BC1;&#x4E66;&#x7684; <code>CN</code> &#x5B57;&#x6BB5;&#x503C;&#x662F;&#x5426;&#x4E0E;&#x516C;&#x53F8;&#x901A;&#x544A;&#x4E00;&#x81F4;&#xFF08;&#x53EA;&#x662F;&#x7F13;&#x89E3;&#x98CE;&#x9669;&#xFF0C;&#x5982;&#x679C;&#x653B;&#x51FB;&#x8005;&#x5B8C;&#x5168;&#x514B;&#x9686;&#x4F01;&#x4E1A;&#x7684;&#x8BC1;&#x4E66;&#x4FE1;&#x606F;&#xFF0C;&#x5219;&#x672C;&#x65B9;&#x6CD5;&#x65E0;&#x6548;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x5B89;&#x5168;&#x673A;&#x5236;&#x6F0F;&#x6D1E;&#x5229;&#x7528;&#x5B9E;&#x4F8B;"><a name="&#x5B89;&#x5168;&#x673A;&#x5236;&#x6F0F;&#x6D1E;&#x5229;&#x7528;&#x5B9E;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x5168;&#x673A;&#x5236;&#x6F0F;&#x6D1E;&#x5229;&#x7528;&#x5B9E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x5168;&#x673A;&#x5236;&#x6F0F;&#x6D1E;&#x5229;&#x7528;&#x5B9E;&#x4F8B;</h2>
+<p>&#x8BE6;&#x89C1;<a href="exp.html">&#x672C;&#x7AE0;&#x5B9E;&#x9A8C;</a></p>
+<h2 id="&#x6784;&#x5EFA;&#x5B89;&#x5168;&#x7684;&#x65E0;&#x7EBF;&#x5C40;&#x57DF;&#x7F51;"><a name="&#x6784;&#x5EFA;&#x5B89;&#x5168;&#x7684;&#x65E0;&#x7EBF;&#x5C40;&#x57DF;&#x7F51;" class="anchor-navigation-ex-anchor" href="#&#x6784;&#x5EFA;&#x5B89;&#x5168;&#x7684;&#x65E0;&#x7EBF;&#x5C40;&#x57DF;&#x7F51;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6784;&#x5EFA;&#x5B89;&#x5168;&#x7684;&#x65E0;&#x7EBF;&#x5C40;&#x57DF;&#x7F51;</h2>
+<p>&#x548C;&#x901A;&#x7528;&#x4FE1;&#x606F;&#x7CFB;&#x7EDF;&#x548C;&#x7F51;&#x7EDC;&#x7684;&#x5B89;&#x5168;&#x52A0;&#x56FA;&#x65B9;&#x6CD5;&#x4E00;&#x6837;&#xFF0C;&#x6784;&#x5EFA;&#x5B89;&#x5168;&#x7684;&#x65E0;&#x7EBF;&#x5C40;&#x57DF;&#x7F51;&#x4E5F;&#x5E94;&#x9075;&#x5B88;&#x201C;&#x5C42;&#x6B21;&#x5316;&#x7684;&#x5B89;&#x5168;&#x52A0;&#x56FA;&#x7B56;&#x7565;&#x201D;&#xFF0C;&#x5373;&#x6309;&#x7167;&#xFF1A;&#x4EBA;&#x3001;&#x5E94;&#x7528;&#x5C42;&#x3001;&#x7F51;&#x7EDC;&#x5C42;&#x3001;&#x94FE;&#x8DEF;&#x5C42;&#x548C;&#x7269;&#x7406;&#x5C42;&#x7B49;&#x8FD9;&#x6837;&#x7684;&#x5206;&#x5C42;&#x5206;&#x6790;&#x5A01;&#x80C1;&#x548C;&#x9488;&#x5BF9;&#x6027;&#x5B89;&#x5168;&#x52A0;&#x56FA;&#x3002;</p>
+<h3 id="&#x4EBA;"><a name="&#x4EBA;" class="anchor-navigation-ex-anchor" href="#&#x4EBA;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EBA;</h3>
+<p>&#x9488;&#x5BF9;&#x4EBA;&#x7684;&#x5B89;&#x5168;&#x52A0;&#x56FA;&#x4E3B;&#x8981;&#x662F;&#x901A;&#x8FC7;&#x5B89;&#x5168;&#x610F;&#x8BC6;&#x6559;&#x80B2;&#x548C;&#x5B89;&#x5168;&#x6280;&#x80FD;&#x57F9;&#x8BAD;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5B9E;&#x65BD;&#xFF1A;</p>
+<ul>
+<li>&#x907F;&#x514D;&#x4F7F;&#x7528;&#x4E07;&#x80FD;Wi-Fi&#x94A5;&#x5319;&#x7C7B;APP&#x3002;&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x62AB;&#x7740;&#x201C;&#x5206;&#x4EAB;&#x201D;&#x7ECF;&#x6D4E;&#x5916;&#x8863;&#x7684;&#x5DE5;&#x5177;&#x7C7B;&#x5E94;&#x7528;&#xFF0C;&#x4FE1;&#x606F;&#x76F8;&#x6BD4;&#x8F83;&#x4E8E;&#x5B9E;&#x7269;&#xFF0C;&#x5929;&#x7136;&#x5177;&#x6709;&#x96F6;&#x590D;&#x5236;&#x6210;&#x672C;&#x548C;&#x6613;&#x4E8E;&#x590D;&#x5236;&#x3001;&#x5FEB;&#x901F;&#x4F20;&#x64AD;&#x3001;&#x96BE;&#x4EE5;&#x8FFD;&#x6EAF;&#x4F20;&#x64AD;&#x6E90;&#x7684;&#x7279;&#x70B9;&#x3002;&#x5BA2;&#x4EBA;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6B64;&#x7C7B;&#x8F6F;&#x4EF6;&#x5728;&#x672A;&#x7ECF;&#x4E3B;&#x4EBA;&#x77E5;&#x6653;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5C06;&#x6240;&#x8FDE;&#x8FC7;&#x7684;&#x4E3B;&#x4EBA;&#x5BB6;&#x4E2D;Wi-Fi&#x7684;&#x5BC6;&#x7801;&#x3001;SSID&#x4E0A;&#x4F20;&#x5230;&#x670D;&#x52A1;&#x5668;&#x5206;&#x4EAB;&#x7ED9;&#x5176;&#x4ED6;&#x4EBA;&#x3002;&#x5176;&#x4ED6;&#x8DEF;&#x4EBA;&#x540E;&#x7EED;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5171;&#x4EAB;&#x5BC6;&#x94A5;&#x8FDE;&#x5165;&#x8BE5;&#x4E3B;&#x4EBA;&#x7684;&#x5BB6;&#x5EAD;&#x7F51;&#x7EDC;&#x65F6;&#xFF0C;&#x4E3B;&#x4EBA;&#x540C;&#x6837;&#x9762;&#x4E34;&#x7740;&#x6CA1;&#x6709;&#x77E5;&#x60C5;&#x6743;&#x548C;&#x63A7;&#x5236;&#x6743;&#x7684;&#x5371;&#x9669;&#x5904;&#x5883;&#x3002;&#x5982;&#x679C;&#x8BF4;&#x672A;&#x7ECF;&#x6388;&#x6743;&#x5360;&#x7528;&#x4ED6;&#x4EBA;&#x5E26;&#x5BBD;&#x4E8B;&#x5C0F;&#xFF0C;&#x90A3;&#x4E48;&#x672A;&#x6388;&#x6743;&#x7684;&#x5185;&#x90E8;&#x7F51;&#x7EDC;&#x4EFB;&#x610F;&#x8BBF;&#x95EE;&#x3001;&#x7A83;&#x53D6;&#x9690;&#x79C1;&#x548C;&#x673A;&#x5BC6;&#x6570;&#x636E;&#x5219;&#x6709;&#x53EF;&#x80FD;&#x4E25;&#x91CD;&#x4FB5;&#x72AF;&#x5230;&#x7F51;&#x7EDC;&#x6240;&#x6709;&#x8005;&#x7684;&#x79C1;&#x6709;&#x6570;&#x636E;&#x6240;&#x6709;&#x6743;&#x3002;</li>
+<li>&#x5B9A;&#x671F;&#x66F4;&#x6362;&#x4E2A;&#x4EBA;&#x6216;&#x5BB6;&#x5EAD;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x7684;&#x5171;&#x4EAB;&#x5BC6;&#x94A5;&#xFF0C;&#x4E00;&#x6765;&#x7F13;&#x89E3;&#x5BC6;&#x94A5;&#x88AB;&#x672A;&#x77E5;&#x6E20;&#x9053;&#x3001;&#x672A;&#x77E5;&#x539F;&#x56E0;&#x6CC4;&#x6F0F;&#x5E26;&#x6765;&#x7684;&#x201C;&#x8E6D;&#x7F51;&#x201D;&#x98CE;&#x9669;&#xFF0C;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#x53EF;&#x4EE5;&#x964D;&#x4F4E;&#x7F51;&#x7EDC;&#x5BC6;&#x94A5;&#x88AB;&#x79BB;&#x7EBF;&#x66B4;&#x529B;&#x7834;&#x89E3;&#x6210;&#x529F;&#x7684;&#x6982;&#x7387;&#x3002;</li>
+<li>&#x8C28;&#x614E;&#x4F7F;&#x7528;&#x516C;&#x5171;&#x6216;&#x964C;&#x751F;Wi-Fi&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x6837;&#x7684;&#x7F51;&#x7EDC;&#x4E2D;&#x4F7F;&#x7528;&#x5C40;&#x57DF;&#x7F51;&#x653B;&#x51FB;&#x6280;&#x672F;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x55C5;&#x63A2;&#x548C;&#x4E2D;&#x95F4;&#x4EBA;&#x653B;&#x51FB;&#xFF0C;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x654F;&#x611F;&#x4FE1;&#x606F;&#x5728;&#x4F20;&#x8F93;&#x8FC7;&#x7A0B;&#x4E2D;&#x88AB;&#x975E;&#x6CD5;&#x55C5;&#x63A2;&#xFF0C;&#x9632;&#x6B62;&#x6295;&#x6BD2;&#x653B;&#x51FB;&#x52AB;&#x6301;&#x6B63;&#x5E38;&#x901A;&#x4FE1;&#x8FDE;&#x63A5;&#x8FDB;&#x884C;&#x9493;&#x9C7C;&#x653B;&#x51FB;&#x548C;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x7BE1;&#x6539;&#x5B89;&#x88C5;&#x540E;&#x95E8;&#xFF0C;&#x5E94;&#x907F;&#x514D;&#x5728;&#x8FD9;&#x4E00;&#x7C7B;Wi-Fi&#x4E2D;&#x4F7F;&#x7528;&#x9700;&#x8981;&#x63D0;&#x4EA4;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;&#x7684;&#x5E94;&#x7528;&#x548C;&#x670D;&#x52A1;&#xFF0C;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x660E;&#x6587;&#x65B9;&#x5F0F;&#x4E0B;&#x8F7D;&#x548C;&#x5B89;&#x88C5;&#x5E94;&#x7528;&#x8F6F;&#x4EF6;&#xFF0C;&#x907F;&#x514D;&#x6253;&#x5F00;&#x5728;&#x7528;&#x7F51;&#x671F;&#x95F4;&#x901A;&#x8FC7;&#x660E;&#x6587;&#x65B9;&#x5F0F;&#x4E0B;&#x8F7D;&#x7684;&#x6587;&#x6863;&#x548C;&#x538B;&#x7F29;&#x5305;&#x7B49;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x3002;</li>
+<li>&#x6240;&#x6709;&#x5177;&#x5907;Wi-Fi&#x529F;&#x80FD;&#x7684;&#x8BBE;&#x5907;&#x5728;&#x4E0D;&#x4F7F;&#x7528;Wi-Fi&#x529F;&#x80FD;&#x65F6;&#x5173;&#x95ED;&#x65E0;&#x7EBF;&#x5F00;&#x5173;&#xFF08;&#x8F6F;&#x5F00;&#x5173;&#x6216;&#x786C;&#x4EF6;&#x5F00;&#x5173;&#xFF09;&#xFF0C;&#x907F;&#x514D;Evil Twin&#x653B;&#x51FB;&#x5957;&#x53D6;&#x5230;&#x4F60;&#x8FDE;&#x8FC7;&#x7684;AP&#x7684;EAPOL Packet&#x7528;&#x4E8E;&#x79BB;&#x7EBF;&#x7834;&#x89E3;WPA/WPA2 PSK&#x5BC6;&#x7801;&#xFF0C;&#x907F;&#x514D;&#x8BBE;&#x5907;&#x4E3B;&#x52A8;&#x8FDE;&#x5165;&#x5F00;&#x653E;&#x8BA4;&#x8BC1;&#x7684;&#x6076;&#x610F;AP&#x88AB;&#x76D1;&#x542C;&#x548C;&#x4E2D;&#x95F4;&#x4EBA;&#x52AB;&#x6301;&#x653B;&#x51FB;&#x3002;</li>
+</ul>
+<h3 id="&#x5E94;&#x7528;&#x5C42;"><a name="&#x5E94;&#x7528;&#x5C42;" class="anchor-navigation-ex-anchor" href="#&#x5E94;&#x7528;&#x5C42;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E94;&#x7528;&#x5C42;</h3>
+<p>&#x65E0;&#x7EBF;&#x8DEF;&#x7531;&#x5668;&#x7684;&#x7BA1;&#x7406;&#x5458;&#x5E94;&#x4FEE;&#x6539;&#x8DEF;&#x7531;&#x5668;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#xFF0C;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x5B89;&#x5168;&#x52A0;&#x56FA;&#x63AA;&#x65BD;</p>
+<ul>
+<li>&#x4FEE;&#x6539;&#x9ED8;&#x8BA4;&#x7684;&#x7BA1;&#x7406;&#x5458;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#xFF0C;&#x907F;&#x514D;&#x88AB;&#x5F31;&#x53E3;&#x4EE4;&#x767B;&#x5F55;&#xFF1B;</li>
+<li>&#x542F;&#x7528;&#x767B;&#x5F55;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x7684;&#x56FE;&#x5F62;&#x5316;&#x9A8C;&#x8BC1;&#x7801;&#xFF0C;&#x63D0;&#x9AD8;&#x8EAB;&#x4EFD;&#x8BA4;&#x8BC1;&#x66B4;&#x529B;&#x7834;&#x89E3;&#x7684;&#x96BE;&#x5EA6;&#xFF1B;</li>
+<li>&#x66F4;&#x65B0;&#x5230;&#x6700;&#x65B0;&#x7248;&#x56FA;&#x4EF6;&#xFF0C;&#x907F;&#x514D;&#x9488;&#x5BF9;&#x8DEF;&#x7531;&#x5668;&#x7CFB;&#x7EDF;&#x7684;&#x76F4;&#x63A5;&#x8FDC;&#x7A0B;&#x653B;&#x51FB;&#x3002;</li>
+</ul>
+<h3 id="&#x7F51;&#x7EDC;&#x5C42;"><a name="&#x7F51;&#x7EDC;&#x5C42;" class="anchor-navigation-ex-anchor" href="#&#x7F51;&#x7EDC;&#x5C42;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F51;&#x7EDC;&#x5C42;</h3>
+<p>&#x540C;&#x6837;&#x662F;&#x5BF9;&#x65E0;&#x7EBF;&#x8DEF;&#x7531;&#x5668;&#x7684;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x542F;&#x7528;&#x5BA2;&#x4EBA;/&#x8BBF;&#x5BA2;&#x7F51;&#x7EDC;</p>
+<ul>
+<li>&#x4EC5;&#x63D0;&#x4F9B;&#x4E92;&#x8054;&#x7F51;&#x8BBF;&#x95EE;&#xFF0C;&#x7981;&#x6B62;&#x8BBF;&#x95EE;&#x6709;&#x7EBF;&#x5C40;&#x57DF;&#x7F51;&#xFF1B;</li>
+<li>&#x72EC;&#x7ACB;&#x7F51;&#x7EDC;&#x4F7F;&#x7528;&#x72EC;&#x7ACB;&#x5BC6;&#x7801;&#xFF1B;</li>
+<li>&#x542F;&#x7528;AP&#x9694;&#x79BB;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x7981;&#x6B62;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x76F8;&#x4E92;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#xFF0C;&#x675C;&#x7EDD;&#x5C40;&#x57DF;&#x7F51;&#x5185;&#x7684;&#x653B;&#x51FB;&#x3002;</li>
+</ul>
+<p>&#x5BF9;&#x4E8E;&#x4F01;&#x4E1A;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x7684;&#x7BA1;&#x7406;&#x5458;&#x6765;&#x8BF4;&#xFF0C;&#x8FDB;&#x884C;&#x5408;&#x7406;&#x7684;&#x5B50;&#x7F51;&#x5212;&#x5206;&#x4E0E;&#x9694;&#x79BB;&#xFF0C;&#x6309;&#x4E1A;&#x52A1;&#x9700;&#x6C42;&#x3001;&#x5B89;&#x5168;&#x7B49;&#x7EA7;&#x8BBE;&#x7F6E;&#x65E0;&#x7EBF;&#x5C40;&#x57DF;&#x7F51;&#x3001;&#x6709;&#x7EBF;&#x5C40;&#x57DF;&#x7F51;&#x548C;&#x4E92;&#x8054;&#x7F51;&#x4E4B;&#x95F4;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x673A;&#x5236;&#x3002;</p>
+<h3 id="&#x94FE;&#x8DEF;&#x5C42;"><a name="&#x94FE;&#x8DEF;&#x5C42;" class="anchor-navigation-ex-anchor" href="#&#x94FE;&#x8DEF;&#x5C42;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x94FE;&#x8DEF;&#x5C42;</h3>
+<p>&#x4F9D;&#x7136;&#x662F;&#x5BF9;&#x65E0;&#x7EBF;&#x8DEF;&#x7531;&#x5668;&#x7684;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x8FDB;&#x884C;&#x4FEE;&#x6539;</p>
+<ul>
+<li>&#x4EC5;&#x4F7F;&#x7528;WPA2-PSK&#xFF08;&#x9488;&#x5BF9;&#x4E2A;&#x4EBA;&#x7528;&#x6237;&#xFF09;&#xFF0C;&#x7981;&#x7528;TKIP&#x8FD9;&#x6837;&#x7684;&#x7F3A;&#x9677;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#xFF1B;</li>
+<li>&#x4F7F;&#x7528;&#x5F3A;&#x5065;&#x5BC6;&#x7801;&#xFF0C;&#x4F8B;&#x5982;&#x5927;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x3001;&#x6570;&#x5B57;&#x3001;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x7EC4;&#x5408;&#xFF1B;</li>
+<li>&#x7981;&#x7528;WPS&#x529F;&#x80FD;&#xFF1B;</li>
+<li>&#x907F;&#x514D;&#x4F7F;&#x7528;&#x5E38;&#x89C1;SSID&#x540D;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;dlink&#x3001;NetGear&#x7B49;&#x3002;</li>
+</ul>
+<p>&#x5BF9;&#x4E8E;&#x4F01;&#x4E1A;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x7684;&#x7BA1;&#x7406;&#x5458;&#x6765;&#x8BF4;&#xFF0C;&#x542F;&#x7528;WPA-&#x4F01;&#x4E1A;&#x7EA7;&#x8EAB;&#x4EFD;&#x8BA4;&#x8BC1;</p>
+<ul>
+<li>&#x5B9E;&#x540D;&#x5236;&#x3001;&#x72EC;&#x7ACB;&#x8D26;&#x53F7;&#x63A5;&#x5165;&#xFF0C;&#x5728;&#x5458;&#x5DE5;&#x79BB;&#x804C;&#x65F6;&#x53EF;&#x4EE5;&#x53CA;&#x65F6;&#x5220;&#x9664;&#x8D26;&#x53F7;&#x675C;&#x7EDD;&#x975E;&#x6388;&#x6743;&#x8BBF;&#x95EE;&#xFF0C;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x5458;&#x5DE5;&#x7684;&#x7528;&#x7F51;&#x884C;&#x4E3A;&#x8FDB;&#x884C;&#x72EC;&#x7ACB;&#x5BA1;&#x8BA1;&#xFF0C;&#x53EF;&#x4EE5;&#x7CBE;&#x786E;&#x5B9A;&#x4F4D;&#x662F;&#x54EA;&#x4E2A;&#x7528;&#x6237;&#x6CC4;&#x6F0F;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x4E0A;&#x7F51;&#x8D26;&#x53F7;&#x548C;&#x5BC6;&#x7801;&#xFF1B;</li>
+<li>&#x6709;IT&#x6280;&#x672F;&#x80FD;&#x529B;&#x7684;&#x4F01;&#x4E1A;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x914D;&#x7F6E;EAP-TLS&#xFF0C;&#x5B9E;&#x73B0; <strong>&#x53CC;&#x5411;&#x8BC1;&#x4E66;&#x9A8C;&#x8BC1;</strong> &#x3002;</li>
+</ul>
+<h3 id="&#x7269;&#x7406;&#x5C42;"><a name="&#x7269;&#x7406;&#x5C42;" class="anchor-navigation-ex-anchor" href="#&#x7269;&#x7406;&#x5C42;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7269;&#x7406;&#x5C42;</h3>
+<p>&#x4E2A;&#x4EBA;&#x7528;&#x6237;&#x6839;&#x636E;&#x4FE1;&#x53F7;&#x8986;&#x76D6;&#x8303;&#x56F4;&#x9700;&#x6C42;&#xFF0C;&#x5408;&#x7406;&#x8BBE;&#x7F6E;&#x65E0;&#x7EBF;&#x8DEF;&#x7531;&#x5668;&#x7684;&#x4FE1;&#x53F7;&#x53D1;&#x5C04;&#x529F;&#x7387;&#x3002;&#x4F01;&#x4E1A;&#x65E0;&#x7EBF;&#x7F51;&#x7EDC;&#x7684;&#x7BA1;&#x7406;&#x5458;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x63AA;&#x65BD;&#x9650;&#x5236;&#x65E0;&#x7EBF;&#x4FE1;&#x53F7;&#x7684;&#x8986;&#x76D6;&#x8303;&#x56F4;&#xFF1A;</p>
+<ul>
+<li>&#x7F29;&#x7A84;&#x53D1;&#x5C04;&#x5929;&#x7EBF;&#x8986;&#x76D6;&#x8303;&#x56F4;</li>
+<li>&#x5899;&#x9762;&#x4FE1;&#x53F7;&#x53CD;&#x5C04;&#x6D82;&#x6599;</li>
+<li>&#x4F7F;&#x7528;&#x5B9A;&#x5411;&#x5929;&#x7EBF;</li>
+</ul>
+<footer class="page-footer"><span class="copyright">&#xA9; <a href="https://www.zhihu.com/people/c4pr1c3" target="_blank">@&#x9EC4;&#x73AE;</a> all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-03-18 07:42:23
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../chap0x02/wnda3100v3.html" class="navigation navigation-prev " aria-label="Previous page: Netgear WNDA3100v3">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="exp.html" class="navigation navigation-next " aria-label="Next page: 实验">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第三章 无线接入网入侵与防御","level":"1.4","depth":1,"next":{"title":"实验","level":"1.4.1","depth":2,"path":"chap0x03/exp.md","ref":"chap0x03/exp.md","articles":[]},"previous":{"title":"Netgear WNDA3100v3","level":"1.3.5.11","depth":3,"path":"chap0x02/wnda3100v3.md","ref":"chap0x02/wnda3100v3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchor-navigation-ex","tbfed-pagefooter","ga","image-captions","add-js-css","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy <a href='https://www.zhihu.com/people/c4pr1c3'>@黄玮</a>","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"search":{},"add-js-css":{"js":["js/custom.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"ga":{"configuration":"auto","token":"UA-4489768-14"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/c4pr1c3/cuc-mis/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"_CAPTION_","align":"center","variable_name":"_pictures"}},"theme":"default","author":"黄玮","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","align":"center","list_caption":"Figure: License: CC BY-NC-SA 4.0","alt":"License: CC BY-NC-SA 4.0","nro":1,"url":"https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg","index":1,"caption_template":"_CAPTION_","label":"License: CC BY-NC-SA 4.0","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"chap0x01/main.html#fig1.2.1","level":"1.2","align":"center","list_caption":"Figure: 图 1-1 移动互联网架构","alt":"图 1-1 移动互联网架构","nro":2,"url":"attach/chap0x01/mobile_net_arch.jpg","index":1,"caption_template":"_CAPTION_","label":"图 1-1 移动互联网架构","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"chap0x01/main.html#fig1.2.2","level":"1.2","align":"center","list_caption":"Figure: 图 1-2 无线网络通信协议家谱","alt":"图 1-2 无线网络通信协议家谱","nro":3,"url":"attach/chap0x01/wireless_protocols.png","index":2,"caption_template":"_CAPTION_","label":"图 1-2 无线网络通信协议家谱","attributes":{},"skip":false,"key":"1.2.2"},{"backlink":"chap0x01/main.html#fig1.2.3","level":"1.2","align":"center","list_caption":"Figure: 图 1-3 IEEE 802.11 完整架构","alt":"图 1-3 IEEE 802.11 完整架构","nro":4,"url":"attach/chap0x01/802.11.arch.png","index":3,"caption_template":"_CAPTION_","label":"图 1-3 IEEE 802.11 完整架构","attributes":{},"skip":false,"key":"1.2.3"},{"backlink":"chap0x01/main.html#fig1.2.4","level":"1.2","align":"center","list_caption":"Figure: 图 1-4 真实世界无限网络抓包结果示例","alt":"图 1-4 真实世界无限网络抓包结果示例","nro":5,"url":"attach/chap0x01/kismac.1.png","index":4,"caption_template":"_CAPTION_","label":"图 1-4 真实世界无限网络抓包结果示例","attributes":{},"skip":false,"key":"1.2.4"},{"backlink":"chap0x01/main.html#fig1.2.5","level":"1.2","align":"center","list_caption":"Figure: 图 1-5 802.11 协议历史时间线","alt":"图 1-5 802.11 协议历史时间线","nro":6,"url":"attach/chap0x01/802.11.timeline.png","index":5,"caption_template":"_CAPTION_","label":"图 1-5 802.11 协议历史时间线","attributes":{},"skip":false,"key":"1.2.5"},{"backlink":"chap0x01/main.html#fig1.2.6","level":"1.2","align":"center","list_caption":"Figure: 图 1-6 IEEE 802.11g 第1-14信道的频谱屏蔽范围定义","alt":"图 1-6 IEEE 802.11g 第1-14信道的频谱屏蔽范围定义","nro":7,"url":"attach/chap0x01/802.11.2.4.svg.png","index":6,"caption_template":"_CAPTION_","label":"图 1-6 IEEE 802.11g 第1-14信道的频谱屏蔽范围定义","attributes":{},"skip":false,"key":"1.2.6"},{"backlink":"chap0x01/main.html#fig1.2.7","level":"1.2","align":"center","list_caption":"Figure: 图 1.6 IEEE 802.11 协议标准对应最大带宽能力发展历史","alt":"图 1.6 IEEE 802.11 协议标准对应最大带宽能力发展历史","nro":8,"url":"attach/chap0x01/802.11.timeline.bandwidth.jpg","index":7,"caption_template":"_CAPTION_","label":"图 1.6 IEEE 802.11 协议标准对应最大带宽能力发展历史","attributes":{},"skip":false,"key":"1.2.7"},{"backlink":"chap0x01/main.html#fig1.2.8","level":"1.2","align":"center","list_caption":"Figure: 图 1-7 IEEE 802 家族主要协议对应 OSI 模型归属关系","alt":"图 1-7 IEEE 802 家族主要协议对应 OSI 模型归属关系","nro":9,"url":"attach/chap0x01/IEEE_802_family.png","index":8,"caption_template":"_CAPTION_","label":"图 1-7 IEEE 802 家族主要协议对应 OSI 模型归属关系","attributes":{},"skip":false,"key":"1.2.8"},{"backlink":"chap0x01/main.html#fig1.2.9","level":"1.2","align":"center","list_caption":"Figure: 图 1-8 STA 工作模式","alt":"图 1-8 STA 工作模式","nro":10,"url":"attach/chap0x01/wds.png","index":9,"caption_template":"_CAPTION_","label":"图 1-8 STA 工作模式","attributes":{},"skip":false,"key":"1.2.9"},{"backlink":"chap0x01/main.html#fig1.2.10","level":"1.2","align":"center","list_caption":"Figure: 图 1-9 IEEE 802.11 关联过程示例","alt":"图 1-9 IEEE 802.11 关联过程示例","nro":11,"url":"attach/chap0x01/802.11.open.association.png","index":10,"caption_template":"_CAPTION_","label":"图 1-9 IEEE 802.11 关联过程示例","attributes":{},"skip":false,"key":"1.2.10"},{"backlink":"chap0x01/main.html#fig1.2.11","level":"1.2","align":"center","list_caption":"Figure: 图 1-10 真实无线网络加入过程可视化","alt":"图 1-10 真实无线网络加入过程可视化","nro":12,"url":"attach/chap0x01/cuc.open.association.demo.png","index":11,"caption_template":"_CAPTION_","label":"图 1-10 真实无线网络加入过程可视化","attributes":{},"skip":false,"key":"1.2.11"},{"backlink":"chap0x01/main.html#fig1.2.12","level":"1.2","align":"center","list_caption":"Figure: 图 1-11 RSSI 实例-1","alt":"图 1-11 RSSI 实例-1","nro":13,"url":"attach/chap0x01/mac.wifi.rssi.png","index":12,"caption_template":"_CAPTION_","label":"图 1-11 RSSI 实例-1","attributes":{},"skip":false,"key":"1.2.12"},{"backlink":"chap0x01/main.html#fig1.2.13","level":"1.2","align":"center","list_caption":"Figure: 图 1-12 RSSI 实例-2","alt":"图 1-12 RSSI 实例-2","nro":14,"url":"attach/chap0x01/cts.png","index":13,"caption_template":"_CAPTION_","label":"图 1-12 RSSI 实例-2","attributes":{},"skip":false,"key":"1.2.13"},{"backlink":"chap0x01/main.html#fig1.2.14","level":"1.2","align":"center","list_caption":"Figure: 图 1-13 RSSI 变化趋势可视化","alt":"图 1-13 RSSI 变化趋势可视化","nro":15,"url":"attach/chap0x01/rssi_sample.png","index":14,"caption_template":"_CAPTION_","label":"图 1-13 RSSI 变化趋势可视化","attributes":{},"skip":false,"key":"1.2.14"},{"backlink":"chap0x01/main.html#fig1.2.15","level":"1.2","align":"center","list_caption":"Figure: 图 1-14 无线安全机制","alt":"图 1-14 无线安全机制","nro":16,"url":"attach/chap0x01/wifi-enc.png","index":15,"caption_template":"_CAPTION_","label":"图 1-14 无线安全机制","attributes":{},"skip":false,"key":"1.2.15"},{"backlink":"chap0x01/main.html#fig1.2.16","level":"1.2","align":"center","list_caption":"Figure: 图 1-15 WiFi Pineapple","alt":"图 1-15 WiFi Pineapple","nro":17,"url":"attach/chap0x01/wifi-pineapple.jpg","index":16,"caption_template":"_CAPTION_","label":"图 1-15 WiFi Pineapple","attributes":{},"skip":false,"key":"1.2.16"},{"backlink":"chap0x01/main.html#fig1.2.17","level":"1.2","align":"center","list_caption":"Figure: 图 1-16 自建个人热点","alt":"图 1-16 自建个人热点","nro":18,"url":"attach/chap0x01/adhoc-soft-ap.png","index":17,"caption_template":"_CAPTION_","label":"图 1-16 自建个人热点","attributes":{},"skip":false,"key":"1.2.17"},{"backlink":"chap0x02/exp.html#fig1.3.1.1","level":"1.3.1","align":"center","list_caption":"Figure: 图1 Wireshark开启监听模式","alt":"图1 Wireshark开启监听模式","nro":19,"url":"attach/chap0x02/media/wireshark_turn_on_monitor_mode.png","index":1,"caption_template":"_CAPTION_","label":"图1 Wireshark开启监听模式","attributes":{},"skip":false,"key":"1.3.1.1"},{"backlink":"chap0x04/smartconfig.html#fig1.5.2.1","level":"1.5.2","align":"center","list_caption":"Figure: 点击图片看原图","alt":"点击图片看原图","nro":20,"url":"attach/smartconfig/airkiss-1-small.png","index":1,"caption_template":"_CAPTION_","label":"点击图片看原图","attributes":{},"skip":false,"key":"1.5.2.1"},{"backlink":"chap0x04/smartconfig.html#fig1.5.2.2","level":"1.5.2","align":"center","list_caption":"Figure: 点击图片看原图","alt":"点击图片看原图","nro":21,"url":"attach/smartconfig/airkiss-2-small.png","index":2,"caption_template":"_CAPTION_","label":"点击图片看原图","attributes":{},"skip":false,"key":"1.5.2.2"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.1","level":"1.5.3","align":"center","list_caption":"Figure: NVD 记录的 CVE-2019-12272 漏洞详情","alt":"NVD 记录的 CVE-2019-12272 漏洞详情","nro":22,"url":"attach/CVE-2019-12272-CVSS-details.png","index":1,"caption_template":"_CAPTION_","label":"NVD 记录的 CVE-2019-12272 漏洞详情","attributes":{},"skip":false,"key":"1.5.3.1"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.2","level":"1.5.3","align":"center","list_caption":"Figure: NVD 官方原版 CVSS-3.0 评分 - BaseScore: 9.8","alt":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 9.8","nro":23,"url":"attach/CVE-2019-12272-CVSS-3.0-original.png","index":2,"caption_template":"_CAPTION_","label":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 9.8","attributes":{},"skip":false,"key":"1.5.3.2"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.3","level":"1.5.3","align":"center","list_caption":"Figure: CVSS-3.0 评分修正版 - BaseScore: 8.8","alt":"CVSS-3.0 评分修正版 - BaseScore: 8.8","nro":24,"url":"attach/CVE-2019-12272-CVSS-3.0-modified.png","index":3,"caption_template":"_CAPTION_","label":"CVSS-3.0 评分修正版 - BaseScore: 8.8","attributes":{},"skip":false,"key":"1.5.3.3"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.4","level":"1.5.3","align":"center","list_caption":"Figure: NVD 官方原版 CVSS-3.0 评分 - BaseScore: 7.5","alt":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 7.5","nro":25,"url":"attach/CVE-2019-12272-CVSS-2.0-original.png","index":4,"caption_template":"_CAPTION_","label":"NVD 官方原版 CVSS-3.0 评分 - BaseScore: 7.5","attributes":{},"skip":false,"key":"1.5.3.4"},{"backlink":"chap0x04/cve-2019-12272.html#fig1.5.3.5","level":"1.5.3","align":"center","list_caption":"Figure: CVSS-2.0 评分修正版 - BaseScore 9.0","alt":"CVSS-2.0 评分修正版 - BaseScore 9.0","nro":26,"url":"attach/CVE-2019-12272-CVSS-2.0-modified.png","index":5,"caption_template":"_CAPTION_","label":"CVSS-2.0 评分修正版 - BaseScore 9.0","attributes":{},"skip":false,"key":"1.5.3.5"}]},"title":"移动互联网安全","language":"zh-hans","links":{"sidebar":{"中传信安课程网站":"https://c4pr1c3.github.io/cuc-wiki/"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]}},"gitbook":">=2.0.0","description":"本科信息安全专业教材@CUC"},"file":{"path":"chap0x03/main.md","mtime":"2022-03-18T07:42:23.560Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-18T07:43:09.415Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-add-js-css/af312876c5e0460630586c89a1e8141d-custom.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
